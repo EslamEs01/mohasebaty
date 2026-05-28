@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>مركز التقارير · منصة محاسبتي</title>
+  <link rel="stylesheet" href="../assets/css/output.css" />
+</head>
+<body>
+
+<div class="app-shell">
+
+  <!-- BLOCK: sidebar -->
+  <aside class="sidebar" aria-label="القائمة الجانبية">
+    <div class="sidebar-brand">
+      <div class="brand-mark">م</div>
+      <div class="brand-name">
+        <b>منصة محاسبتي</b>
+        <span>ADMIN</span>
+      </div>
+    </div>
+    <div class="sidebar-section-label">لوحات العميل</div>
+    <a class="sidebar-link" href="client-dashboard.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span>
+      <span>لوحة العميل</span>
+    </a>
+    <a class="sidebar-link" href="upload-document.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 0 0 0-9h-1.3A7 7 0 1 0 4 16.4"/><path d="M12 12v8"/><path d="m9 15 3-3 3 3"/></svg></span>
+      <span>رفع مستند جديد</span>
+    </a>
+    <a class="sidebar-link" href="client-documents.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M9 13h6"/><path d="M9 17h4"/></svg></span>
+      <span>مستنداتي</span>
+    </a>
+    <a class="sidebar-link" href="messages.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+      <span>الرسائل</span>
+    </a>
+    <div class="sidebar-section-label">ساحة المحاسب</div>
+    <a class="sidebar-link" href="accountant-inbox.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.5 5h13L22 12v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7Z"/></svg></span>
+      <span>صندوق المستندات</span>
+    </a>
+    <a class="sidebar-link" href="document-review.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="m9 14 2 2 4-4"/></svg></span>
+      <span>مراجعة وتصنيف</span>
+    </a>
+    <a class="sidebar-link" href="chart-of-accounts.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v7H3z"/><path d="M14 3h7v7h-7z"/><path d="M14 14h7v7h-7z"/><path d="M3 14h7v7H3z"/></svg></span>
+      <span>شجرة الحسابات</span>
+    </a>
+    <a class="sidebar-link" href="journal-entries.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M9 7h7"/><path d="M9 11h7"/></svg></span>
+      <span>القيود المحاسبية</span>
+    </a>
+    <div class="sidebar-section-label">إدارة</div>
+    <a class="sidebar-link" href="admin-financial-dashboard.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 3-3 4 4 5-6"/></svg></span>
+      <span>لوحة التقارير</span>
+    </a>
+    <a class="sidebar-link active" href="reports.html" aria-current="page">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M9 13h6"/><path d="M9 17h4"/><path d="M9 9h1"/></svg></span>
+      <span>مركز التقارير</span>
+    </a>
+    <a class="sidebar-link" href="clients.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 9h.01"/><path d="M9 13h.01"/><path d="M9 17h.01"/><path d="M15 9h.01"/><path d="M15 13h.01"/><path d="M15 17h.01"/></svg></span>
+      <span>إدارة العملاء</span>
+    </a>
+    <a class="sidebar-link" href="users-permissions.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+      <span>المستخدمون والصلاحيات</span>
+    </a>
+    <a class="sidebar-link" href="settings.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12.2 2h-.4a2 2 0 0 0-2 2 1.7 1.7 0 0 1-1 1.6 1.7 1.7 0 0 1-1.9-.3 2 2 0 0 0-2.8 0l-.3.3a2 2 0 0 0 0 2.8 1.7 1.7 0 0 1 .3 1.9 1.7 1.7 0 0 1-1.6 1 2 2 0 0 0-2 2v.4a2 2 0 0 0 2 2 1.7 1.7 0 0 1 1.6 1 1.7 1.7 0 0 1-.3 1.9 2 2 0 0 0 0 2.8l.3.3a2 2 0 0 0 2.8 0 1.7 1.7 0 0 1 1.9-.3 1.7 1.7 0 0 1 1 1.6 2 2 0 0 0 2 2h.4a2 2 0 0 0 2-2 1.7 1.7 0 0 1 1-1.6 1.7 1.7 0 0 1 1.9.3 2 2 0 0 0 2.8 0l.3-.3a2 2 0 0 0 0-2.8 1.7 1.7 0 0 1-.3-1.9 1.7 1.7 0 0 1 1.6-1 2 2 0 0 0 2-2v-.4a2 2 0 0 0-2-2 1.7 1.7 0 0 1-1.6-1 1.7 1.7 0 0 1 .3-1.9 2 2 0 0 0 0-2.8l-.3-.3a2 2 0 0 0-2.8 0 1.7 1.7 0 0 1-1.9.3 1.7 1.7 0 0 1-1-1.6 2 2 0 0 0-2-2Z"/><circle cx="12" cy="12" r="3"/></svg></span>
+      <span>إعدادات النظام</span>
+    </a>
+    <div class="sidebar-foot">
+      <div class="sidebar-help">
+        <b>تحتاج مساعدة؟</b>
+        <p>فريقنا جاهز للرد على استفساراتك خلال دقائق.</p>
+        <a href="#">تواصل مع الدعم
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+        </a>
+      </div>
+    </div>
+  </aside>
+  <!-- /BLOCK -->
+
+  <main class="main-area">
+
+    <!-- BLOCK: header -->
+    <header class="header">
+      <button class="mobile-nav-toggle" aria-label="فتح القائمة">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+      </button>
+      <div class="page-title-wrap">
+        <div>
+          <div class="title-eyebrow">الإدارة · مركز التقارير</div>
+          <div class="page-title">مركز التقارير</div>
+          <div class="page-sub">استعرض التقارير المالية والتشغيلية والضريبية الخاصة بالعملاء</div>
+        </div>
+      </div>
+      <button class="btn btn-outline" type="button">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>
+        تصدير شامل
+      </button>
+      <a href="#report-filters" class="btn btn-primary">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+        تقرير جديد
+      </a>
+      <div class="header-right">
+        <button class="avatar-btn">
+          <div class="avatar">ك.ع</div>
+          <div class="avatar-name">
+            <b>كريم العمري</b>
+            <span>مدير المكتب</span>
+          </div>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+      </div>
+    </header>
+    <!-- /BLOCK -->
+
+    <!-- Report Filters -->
+    <div class="card" id="report-filters" style="margin-top:20px;">
+      <div class="filters">
+        <div class="filter" style="flex:1 1 220px;min-width:200px;">
+          <label>العميل</label>
+          <div class="select-wrap">
+            <select class="select">
+              <option>كل العملاء</option>
+              <option>شركة النور للتجارة</option>
+              <option>مؤسسة السلام للمقاولات</option>
+              <option>شركة البيان للخدمات</option>
+              <option>شركة الهدى للتوريدات</option>
+            </select>
+            <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+          </div>
+        </div>
+        <div class="filter">
+          <label>الفترة</label>
+          <div class="select-wrap">
+            <select class="select">
+              <option>مايو 2026</option>
+              <option>أبريل 2026</option>
+              <option>الربع الثاني 2026</option>
+              <option>السنة المالية 2026</option>
+            </select>
+            <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+          </div>
+        </div>
+        <div class="filter">
+          <label>نوع التقرير</label>
+          <div class="select-wrap">
+            <select class="select">
+              <option>الكل</option>
+              <option>ميزان مراجعة</option>
+              <option>قائمة الدخل</option>
+              <option>تقرير الضريبة</option>
+              <option>تقرير الإيرادات</option>
+              <option>تقرير المصروفات</option>
+              <option>كشف حساب عميل</option>
+            </select>
+            <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+          </div>
+        </div>
+        <div class="filter">
+          <label>حالة المستندات</label>
+          <div class="select-wrap">
+            <select class="select">
+              <option>الكل</option>
+              <option>مصنّفة فقط</option>
+              <option>مرحّلة فقط</option>
+              <option>تشمل غير المصنّفة</option>
+            </select>
+            <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="button">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M9 13h6"/><path d="M9 17h4"/></svg>
+          إنشاء التقرير
+        </button>
+        <button class="btn btn-outline" type="button">إعادة ضبط</button>
+      </div>
+    </div>
+
+    <!-- Featured Reports Grid -->
+    <div class="reports-head">
+      <div>
+        <h2>التقارير المتاحة</h2>
+        <div class="sub">اختر تقريرًا لإنشائه أو لعرض آخر نسخة منه</div>
+      </div>
+    </div>
+    <div class="reports-grid">
+      <button class="report-card">
+        <div class="rc-top">
+          <div class="rc-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M8 17V9"/><path d="M13 17V5"/><path d="M18 17v-4"/></svg></div>
+          <div style="flex:1;min-width:0;">
+            <div class="rc-title">ميزان مراجعة</div>
+            <div class="rc-sub">عرض أرصدة الحسابات المدينة والدائنة خلال فترة محددة</div>
+          </div>
+        </div>
+        <div class="rc-foot"><span class="freq">شهري</span><span style="display:inline-flex;align-items:center;gap:4px;">فتح التقرير <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></span></div>
+      </button>
+
+      <button class="report-card rc-c2">
+        <div class="rc-top">
+          <div class="rc-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m3 17 6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></div>
+          <div style="flex:1;min-width:0;">
+            <div class="rc-title">قائمة الدخل</div>
+            <div class="rc-sub">تحليل الإيرادات والمصروفات وصافي الربح التقديري</div>
+          </div>
+        </div>
+        <div class="rc-foot"><span class="freq">شهري</span><span style="display:inline-flex;align-items:center;gap:4px;">فتح التقرير <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></span></div>
+      </button>
+
+      <button class="report-card rc-c3">
+        <div class="rc-top">
+          <div class="rc-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M19 5 5 19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg></div>
+          <div style="flex:1;min-width:0;">
+            <div class="rc-title">تقرير الضريبة</div>
+            <div class="rc-sub">حساب ضريبة المخرجات والمدخلات والضريبة المستحقة</div>
+          </div>
+        </div>
+        <div class="rc-foot"><span class="freq">شهري</span><span style="display:inline-flex;align-items:center;gap:4px;">فتح التقرير <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></span></div>
+      </button>
+
+      <button class="report-card rc-c4">
+        <div class="rc-top">
+          <div class="rc-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+          <div style="flex:1;min-width:0;">
+            <div class="rc-title">تقرير الإيرادات</div>
+            <div class="rc-sub">تفاصيل فواتير المبيعات والإيرادات حسب العميل والبند</div>
+          </div>
+        </div>
+        <div class="rc-foot"><span class="freq">شهري</span><span style="display:inline-flex;align-items:center;gap:4px;">فتح التقرير <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></span></div>
+      </button>
+
+      <button class="report-card rc-c5">
+        <div class="rc-top">
+          <div class="rc-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/><path d="M7 15h4"/></svg></div>
+          <div style="flex:1;min-width:0;">
+            <div class="rc-title">تقرير المصروفات</div>
+            <div class="rc-sub">تحليل المصروفات حسب التصنيف والفترة</div>
+          </div>
+        </div>
+        <div class="rc-foot"><span class="freq">شهري</span><span style="display:inline-flex;align-items:center;gap:4px;">فتح التقرير <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></span></div>
+      </button>
+
+      <button class="report-card rc-c6">
+        <div class="rc-top">
+          <div class="rc-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M10 13h.01"/><path d="m9.5 16.5 1 1 2.5-2.5"/></svg></div>
+          <div style="flex:1;min-width:0;">
+            <div class="rc-title">المستندات غير المصنفة</div>
+            <div class="rc-sub">متابعة المستندات التي لم يتم تصنيفها أو ترحيلها</div>
+          </div>
+        </div>
+        <div class="rc-foot"><span class="freq">لحظي</span><span style="display:inline-flex;align-items:center;gap:4px;">فتح التقرير <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></span></div>
+      </button>
+
+      <button class="report-card">
+        <div class="rc-top">
+          <div class="rc-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <div style="flex:1;min-width:0;">
+            <div class="rc-title">كشف حساب عميل</div>
+            <div class="rc-sub">عرض ملخص حركات ومستندات عميل محدد</div>
+          </div>
+        </div>
+        <div class="rc-foot"><span class="freq">حسب الطلب</span><span style="display:inline-flex;align-items:center;gap:4px;">فتح التقرير <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></span></div>
+      </button>
+
+      <button class="report-card rc-c2">
+        <div class="rc-top">
+          <div class="rc-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <div style="flex:1;min-width:0;">
+            <div class="rc-title">سجل النشاط</div>
+            <div class="rc-sub">متابعة نشاط المحاسبين والعملاء داخل النظام</div>
+          </div>
+        </div>
+        <div class="rc-foot"><span class="freq">يومي</span><span style="display:inline-flex;align-items:center;gap:4px;">فتح التقرير <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></span></div>
+      </button>
+    </div>
+
+    <!-- Recent generated reports + status summary -->
+    <div class="row-grid row-2-1">
+
+      <div class="card">
+        <div class="card-head">
+          <div class="ch-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <h2>آخر التقارير المنشأة</h2>
+          <span class="badge-count" style="margin-inline-start:auto;">24 تقرير</span>
+        </div>
+        <div class="table-wrap">
+          <table class="docs">
+            <thead>
+              <tr>
+                <th>اسم التقرير</th>
+                <th>العميل</th>
+                <th>الفترة</th>
+                <th>أنشئ بواسطة</th>
+                <th>تاريخ الإنشاء</th>
+                <th>الحالة</th>
+                <th>إجراء</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="doc-type">
+                    <span class="t-ico"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M19 5 5 19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg></span>
+                    <b>تقرير الضريبة</b>
+                  </div>
+                </td>
+                <td>شركة النور للتجارة</td>
+                <td>مايو 2026</td>
+                <td><span class="assignee"><span class="av a-1">أ</span><span class="name">أحمد محمود</span></span></td>
+                <td class="upd">اليوم</td>
+                <td><span class="chip green">جاهز</span></td>
+                <td><button class="row-action view" type="button"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> تحميل</button></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="doc-type">
+                    <span class="t-ico"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m3 17 6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></span>
+                    <b>قائمة الدخل</b>
+                  </div>
+                </td>
+                <td>مؤسسة السلام</td>
+                <td>أبريل 2026</td>
+                <td><span class="assignee"><span class="av a-2">م</span><span class="name">منى حسن</span></span></td>
+                <td class="upd">أمس</td>
+                <td><span class="chip green">جاهز</span></td>
+                <td><button class="row-action view" type="button"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg> عرض</button></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="doc-type">
+                    <span class="t-ico"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M8 17V9"/><path d="M13 17V5"/><path d="M18 17v-4"/></svg></span>
+                    <b>ميزان مراجعة</b>
+                  </div>
+                </td>
+                <td>شركة البيان</td>
+                <td>مايو 2026</td>
+                <td><span class="assignee"><span class="av a-1">أ</span><span class="name">أحمد محمود</span></span></td>
+                <td class="upd">منذ 3 أيام</td>
+                <td><span class="chip amber">قيد التجهيز</span></td>
+                <td><button class="row-action review" type="button"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> متابعة</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Empty State (يظهر عند عدم وجود تقارير) -->
+        <div class="empty" hidden data-empty-state>
+          <div class="em-art">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M9 13h6"/><path d="M9 17h3"/></svg>
+          </div>
+          <h3>لم يتم إنشاء أي تقارير بعد</h3>
+          <p>ابدأ بإنشاء تقريرك الأول لمتابعته وتحميله من هنا.</p>
+          <a href="#report-filters" class="btn btn-primary">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+            إنشاء أول تقرير
+          </a>
+        </div>
+
+        <div class="tbl-foot">
+          <span>عرض 3 من 24 تقرير</span>
+          <div class="pager">
+            <button aria-label="السابق"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button>
+            <button class="current">1</button>
+            <button>2</button>
+            <button>3</button>
+            <button aria-label="التالي"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Side: report status summary -->
+      <aside style="display:flex;flex-direction:column;gap:16px;">
+        <div class="card">
+          <div class="card-head">
+            <div class="ch-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg></div>
+            <h2>حالة التقارير</h2>
+          </div>
+          <div class="info-list">
+            <div class="info-row"><span class="k"><span class="chip green" style="font-size:11px;padding:2px 8px;">جاهزة</span></span><span class="v" style="font-size:15px;">18</span></div>
+            <div class="info-row"><span class="k"><span class="chip amber" style="font-size:11px;padding:2px 8px;">قيد التجهيز</span></span><span class="v" style="font-size:15px;">4</span></div>
+            <div class="info-row"><span class="k"><span class="chip rose" style="font-size:11px;padding:2px 8px;">تحتاج مراجعة</span></span><span class="v" style="font-size:15px;">2</span></div>
+            <div class="info-row"><span class="k">تم تحميلها هذا الشهر</span><span class="v" style="font-size:15px;">31</span></div>
+          </div>
+        </div>
+
+        <div class="card" style="padding:16px 18px;">
+          <h4 style="margin:0 0 6px;font-size:13.5px;font-weight:600;color:#14181F;">تلميح</h4>
+          <p style="margin:0;font-size:12.5px;color:#5C6573;line-height:1.65;">التقارير المالية تعتمد على المستندات المصنّفة والقيود المرحّلة فقط، لضمان دقة الأرقام.</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="foot">
+      <div>منصة محاسبتي · مركز التقارير · 2026</div>
+      <div class="links">
+        <a href="admin-financial-dashboard.html">لوحة التقارير</a>
+        <a href="journal-entries.html">القيود المحاسبية</a>
+        <a href="chart-of-accounts.html">شجرة الحسابات</a>
+        <a href="#">المساعدة</a>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

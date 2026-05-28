@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>الرسائل · منصة محاسبتي</title>
+  <link rel="stylesheet" href="../assets/css/output.css" />
+</head>
+<body>
+
+<div class="app-shell">
+
+  <!-- BLOCK: sidebar -->
+  <aside class="sidebar" aria-label="القائمة الجانبية">
+    <div class="sidebar-brand">
+      <div class="brand-mark">م</div>
+      <div class="brand-name">
+        <b>منصة محاسبتي</b>
+        <span>ACCOUNTANT</span>
+      </div>
+    </div>
+    <div class="sidebar-section-label">لوحات العميل</div>
+    <a class="sidebar-link" href="client-dashboard.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span>
+      <span>لوحة العميل</span>
+    </a>
+    <a class="sidebar-link" href="upload-document.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 0 0 0-9h-1.3A7 7 0 1 0 4 16.4"/><path d="M12 12v8"/><path d="m9 15 3-3 3 3"/></svg></span>
+      <span>رفع مستند جديد</span>
+    </a>
+    <a class="sidebar-link" href="client-documents.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M9 13h6"/><path d="M9 17h4"/></svg></span>
+      <span>مستنداتي</span>
+    </a>
+    <a class="sidebar-link active" href="messages.html" aria-current="page">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+      <span>الرسائل</span>
+    </a>
+    <div class="sidebar-section-label">ساحة المحاسب</div>
+    <a class="sidebar-link" href="accountant-inbox.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.5 5h13L22 12v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7Z"/></svg></span>
+      <span>صندوق المستندات</span>
+    </a>
+    <a class="sidebar-link" href="document-review.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="m9 14 2 2 4-4"/></svg></span>
+      <span>مراجعة وتصنيف</span>
+    </a>
+    <a class="sidebar-link" href="chart-of-accounts.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v7H3z"/><path d="M14 3h7v7h-7z"/><path d="M14 14h7v7h-7z"/><path d="M3 14h7v7H3z"/></svg></span>
+      <span>شجرة الحسابات</span>
+    </a>
+    <a class="sidebar-link" href="journal-entries.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M9 7h7"/><path d="M9 11h7"/></svg></span>
+      <span>القيود المحاسبية</span>
+    </a>
+    <div class="sidebar-section-label">إدارة</div>
+    <a class="sidebar-link" href="admin-financial-dashboard.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 3-3 4 4 5-6"/></svg></span>
+      <span>لوحة التقارير</span>
+    </a>
+    <a class="sidebar-link" href="reports.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M9 13h6"/><path d="M9 17h4"/><path d="M9 9h1"/></svg></span>
+      <span>مركز التقارير</span>
+    </a>
+    <a class="sidebar-link" href="clients.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 9h.01"/><path d="M9 13h.01"/><path d="M9 17h.01"/><path d="M15 9h.01"/><path d="M15 13h.01"/><path d="M15 17h.01"/></svg></span>
+      <span>إدارة العملاء</span>
+    </a>
+    <a class="sidebar-link" href="users-permissions.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+      <span>المستخدمون والصلاحيات</span>
+    </a>
+    <a class="sidebar-link" href="settings.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12.2 2h-.4a2 2 0 0 0-2 2 1.7 1.7 0 0 1-1 1.6 1.7 1.7 0 0 1-1.9-.3 2 2 0 0 0-2.8 0l-.3.3a2 2 0 0 0 0 2.8 1.7 1.7 0 0 1 .3 1.9 1.7 1.7 0 0 1-1.6 1 2 2 0 0 0-2 2v.4a2 2 0 0 0 2 2 1.7 1.7 0 0 1 1.6 1 1.7 1.7 0 0 1-.3 1.9 2 2 0 0 0 0 2.8l.3.3a2 2 0 0 0 2.8 0 1.7 1.7 0 0 1 1.9-.3 1.7 1.7 0 0 1 1 1.6 2 2 0 0 0 2 2h.4a2 2 0 0 0 2-2 1.7 1.7 0 0 1 1-1.6 1.7 1.7 0 0 1 1.9.3 2 2 0 0 0 2.8 0l.3-.3a2 2 0 0 0 0-2.8 1.7 1.7 0 0 1-.3-1.9 1.7 1.7 0 0 1 1.6-1 2 2 0 0 0 2-2v-.4a2 2 0 0 0-2-2 1.7 1.7 0 0 1-1.6-1 1.7 1.7 0 0 1 .3-1.9 2 2 0 0 0 0-2.8l-.3-.3a2 2 0 0 0-2.8 0 1.7 1.7 0 0 1-1.9.3 1.7 1.7 0 0 1-1-1.6 2 2 0 0 0-2-2Z"/><circle cx="12" cy="12" r="3"/></svg></span>
+      <span>إعدادات النظام</span>
+    </a>
+    <div class="sidebar-foot">
+      <div class="sidebar-help">
+        <b>تحتاج مساعدة؟</b>
+        <p>فريقنا جاهز للرد على استفساراتك خلال دقائق.</p>
+        <a href="#">تواصل مع الدعم
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+        </a>
+      </div>
+    </div>
+  </aside>
+  <!-- /BLOCK -->
+
+  <main class="main-area">
+
+    <!-- BLOCK: header -->
+    <header class="header">
+      <button class="mobile-nav-toggle" aria-label="فتح القائمة">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+      </button>
+      <div class="page-title-wrap">
+        <div>
+          <div class="page-title">الرسائل</div>
+          <div class="page-sub">تواصل مع العملاء أو فريق المحاسبة بخصوص المستندات والطلبات</div>
+        </div>
+      </div>
+      <button class="btn btn-outline" type="button">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18l-7 9v6l-4-2v-4z"/></svg>
+        تصفية الرسائل
+      </button>
+      <button class="btn btn-primary" type="button">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+        رسالة جديدة
+      </button>
+      <div class="header-right">
+        <div style="position:relative;">
+          <button class="icon-btn" data-bell-toggle="msgs-bell" aria-label="الإشعارات">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 7 3 9H3c0-2 3-2 3-9Z"/><path d="M10 21a2 2 0 0 0 4 0"/></svg>
+            <span class="badge">2</span>
+          </button>
+          <div class="notif-panel" data-bell-panel="msgs-bell">
+            <div class="notif-head">الإشعارات</div>
+            <div class="notif-item">
+              <div class="nico"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+              <div><b>رد جديد من شركة النور للتجارة</b><span>منذ 15 دقيقة</span></div>
+            </div>
+            <div class="notif-item">
+              <div class="nico rose"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></div>
+              <div><b>مؤسسة السلام بانتظار ردك</b><span>منذ ساعة</span></div>
+            </div>
+          </div>
+        </div>
+        <button class="avatar-btn">
+          <div class="avatar">أ.م</div>
+          <div class="avatar-name">
+            <b>أحمد محمود</b>
+            <span>محاسب أول</span>
+          </div>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+      </div>
+    </header>
+    <!-- /BLOCK -->
+
+    <!-- Messaging workspace -->
+    <div class="msg-workspace">
+
+      <!-- Right column: conversation list -->
+      <section class="card msg-pane conv" aria-label="قائمة المحادثات">
+        <div class="conv-search">
+          <div class="input-wrap has-prefix">
+            <input class="input" type="text" placeholder="ابحث في الرسائل" />
+            <span class="prefix-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></span>
+          </div>
+        </div>
+        <div class="conv-list">
+          <button type="button" class="conv-item active">
+            <span class="conv-ico">ن</span>
+            <span class="conv-body">
+              <span class="conv-top"><b>شركة النور للتجارة</b><span class="t">11:15 ص</span></span>
+              <span class="conv-last">تم إرسال التوضيح المطلوب...</span>
+              <span class="conv-tags">
+                <span class="conv-badge new">2 رسائل جديدة</span>
+                <span class="conv-doc"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> EXP-118</span>
+              </span>
+            </span>
+          </button>
+          <button type="button" class="conv-item">
+            <span class="conv-ico">س</span>
+            <span class="conv-body">
+              <span class="conv-top"><b>مؤسسة السلام للمقاولات</b><span class="t">أمس</span></span>
+              <span class="conv-last">برجاء رفع نسخة أوضح من الفاتورة</span>
+              <span class="conv-tags">
+                <span class="conv-badge wait">مطلوب رد</span>
+                <span class="conv-doc"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> EXP-204</span>
+              </span>
+            </span>
+          </button>
+          <button type="button" class="conv-item">
+            <span class="conv-ico">ب</span>
+            <span class="conv-body">
+              <span class="conv-top"><b>شركة البيان للخدمات</b><span class="t">منذ 3 أيام</span></span>
+              <span class="conv-last">تم تصنيف سند القبض بنجاح</span>
+              <span class="conv-tags">
+                <span class="conv-badge done">تم الرد</span>
+                <span class="conv-doc"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> REC-77</span>
+              </span>
+            </span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Center column: active conversation -->
+      <section class="card msg-pane chat" aria-label="المحادثة النشطة">
+        <!-- Active conversation header -->
+        <div class="chat-head">
+          <div class="ci">ن</div>
+          <div class="meta">
+            <b>شركة النور للتجارة</b>
+            <div class="row">
+              <span class="chip rose" style="font-size:11px;padding:2px 8px;">مطلوب رد من العميل</span>
+              <span>المستند المرتبط:</span>
+              <span class="conv-doc"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> EXP-118</span>
+            </div>
+          </div>
+          <div class="right">
+            <a href="document-review.html" class="btn btn-outline btn-sm">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg>
+              فتح المستند
+            </a>
+          </div>
+        </div>
+
+        <!-- Chat messages -->
+        <div class="chat-body">
+          <div class="chat-day">24 مايو 2026</div>
+
+          <div class="bubble-row them">
+            <div class="bubble-who">أحمد محمود · المحاسب</div>
+            <div class="bubble">برجاء توضيح هل هذا المصروف خاص بحملة إعلانية لمنتج معين أم مصروف تسويق عام؟</div>
+            <div class="bubble-time">11:15 ص</div>
+          </div>
+
+          <div class="bubble-row me">
+            <div class="bubble-who">نورة العمري · العميل</div>
+            <div class="bubble">المصروف خاص بحملة إعلانية لمنتج العروض الشهرية.</div>
+            <div class="bubble-time">11:42 ص</div>
+          </div>
+
+          <div class="bubble-row them">
+            <div class="bubble-who">أحمد محمود · المحاسب</div>
+            <div class="bubble">تمام، سيتم تصنيفه ضمن مصروفات التسويق.</div>
+            <div class="bubble-time">11:50 ص</div>
+          </div>
+        </div>
+
+        <!-- Quick replies -->
+        <div class="quick-replies">
+          <button type="button" class="qr-chip">برجاء رفع نسخة أوضح</button>
+          <button type="button" class="qr-chip">تم استلام المستند</button>
+          <button type="button" class="qr-chip">تم التصنيف بنجاح</button>
+          <button type="button" class="qr-chip">نحتاج توضيحًا إضافيًا</button>
+        </div>
+
+        <!-- Composer -->
+        <div class="composer">
+          <textarea class="textarea" placeholder="اكتب رسالتك هنا..." style="min-height:70px;"></textarea>
+          <div class="composer-foot">
+            <button type="button" class="btn btn-outline btn-sm">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m21.4 11.1-8.6 8.6a5 5 0 0 1-7-7l8.5-8.6a3 3 0 0 1 4.3 4.3l-8.6 8.5a1 1 0 0 1-1.4-1.4l7.9-7.9"/></svg>
+              إرفاق ملف
+            </button>
+            <div class="spacer"></div>
+            <button type="button" class="btn btn-outline">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2Z"/><path d="M17 21v-8H7v8"/><path d="M7 3v5h8"/></svg>
+              حفظ كمسودة
+            </button>
+            <button type="button" class="btn btn-primary">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2.5 11 13"/><path d="M21.5 2.5 15 22l-4-9-9-4Z"/></svg>
+              إرسال
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Left column: side info panel -->
+      <aside class="msg-pane info" style="display:flex;flex-direction:column;gap:16px;">
+        <div class="card">
+          <div class="card-head">
+            <div class="ch-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></div>
+            <h2>بيانات مرتبطة</h2>
+          </div>
+          <div class="info-list">
+            <div class="info-row"><span class="k">العميل</span><span class="v">شركة النور للتجارة</span></div>
+            <div class="info-row"><span class="k">المحاسب المسؤول</span><span class="v">أحمد محمود</span></div>
+            <div class="info-row"><span class="k">المستند المرتبط</span><span class="v mono">EXP-118</span></div>
+            <div class="info-row"><span class="k">حالة المستند</span><span class="v"><span class="chip rose">مطلوب توضيح</span></span></div>
+            <div class="info-row"><span class="k">آخر تحديث</span><span class="v">24 مايو 2026</span></div>
+          </div>
+          <div style="padding:0 18px 18px;">
+            <a href="client-document-details.html" class="btn btn-outline btn-sm" style="width:100%;justify-content:center;">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+              عرض تفاصيل المستند
+            </a>
+          </div>
+        </div>
+
+        <div class="card" style="padding:16px 18px;">
+          <h4 style="margin:0 0 6px;font-size:13.5px;font-weight:600;color:#14181F;">نصيحة سريعة</h4>
+          <p style="margin:0;font-size:12.5px;color:#5C6573;line-height:1.65;">ربط الرسالة بمستند يساعد فريق المحاسبة على الرد بشكل أسرع وأدق.</p>
+        </div>
+      </aside>
+
+    </div>
+
+    <div class="foot">
+      <div>منصة محاسبتي · الرسائل · 2026</div>
+      <div class="links">
+        <a href="client-documents.html">مستنداتي</a>
+        <a href="accountant-inbox.html">صندوق المستندات</a>
+        <a href="document-review.html">مراجعة مستند</a>
+        <a href="#">المساعدة</a>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
