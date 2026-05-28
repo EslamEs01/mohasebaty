@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>لوحة التقارير المالية · منصة محاسبتي</title>
+  <link rel="stylesheet" href="../assets/css/output.css" />
+</head>
+<body>
+
+<div class="app-shell">
+
+  <!-- BLOCK: sidebar -->
+  <aside class="sidebar" aria-label="القائمة الجانبية">
+    <div class="sidebar-brand">
+      <div class="brand-mark">م</div>
+      <div class="brand-name">
+        <b>منصة محاسبتي</b>
+        <span>EXECUTIVE</span>
+      </div>
+    </div>
+    <div class="sidebar-section-label">لوحات العميل</div>
+    <a class="sidebar-link" href="client-dashboard.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span>
+      <span>لوحة العميل</span>
+    </a>
+    <a class="sidebar-link" href="upload-document.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 0 0 0-9h-1.3A7 7 0 1 0 4 16.4"/><path d="M12 12v8"/><path d="m9 15 3-3 3 3"/></svg></span>
+      <span>رفع مستند جديد</span>
+    </a>
+    <div class="sidebar-section-label">ساحة المحاسب</div>
+    <a class="sidebar-link" href="accountant-inbox.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.5 5h13L22 12v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7Z"/></svg></span>
+      <span>صندوق المستندات</span>
+    </a>
+    <a class="sidebar-link" href="document-review.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="m9 14 2 2 4-4"/></svg></span>
+      <span>مراجعة وتصنيف</span>
+    </a>
+    <div class="sidebar-section-label">إدارة</div>
+    <a class="sidebar-link active" href="admin-financial-dashboard.html" aria-current="page">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 3-3 4 4 5-6"/></svg></span>
+      <span>لوحة التقارير</span>
+    </a>
+    <div class="sidebar-foot">
+      <div class="sidebar-help">
+        <b>تحتاج مساعدة؟</b>
+        <p>فريقنا جاهز للرد على استفساراتك خلال دقائق.</p>
+        <a href="#">تواصل مع الدعم
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+        </a>
+      </div>
+    </div>
+  </aside>
+  <!-- /BLOCK -->
+
+  <main class="main-area">
+
+    <!-- BLOCK: header -->
+    <header class="header">
+      <button class="mobile-nav-toggle" aria-label="فتح القائمة">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+      </button>
+      <div class="page-title-wrap">
+        <div>
+          <div class="title-eyebrow"><span class="pulse"></span> محدّث الآن · بيانات حية</div>
+          <div class="page-title">لوحة التقارير المالية</div>
+          <div class="page-sub">نظرة شاملة على نشاط العملاء والمستندات والتقارير</div>
+        </div>
+      </div>
+      <button class="date-pill">
+        <span class="dp-ico"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18"/><path d="M8 3v4"/><path d="M16 3v4"/></svg></span>
+        <span>مايو 2026</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+      <button class="btn btn-dark">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>
+        تصدير التقرير
+      </button>
+      <div class="header-right">
+        <button class="icon-btn" aria-label="الإشعارات">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 7 3 9H3c0-2 3-2 3-9Z"/><path d="M10 21a2 2 0 0 0 4 0"/></svg>
+          <span class="badge">5</span>
+        </button>
+        <button class="avatar-btn">
+          <div class="avatar">ك.ع</div>
+          <div class="avatar-name">
+            <b>كريم العمري</b>
+            <span>مدير المكتب</span>
+          </div>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+      </div>
+    </header>
+    <!-- /BLOCK -->
+
+    <!-- KPI Grid (6 cards with sparklines) -->
+    <div class="kpi-grid-6" style="margin-top:20px;">
+      <!-- Revenue -->
+      <div class="card kpi">
+        <div class="kpi-top">
+          <div class="kpi-ico kpi-ico-green"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m3 17 6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></div>
+          <span class="kpi-trend up"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg> +12.4% عن الشهر السابق</span>
+        </div>
+        <div class="kpi-num">1,250,000<span class="ccy">ج.م</span></div>
+        <div class="kpi-lbl">إجمالي الإيرادات المرفوعة</div>
+        <div class="kpi-help">من 18 عميل نشط</div>
+        <svg class="kpi-spark" viewBox="0 0 180 30" preserveAspectRatio="none">
+          <defs><linearGradient id="g-2F7A4E" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2F7A4E" stop-opacity=".22"/><stop offset="100%" stop-color="#2F7A4E" stop-opacity="0"/></linearGradient></defs>
+          <path d="M 0.0 28.0 L 25.7 24.0 L 51.4 20.0 L 77.1 24.0 L 102.9 16.0 L 128.6 12.0 L 154.3 8.0 L 180.0 4.0 L 180 30 L 0 30 Z" fill="url(#g-2F7A4E)"/>
+          <path d="M 0.0 28.0 L 25.7 24.0 L 51.4 20.0 L 77.1 24.0 L 102.9 16.0 L 128.6 12.0 L 154.3 8.0 L 180.0 4.0" fill="none" stroke="#2F7A4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <!-- Expenses -->
+      <div class="card kpi">
+        <div class="kpi-top">
+          <div class="kpi-ico kpi-ico-rose"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/><path d="M7 15h4"/></svg></div>
+          <span class="kpi-trend up"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg> +4.2%</span>
+        </div>
+        <div class="kpi-num">680,000<span class="ccy">ج.م</span></div>
+        <div class="kpi-lbl">إجمالي المصروفات المرفوعة</div>
+        <div class="kpi-help">موزّعة على 6 فئات</div>
+        <svg class="kpi-spark" viewBox="0 0 180 30" preserveAspectRatio="none">
+          <defs><linearGradient id="g-B83A3A" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#B83A3A" stop-opacity=".22"/><stop offset="100%" stop-color="#B83A3A" stop-opacity="0"/></linearGradient></defs>
+          <path d="M 0.0 28.0 L 25.7 20.0 L 51.4 28.0 L 77.1 12.0 L 102.9 20.0 L 128.6 12.0 L 154.3 12.0 L 180.0 4.0 L 180 30 L 0 30 Z" fill="url(#g-B83A3A)"/>
+          <path d="M 0.0 28.0 L 25.7 20.0 L 51.4 28.0 L 77.1 12.0 L 102.9 20.0 L 128.6 12.0 L 154.3 12.0 L 180.0 4.0" fill="none" stroke="#B83A3A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <!-- Net -->
+      <div class="card kpi">
+        <div class="kpi-top">
+          <div class="kpi-ico kpi-ico-primary"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-2"/><path d="M17 14h4v-4h-4a2 2 0 0 0 0 4Z"/></svg></div>
+          <span class="kpi-trend up"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg> +18.6%</span>
+        </div>
+        <div class="kpi-num">570,000<span class="ccy">ج.م</span></div>
+        <div class="kpi-lbl">صافي تقديري</div>
+        <div class="kpi-help">بعد المصروفات</div>
+        <svg class="kpi-spark" viewBox="0 0 180 30" preserveAspectRatio="none">
+          <defs><linearGradient id="g-0E6F66" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0E6F66" stop-opacity=".22"/><stop offset="100%" stop-color="#0E6F66" stop-opacity="0"/></linearGradient></defs>
+          <path d="M 0.0 28.0 L 25.7 24.6 L 51.4 21.1 L 77.1 21.1 L 102.9 14.3 L 128.6 10.9 L 154.3 7.4 L 180.0 4.0 L 180 30 L 0 30 Z" fill="url(#g-0E6F66)"/>
+          <path d="M 0.0 28.0 L 25.7 24.6 L 51.4 21.1 L 77.1 21.1 L 102.9 14.3 L 128.6 10.9 L 154.3 7.4 L 180.0 4.0" fill="none" stroke="#0E6F66" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <!-- Tax -->
+      <div class="card kpi">
+        <div class="kpi-top">
+          <div class="kpi-ico kpi-ico-amber"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <span class="kpi-trend">تستحق 15 يونيو</span>
+        </div>
+        <div class="kpi-num">92,000<span class="ccy">ج.م</span></div>
+        <div class="kpi-lbl">ضريبة تقديرية</div>
+        <div class="kpi-help">القيمة المضافة 14%</div>
+        <svg class="kpi-spark" viewBox="0 0 180 30" preserveAspectRatio="none">
+          <defs><linearGradient id="g-A06A0F" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#A06A0F" stop-opacity=".22"/><stop offset="100%" stop-color="#A06A0F" stop-opacity="0"/></linearGradient></defs>
+          <path d="M 0.0 28.0 L 25.7 28.0 L 51.4 22.0 L 77.1 22.0 L 102.9 16.0 L 128.6 16.0 L 154.3 10.0 L 180.0 4.0 L 180 30 L 0 30 Z" fill="url(#g-A06A0F)"/>
+          <path d="M 0.0 28.0 L 25.7 28.0 L 51.4 22.0 L 77.1 22.0 L 102.9 16.0 L 128.6 16.0 L 154.3 10.0 L 180.0 4.0" fill="none" stroke="#A06A0F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <!-- Pending review -->
+      <div class="card kpi">
+        <div class="kpi-top">
+          <div class="kpi-ico kpi-ico-gold"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <span class="kpi-trend down"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg> 8 متأخرة</span>
+        </div>
+        <div class="kpi-num">46</div>
+        <div class="kpi-lbl">مستندات قيد المراجعة</div>
+        <div class="kpi-help">بانتظار محاسب</div>
+        <svg class="kpi-spark" viewBox="0 0 180 30" preserveAspectRatio="none">
+          <defs><linearGradient id="g-B68A3E" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#B68A3E" stop-opacity=".22"/><stop offset="100%" stop-color="#B68A3E" stop-opacity="0"/></linearGradient></defs>
+          <path d="M 0.0 12.0 L 25.7 20.0 L 51.4 12.0 L 77.1 4.0 L 102.9 20.0 L 128.6 12.0 L 154.3 20.0 L 180.0 28.0 L 180 30 L 0 30 Z" fill="url(#g-B68A3E)"/>
+          <path d="M 0.0 12.0 L 25.7 20.0 L 51.4 12.0 L 77.1 4.0 L 102.9 20.0 L 128.6 12.0 L 154.3 20.0 L 180.0 28.0" fill="none" stroke="#B68A3E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <!-- Active clients -->
+      <div class="card kpi">
+        <div class="kpi-top">
+          <div class="kpi-ico kpi-ico-slate"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1a4 4 0 0 1 0 7.8"/></svg></div>
+          <span class="kpi-trend">77% نشاط</span>
+        </div>
+        <div class="kpi-num">24<span class="ccy">/31</span></div>
+        <div class="kpi-lbl">عملاء نشطون</div>
+        <div class="kpi-help">رفعوا مستندات هذا الشهر</div>
+        <svg class="kpi-spark" viewBox="0 0 180 30" preserveAspectRatio="none">
+          <defs><linearGradient id="g-4A5365" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#4A5365" stop-opacity=".22"/><stop offset="100%" stop-color="#4A5365" stop-opacity="0"/></linearGradient></defs>
+          <path d="M 0.0 28.0 L 25.7 25.0 L 51.4 22.0 L 77.1 16.0 L 102.9 13.0 L 128.6 7.0 L 154.3 4.0 L 180.0 4.0 L 180 30 L 0 30 Z" fill="url(#g-4A5365)"/>
+          <path d="M 0.0 28.0 L 25.7 25.0 L 51.4 22.0 L 77.1 16.0 L 102.9 13.0 L 128.6 7.0 L 154.3 4.0 L 180.0 4.0" fill="none" stroke="#4A5365" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Charts row -->
+    <div class="row-grid row-2-1">
+      <!-- Bar chart -->
+      <div class="card">
+        <div class="card-head">
+          <div class="ch-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 3-3 4 4 5-6"/></svg></div>
+          <div>
+            <h2>الإيرادات مقابل المصروفات</h2>
+            <div class="sub">آخر 6 أشهر — بالقيمة المرفوعة من العملاء</div>
+          </div>
+          <div class="right">
+            <button class="btn btn-outline btn-sm"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg></button>
+          </div>
+        </div>
+        <div class="chart-legend">
+          <div class="legend-item"><span class="sw" style="background:#0E6F66;"></span>الإيرادات <span class="v">1,250 ك</span></div>
+          <div class="legend-item"><span class="sw" style="background:#B83A3A;"></span>المصروفات <span class="v">680 ك</span></div>
+          <div class="legend-item" style="margin-inline-start:auto;">
+            <span style="color:#2F7A4E;display:inline-flex;align-items:center;gap:4px;">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+              صافي ينمو 18.6%
+            </span>
+          </div>
+        </div>
+        <div class="chart-body">
+          <svg class="chart-svg" viewBox="0 0 720 280" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="bar-rev" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0E6F66"/><stop offset="100%" stop-color="#0A4F49"/></linearGradient>
+              <linearGradient id="bar-exp" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#B83A3A"/><stop offset="100%" stop-color="#8E2B2B"/></linearGradient>
+            </defs>
+
+            <!-- Grid lines + y-axis labels (right side for RTL) -->
+            <line class="grid-line" x1="12" y1="244" x2="664" y2="244"/>
+            <text class="axis-label" x="670" y="248" text-anchor="start">0</text>
+            <line class="grid-line" x1="12" y1="187.5" x2="664" y2="187.5"/>
+            <text class="axis-label" x="670" y="191.5" text-anchor="start">350 ك</text>
+            <line class="grid-line" x1="12" y1="131" x2="664" y2="131"/>
+            <text class="axis-label" x="670" y="135" text-anchor="start">700 ك</text>
+            <line class="grid-line" x1="12" y1="74.5" x2="664" y2="74.5"/>
+            <text class="axis-label" x="670" y="78.5" text-anchor="start">1050 ك</text>
+            <line class="grid-line" x1="12" y1="18" x2="664" y2="18"/>
+            <text class="axis-label" x="670" y="22" text-anchor="start">1400 ك</text>
+            <line class="axis-line" x1="12" y1="244" x2="664" y2="244"/>
+
+            <!-- Bars (months reversed for RTL: مايو → ديسمبر) -->
+            <g>
+              <rect x="69.3" y="42.2" width="18" height="201.8" fill="url(#bar-rev)" rx="3"/>
+              <rect x="45.3" y="134.2" width="18" height="109.8" fill="url(#bar-exp)" rx="3"/>
+              <text class="axis-label" x="66.3" y="266" text-anchor="middle" style="font-weight:500;">مايو</text>
+              <text class="axis-label" x="66.3" y="278" text-anchor="middle" fill="#8A93A1" font-size="9">2026</text>
+            </g>
+            <g>
+              <rect x="178" y="53.5" width="18" height="190.5" fill="url(#bar-rev)" rx="3"/>
+              <rect x="154" y="140.7" width="18" height="103.3" fill="url(#bar-exp)" rx="3"/>
+              <text class="axis-label" x="175" y="266" text-anchor="middle" style="font-weight:500;">أبريل</text>
+              <text class="axis-label" x="175" y="278" text-anchor="middle" fill="#8A93A1" font-size="9">2026</text>
+            </g>
+            <g>
+              <rect x="286.7" y="66.4" width="18" height="177.6" fill="url(#bar-rev)" rx="3"/>
+              <rect x="262.7" y="150.4" width="18" height="93.6" fill="url(#bar-exp)" rx="3"/>
+              <text class="axis-label" x="283.7" y="266" text-anchor="middle" style="font-weight:500;">مارس</text>
+              <text class="axis-label" x="283.7" y="278" text-anchor="middle" fill="#8A93A1" font-size="9">2026</text>
+            </g>
+            <g>
+              <rect x="395.3" y="74.5" width="18" height="169.5" fill="url(#bar-rev)" rx="3"/>
+              <rect x="371.3" y="160.1" width="18" height="83.9" fill="url(#bar-exp)" rx="3"/>
+              <text class="axis-label" x="392.3" y="266" text-anchor="middle" style="font-weight:500;">فبراير</text>
+              <text class="axis-label" x="392.3" y="278" text-anchor="middle" fill="#8A93A1" font-size="9">2026</text>
+            </g>
+            <g>
+              <rect x="504" y="95.5" width="18" height="148.5" fill="url(#bar-rev)" rx="3"/>
+              <rect x="480" y="166.5" width="18" height="77.5" fill="url(#bar-exp)" rx="3"/>
+              <text class="axis-label" x="501" y="266" text-anchor="middle" style="font-weight:500;">يناير</text>
+              <text class="axis-label" x="501" y="278" text-anchor="middle" fill="#8A93A1" font-size="9">2026</text>
+            </g>
+            <g>
+              <rect x="612.7" y="114.9" width="18" height="129.1" fill="url(#bar-rev)" rx="3"/>
+              <rect x="588.7" y="176.2" width="18" height="67.8" fill="url(#bar-exp)" rx="3"/>
+              <text class="axis-label" x="609.7" y="266" text-anchor="middle" style="font-weight:500;">ديسمبر</text>
+              <text class="axis-label" x="609.7" y="278" text-anchor="middle" fill="#8A93A1" font-size="9">2025</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Donut chart -->
+      <div class="card">
+        <div class="card-head">
+          <div class="ch-ico" style="background:#F4ECDA;color:#B68A3E;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18l-7 9v6l-4-2v-4z"/></svg></div>
+          <div>
+            <h2>توزيع المستندات حسب الحالة</h2>
+            <div class="sub">إجمالي 95 مستند</div>
+          </div>
+        </div>
+        <div class="donut-wrap">
+          <div class="donut-pos">
+            <svg class="donut-svg" viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="38" fill="none" stroke="#EFEBE2" stroke-width="14"/>
+              <!-- segments rotated -90deg to start at top; C = 2π·38 ≈ 238.76 -->
+              <circle cx="50" cy="50" r="38" fill="none" stroke="#A06A0F" stroke-width="14"
+                stroke-dasharray="115.6 123.16" stroke-dashoffset="0" transform="rotate(-90 50 50)" stroke-linecap="butt"/>
+              <circle cx="50" cy="50" r="38" fill="none" stroke="#2F7A4E" stroke-width="14"
+                stroke-dasharray="95.5 143.26" stroke-dashoffset="-116.8" transform="rotate(-90 50 50)" stroke-linecap="butt"/>
+              <circle cx="50" cy="50" r="38" fill="none" stroke="#B83A3A" stroke-width="14"
+                stroke-dasharray="20.1 218.66" stroke-dashoffset="-213.5" transform="rotate(-90 50 50)" stroke-linecap="butt"/>
+              <circle cx="50" cy="50" r="38" fill="none" stroke="#4A5365" stroke-width="14"
+                stroke-dasharray="7.5 231.26" stroke-dashoffset="-234.8" transform="rotate(-90 50 50)" stroke-linecap="butt"/>
+            </svg>
+            <div class="donut-center">
+              <div>
+                <b>95</b>
+                <span>إجمالي المستندات</span>
+              </div>
+            </div>
+          </div>
+          <div class="donut-legend">
+            <div class="dl-row"><span class="sw" style="background:#A06A0F;"></span><span class="lbl">قيد المراجعة</span><span class="v">46</span><span class="pct">48.4%</span></div>
+            <div class="dl-row"><span class="sw" style="background:#2F7A4E;"></span><span class="lbl">تم التصنيف</span><span class="v">38</span><span class="pct">40.0%</span></div>
+            <div class="dl-row"><span class="sw" style="background:#B83A3A;"></span><span class="lbl">مطلوب توضيح</span><span class="v">8</span><span class="pct">8.4%</span></div>
+            <div class="dl-row"><span class="sw" style="background:#4A5365;"></span><span class="lbl">مرفوض</span><span class="v">3</span><span class="pct">3.2%</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Clients attention + System health -->
+    <div class="row-grid row-2-1">
+      <div class="card">
+        <div class="card-head">
+          <div class="ch-ico" style="background:#F7E4E4;color:#B83A3A;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></div>
+          <div>
+            <h2>عملاء يحتاجون متابعة</h2>
+            <div class="sub">4 عملاء — يحتاجون إجراءً منك أو من المحاسبين</div>
+          </div>
+          <div class="right">
+            <button class="btn btn-ghost btn-sm">عرض الكل <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+          </div>
+        </div>
+        <div class="ca-list">
+          <div class="ca-item">
+            <div class="ci-ico">ن</div>
+            <div>
+              <b>شركة النور للتجارة</b>
+              <span class="sub"><span class="chip amber">يحتاج مراجعة</span>5 مستندات قيد المراجعة</span>
+            </div>
+            <button class="btn btn-outline btn-sm">فتح ملف العميل <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+          </div>
+          <div class="ca-item">
+            <div class="ci-ico">س</div>
+            <div>
+              <b>مؤسسة السلام</b>
+              <span class="sub"><span class="chip rose">بانتظار العميل</span>3 مستندات مطلوب توضيح منها</span>
+            </div>
+            <button class="btn btn-outline btn-sm">فتح ملف العميل <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+          </div>
+          <div class="ca-item">
+            <div class="ci-ico">ب</div>
+            <div>
+              <b>شركة البيان</b>
+              <span class="sub"><span class="chip slate">خامل</span>لم ترفع مستندات منذ 12 يومًا</span>
+            </div>
+            <button class="btn btn-outline btn-sm">فتح ملف العميل <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+          </div>
+          <div class="ca-item">
+            <div class="ci-ico">ه</div>
+            <div>
+              <b>شركة الهدى</b>
+              <span class="sub"><span class="chip rose">ضريبة ناقصة</span>تقرير الضريبة غير مكتمل</span>
+            </div>
+            <button class="btn btn-outline btn-sm">فتح ملف العميل <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <div class="ch-ico" style="background:#E1EFE6;color:#2F7A4E;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m3 17 6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></div>
+          <div>
+            <h2>حالة سير العمل</h2>
+            <div class="sub">مؤشرات أداء فريق المحاسبة</div>
+          </div>
+        </div>
+        <div class="health">
+          <div class="health-row">
+            <div class="hr-top">
+              <span class="lbl">متوسط وقت مراجعة المستند</span>
+              <span class="val">4<span style="font-size:11px;color:#8A93A1;font-family:'IBM Plex Sans Arabic',sans-serif;margin-inline-start:4px;">ساعات</span></span>
+            </div>
+            <div class="hr-bar"><div class="seg" style="width:40%;background:#2F7A4E;"></div></div>
+            <div class="hr-foot">
+              <span>الهدف: ≤ 6 ساعات</span>
+              <span class="change" style="color:#2F7A4E;"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg> أسرع بـ 22%</span>
+            </div>
+          </div>
+
+          <div class="health-row">
+            <div class="hr-top">
+              <span class="lbl">نسبة المستندات المصنفة</span>
+              <span class="val">78<span style="font-size:13px;color:#8A93A1;margin-inline-start:2px;">%</span></span>
+            </div>
+            <div class="hr-bar"><div class="seg" style="width:78%;background:#0E6F66;"></div></div>
+            <div class="hr-foot">
+              <span>الهدف: ≥ 85%</span>
+              <span class="change" style="color:#A06A0F;"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg> +6% هذا الأسبوع</span>
+            </div>
+          </div>
+
+          <div class="health-row">
+            <div class="hr-top">
+              <span class="lbl">مستندات متأخرة عن المراجعة</span>
+              <span class="val">6</span>
+            </div>
+            <div class="hr-bar"><div class="seg" style="width:12%;background:#B83A3A;"></div></div>
+            <div class="hr-foot">
+              <span>أكثر من 48 ساعة دون مراجعة</span>
+              <span class="change" style="color:#B83A3A;">يتطلب تدخّل</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reports grid -->
+    <div class="reports-head">
+      <div class="ch-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg></div>
+      <div>
+        <h2>التقارير المحاسبية</h2>
+        <div class="sub">اختصارات للوصول السريع لجميع التقارير المالية للفترة المختارة</div>
+      </div>
+      <div style="margin-inline-start:auto;">
+        <button class="btn btn-outline btn-sm"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 0 1-4 0v-.1A1.7 1.7 0 0 0 9 19.4a1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 0 1 0-4h.1A1.7 1.7 0 0 0 4.6 9a1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 0 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 0 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg> تخصيص التقارير</button>
+      </div>
+    </div>
+
+    <div class="reports-grid">
+      <button class="report-card">
+        <div class="rc-top">
+          <div class="rc-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 3-3 4 4 5-6"/></svg></div>
+          <div style="flex:1;min-width:0;">
+            <div class="rc-title">ميزان مراجعة</div>
+            <div class="rc-sub">كل الحسابات والأرصدة الافتتاحية والختامية.</div>
+          </div>
+        </div>
+        <div class="rc-foot"><span class="freq">شهري</span><span style="display:inline-flex;align-items:center;gap:4px;">عرض التقرير <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></span></div>
+      </button>
+
+      <button class="report-card rc-c2">
+        <div class="rc-top">
+          <div class="rc-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m3 17 6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></div>
+          <div style="flex:1;min-width:0;">
+            <div class="rc-title">قائمة الدخل</div>
+            <div class="rc-sub">الإيرادات والمصروفات وصافي الدخل التقديري.</div>
+          </div>
+        </div>
+        <div class="rc-foot"><span class="freq">شهري</span><span style="display:inline-flex;align-items:center;gap:4px;">عرض التقرير <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></span></div>
+      </button>
+
+      <button class="report-card rc-c3">
+        <div class="rc-top">
+          <div class="rc-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18l-2 12H5L3 7Z"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/><path d="M9 12h6"/></svg></div>
+          <div style="flex:1;min-width:0;">
+            <div class="rc-title">تقرير الإيرادات</div>
+            <div class="rc-sub">تفصيل مصادر الإيراد وأهم العملاء.</div>
+          </div>
+        </div>
+        <div class="rc-foot"><span class="freq">مايو 2026</span><span style="display:inline-flex;align-items:center;gap:4px;">عرض التقرير <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></span></div>
+      </button>
+
+      <button class="report-card rc-c4">
+        <div class="rc-top">
+          <div class="rc-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/><path d="M7 15h4"/></svg></div>
+          <div style="flex:1;min-width:0;">
+            <div class="rc-title">تقرير المصروفات</div>
+            <div class="rc-sub">تفصيل بنود المصروفات حسب الفئة.</div>
+          </div>
+        </div>
+        <div class="rc-foot"><span class="freq">مايو 2026</span><span style="display:inline-flex;align-items:center;gap:4px;">عرض التقرير <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></span></div>
+      </button>
+
+      <button class="report-card rc-c5">
+        <div class="rc-top">
+          <div class="rc-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <div style="flex:1;min-width:0;">
+            <div class="rc-title">تقرير الضريبة</div>
+            <div class="rc-sub">القيمة المضافة المستحقة والمحصّلة.</div>
+          </div>
+        </div>
+        <div class="rc-foot"><span class="freq">ربع سنوي</span><span style="display:inline-flex;align-items:center;gap:4px;">عرض التقرير <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></span></div>
+      </button>
+
+      <button class="report-card rc-c6">
+        <div class="rc-top">
+          <div class="rc-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1a4 4 0 0 1 0 7.8"/></svg></div>
+          <div style="flex:1;min-width:0;">
+            <div class="rc-title">كشف حساب عميل</div>
+            <div class="rc-sub">تحرّكات حساب عميل محدد في الفترة المختارة.</div>
+          </div>
+        </div>
+        <div class="rc-foot"><span class="freq">حسب الطلب</span><span style="display:inline-flex;align-items:center;gap:4px;">عرض التقرير <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></span></div>
+      </button>
+
+      <button class="report-card">
+        <div class="rc-top">
+          <div class="rc-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg></div>
+          <div style="flex:1;min-width:0;">
+            <div class="rc-title">المستندات غير المصنفة</div>
+            <div class="rc-sub">كل المستندات التي لم تُصنَّف بعد محاسبيًا.</div>
+          </div>
+        </div>
+        <div class="rc-foot"><span class="freq">مباشر</span><span style="display:inline-flex;align-items:center;gap:4px;">عرض التقرير <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></span></div>
+      </button>
+
+      <button class="report-card rc-c2">
+        <div class="rc-top">
+          <div class="rc-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <div style="flex:1;min-width:0;">
+            <div class="rc-title">سجل النشاط</div>
+            <div class="rc-sub">كل عمليات المحاسبين على المستندات.</div>
+          </div>
+        </div>
+        <div class="rc-foot"><span class="freq">حي</span><span style="display:inline-flex;align-items:center;gap:4px;">عرض التقرير <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></span></div>
+      </button>
+    </div>
+
+    <!-- Activity timeline -->
+    <div class="card" style="margin-top:20px;">
+      <div class="card-head">
+        <div class="ch-ico" style="background:#ECEEF2;color:#4A5365;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <div>
+          <h2>آخر النشاط المحاسبي</h2>
+          <div class="sub">آخر العمليات التي قام بها فريق المحاسبة</div>
+        </div>
+        <div class="right">
+          <button class="btn btn-outline btn-sm"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18l-7 9v6l-4-2v-4z"/></svg> تصفية</button>
+        </div>
+      </div>
+      <div class="activity">
+        <div class="act-item">
+          <div class="ai-av av-a">أ</div>
+          <div class="ai-body">
+            <div><span class="who">أحمد المصري</span> صنّف <span class="obj">فاتورة مبيعات INV-204</span></div>
+            <span><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> شركة النور للتجارة</span>
+          </div>
+          <div class="ai-time">منذ 12 دقيقة</div>
+        </div>
+        <div class="act-item">
+          <div class="ai-av av-b">م</div>
+          <div class="ai-body">
+            <div><span class="who">منى عبدالله</span> طلبت توضيحًا من <span class="obj">EXP-118</span></div>
+            <span><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> مؤسسة السلام</span>
+          </div>
+          <div class="ai-time">منذ 35 دقيقة</div>
+        </div>
+        <div class="act-item">
+          <div class="ai-av av-c">ن</div>
+          <div class="ai-body">
+            <div><span class="who">النظام</span> رحّل <span class="obj">سند قبض REC-077</span></div>
+            <span><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> شركة البيان</span>
+          </div>
+          <div class="ai-time">منذ ساعتين</div>
+        </div>
+        <div class="act-item">
+          <div class="ai-av av-d">س</div>
+          <div class="ai-body">
+            <div><span class="who">سالم القاضي</span> أصدر <span class="obj">تقرير الضريبة للربع الثاني</span></div>
+            <span><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> شركة الهدى</span>
+          </div>
+          <div class="ai-time">اليوم 09:14 ص</div>
+        </div>
+      </div>
+      <div class="act-foot">
+        <span>إجمالي 142 عملية اليوم</span>
+        <a href="#" style="color:#0E6F66;text-decoration:none;font-size:12.5px;font-weight:500;">عرض السجل الكامل ←</a>
+      </div>
+    </div>
+
+    <div class="foot">
+      <div>منصة محاسبتي · لوحة التقارير المالية · مايو 2026</div>
+      <div class="links">
+        <a href="accountant-inbox.html">صندوق المستندات</a>
+        <a href="client-dashboard.html">لوحة العميل</a>
+        <a href="document-review.html">مراجعة مستند</a>
+        <a href="#">المساعدة</a>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
