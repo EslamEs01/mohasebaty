@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>تفاصيل المستند · EXP-118 · منصة محاسبتي</title>
+  <title>قوالب الاستيراد · منصة محاسبتي</title>
   <link rel="stylesheet" href="../assets/css/output.css" />
 </head>
 <body>
@@ -11,12 +11,13 @@
 <div class="app-shell">
 
   <!-- BLOCK: sidebar -->
+
   <aside class="sidebar" aria-label="القائمة الجانبية">
     <div class="sidebar-brand">
       <div class="brand-mark">م</div>
       <div class="brand-name">
         <b>منصة محاسبتي</b>
-        <span>MOHASEBATY</span>
+        <span>ACCOUNTANT</span>
       </div>
     </div>
     <div class="sidebar-section-label">لوحات العميل</div>
@@ -28,7 +29,7 @@
       <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 0 0 0-9h-1.3A7 7 0 1 0 4 16.4"/><path d="M12 12v8"/><path d="m9 15 3-3 3 3"/></svg></span>
       <span>رفع مستند جديد</span>
     </a>
-    <a class="sidebar-link active" href="client-documents.html" aria-current="page">
+    <a class="sidebar-link" href="client-documents.html">
       <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M9 13h6"/><path d="M9 17h4"/></svg></span>
       <span>مستنداتي</span>
     </a>
@@ -130,7 +131,7 @@
       <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
       <span>أخطاء الاستيراد</span>
     </a>
-    <a class="sidebar-link" href="import-templates.html">
+    <a class="sidebar-link active" href="import-templates.html">
       <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></span>
       <span>قوالب الاستيراد</span>
     </a>
@@ -198,255 +199,181 @@
   <main class="main-area">
 
     <!-- BLOCK: header -->
+
     <header class="header">
       <button class="mobile-nav-toggle" aria-label="فتح القائمة">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
       </button>
       <div class="page-title-wrap">
         <div>
-          <div class="crumb">
-            <a href="client-documents.html">مستنداتي</a>
-            <span class="sep">/</span>
-            <span class="now">EXP-118</span>
-          </div>
-          <div class="page-title-row">
-            <span class="page-title">تفاصيل المستند</span>
-            <span class="chip rose">مطلوب توضيح</span>
-          </div>
-          <div class="page-sub">راجع حالة المستند والرسائل المرتبطة به</div>
+          <div class="title-eyebrow">استيراد البيانات · القوالب</div>
+          <div class="page-title">قوالب الاستيراد المحفوظة</div>
+          <div class="page-sub">أعِد استخدام إعدادات ربط الأعمدة في عمليات استيراد مستقبلية</div>
         </div>
       </div>
-      <a href="client-documents.html" class="back-btn">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-        <span>العودة إلى مستنداتي</span>
-      </a>
+      <button class="btn btn-primary" data-open="#addTemplateModal">إضافة قالب</button>
       <div class="header-right">
-        <a href="upload-document.html" class="btn btn-primary">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 0 0 0-9h-1.3A7 7 0 1 0 4 16.4"/><path d="M12 12v8"/><path d="m9 15 3-3 3 3"/></svg>
-          رفع مستند جديد
-        </a>
+        <button class="avatar-btn">
+          <div class="avatar">ك.ع</div>
+          <div class="avatar-name">
+            <b>كريم العمري</b>
+            <span>مدير المكتب</span>
+          </div>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
       </div>
     </header>
     <!-- /BLOCK -->
 
-    <!-- Status Hero Card -->
-    <section class="card action-wrap" style="margin-top:20px;">
-      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:22px 24px 8px;">
-        <div style="display:flex;align-items:center;gap:14px;">
-          <div class="kpi-ico kpi-ico-rose" style="width:46px;height:46px;border-radius:12px;">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/><path d="M7 15h4"/></svg>
-          </div>
-          <div>
-            <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
-              <h2 style="margin:0;font-size:18px;font-weight:600;color:#14181F;">فاتورة مصروفات</h2>
-              <span class="chip rose">مطلوب توضيح</span>
-            </div>
-            <div style="font-size:12.5px;color:#8A93A1;margin-top:3px;font-family:'IBM Plex Mono',monospace;">EXP-118</div>
-          </div>
-        </div>
-        <div class="hero-meta" style="background:#F7F8FA;border-color:#E1E4E9;color:#5C6573;">
-          <div>تاريخ الرفع <span class="v" style="color:#14181F;">23 مايو 2026</span></div>
-          <div class="sep" style="background:#E1E4E9;"></div>
-          <div>آخر تحديث <span class="v" style="color:#14181F;">24 مايو 2026</span></div>
+    <!-- BLOCK: templates table card -->
+    <div class="card" style="margin-top:20px;margin-bottom:20px;">
+      <div class="table-top">
+        <div class="left">
+          <h2>القوالب المحفوظة <span class="count">4</span></h2>
         </div>
       </div>
-      <div style="padding:6px 24px 22px;">
-        <div class="note" style="margin-top:8px;">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px;"><path d="M10.3 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
-          <span>المحاسب يحتاج توضيحًا قبل استكمال مراجعة هذا المستند.</span>
-        </div>
-      </div>
-    </section>
+      <div class="table-wrap">
+        <table class="docs">
+          <thead>
+            <tr>
+              <th>اسم القالب</th>
+              <th>نوع الملف</th>
+              <th>النطاق</th>
+              <th>آخر استخدام</th>
+              <th>عدد الحقول</th>
+              <th>الحالة</th>
+              <th>إجراء</th>
+            </tr>
+          </thead>
+          <tbody>
 
-    <!-- Layout: main details + side timeline/messages -->
-    <div class="layout" style="margin-top:16px;">
-
-      <div style="display:flex;flex-direction:column;gap:16px;">
-
-        <!-- Document Info -->
-        <div class="card">
-          <div class="card-head">
-            <div class="ch-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></div>
-            <h2>بيانات المستند</h2>
-          </div>
-          <div class="detail-list">
-            <div class="detail-row"><span class="k">نوع المستند</span><span class="v">فاتورة مصروفات</span></div>
-            <div class="detail-row"><span class="k">رقم الفاتورة / السند</span><span class="v mono">EXP-118</span></div>
-            <div class="detail-row"><span class="k">تاريخ المستند</span><span class="v">23 مايو 2026</span></div>
-            <div class="detail-row"><span class="k">المبلغ</span><span class="v amount">2,100 <span style="color:#8A93A1;font-size:11px;">ج.م</span></span></div>
-            <div class="detail-row"><span class="k">طريقة الدفع</span><span class="v">بطاقة ائتمان</span></div>
-            <div class="detail-row" style="align-items:flex-start;"><span class="k">ملاحظتك عند الرفع</span><span class="v" style="max-width:60%;font-weight:400;color:#5C6573;line-height:1.6;">مصروف إعلان على منصات التواصل الاجتماعي لشهر مايو.</span></div>
-          </div>
-        </div>
-
-        <!-- File Preview -->
-        <div class="card">
-          <div class="card-head">
-            <div class="ch-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg></div>
-            <h2>الملف المرفوع</h2>
-          </div>
-          <div class="preview-meta">
-            <div class="file-block">
-              <div class="fb-ico">PDF</div>
-              <div>
-                <b>invoice-exp-118.pdf</b>
-                <div class="meta-row">
-                  <span>PDF</span><span class="sep"></span>
-                  <span>2.4 م.ب</span><span class="sep"></span>
-                  <span>صفحة واحدة</span>
+            <!-- Row 1 -->
+            <tr>
+              <td>قالب مبيعات النور</td>
+              <td>مبيعات</td>
+              <td><span class="chip slate">شركة النور للتجارة</span></td>
+              <td>14 مايو 2026</td>
+              <td>6</td>
+              <td><span class="chip green">نشط</span></td>
+              <td>
+                <div style="display:flex;gap:6px;">
+                  <a class="btn btn-outline btn-sm" href="data-import.html">استخدام القالب</a>
+                  <button class="btn btn-outline btn-sm">تعديل</button>
+                  <button class="btn btn-outline btn-sm">تعطيل</button>
                 </div>
-              </div>
-            </div>
-            <div class="preview-tools" style="display:flex;gap:8px;flex-wrap:wrap;">
-              <button class="btn btn-outline btn-sm" type="button"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg> عرض الملف</button>
-              <button class="btn btn-outline btn-sm" type="button"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> تحميل الملف</button>
-              <button class="btn btn-outline btn-sm" type="button"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 0 0 0-9h-1.3A7 7 0 1 0 4 16.4"/><path d="M12 12v8"/><path d="m9 15 3-3 3 3"/></svg> رفع نسخة بديلة</button>
-            </div>
-          </div>
-          <div style="padding:0 22px 22px;">
-            <div class="preview" style="height:260px;">
-              <div class="doc-page"></div>
-            </div>
-          </div>
-        </div>
+              </td>
+            </tr>
 
-        <!-- Accountant Request -->
-        <div class="card">
-          <div class="card-head">
-            <div class="ch-ico" style="background:#F6E9CC;color:#A06A0F;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
-            <h2>طلب توضيح من المحاسب</h2>
-          </div>
-          <div style="padding:18px 22px 22px;">
-            <div class="uploader-note" style="border:1px solid #F0E2C4;background:#FBF6EA;border-radius:14px;padding:14px 16px;display:flex;gap:12px;">
-              <div class="un-ico" style="background:#A06A0F;color:#fff;">أ.م</div>
-              <div style="flex:1;min-width:0;">
-                <b>أحمد محمود</b>
-                <div class="un-meta" style="font-size:11.5px;color:#8A93A1;margin:1px 0 8px;">المحاسب المسؤول · 24 مايو 2026، 11:15 ص</div>
-                <p style="margin:0;font-size:13.5px;color:#5C6573;line-height:1.7;">برجاء توضيح هل هذا المصروف خاص بحملة إعلانية لمنتج معين أم مصروف تسويق عام؟</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Client Reply Box -->
-        <div class="card">
-          <div class="card-head">
-            <div class="ch-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2.5 11 13"/><path d="M21.5 2.5 15 22l-4-9-9-4Z"/></svg></div>
-            <h2>إرسال رد</h2>
-          </div>
-          <div style="padding:16px 22px 20px;">
-            <div class="field" style="margin-bottom:14px;">
-              <label>ردك على المحاسب</label>
-              <textarea class="textarea" placeholder="اكتب التوضيح المطلوب هنا..."></textarea>
-            </div>
-
-            <label style="display:block;font-size:11.5px;color:#8A93A1;font-weight:500;margin-bottom:6px;">إرفاق ملف إضافي (اختياري)</label>
-            <label class="dropzone" for="reply-file" style="padding:18px;cursor:pointer;">
-              <div class="dz-ico" style="width:44px;height:44px;border-radius:11px;margin-bottom:8px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m21.4 11.1-8.6 8.6a5 5 0 0 1-7-7l8.5-8.6a3 3 0 0 1 4.3 4.3l-8.6 8.5a1 1 0 0 1-1.4-1.4l7.9-7.9"/></svg></div>
-              <b style="font-size:13.5px;">إرفاق ملف إضافي</b>
-              <div class="sub" style="margin-bottom:0;">اسحب الملف هنا أو اضغط لاختياره · PDF, JPG, PNG حتى 10MB</div>
-              <input type="file" id="reply-file" accept=".pdf,.jpg,.jpeg,.png" hidden />
-            </label>
-
-            <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;">
-              <button class="btn btn-primary" type="button">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2.5 11 13"/><path d="M21.5 2.5 15 22l-4-9-9-4Z"/></svg>
-                إرسال التوضيح
-              </button>
-              <button class="btn btn-outline" type="button">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2Z"/><path d="M17 21v-8H7v8"/><path d="M7 3v5h8"/></svg>
-                حفظ كمسودة
-              </button>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Side: timeline + related messages -->
-      <aside class="side">
-
-        <!-- Status Timeline -->
-        <div class="card">
-          <div class="card-head">
-            <div class="ch-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
-            <h2>سجل المستند</h2>
-          </div>
-          <div class="timeline">
-            <div class="tl-item event-upload">
-              <div class="dot"></div>
-              <div class="body">
-                <b>تم رفع المستند</b>
-                <span><span class="tag">أنت</span> · شركة النور للتجارة</span>
-                <div style="font-size:11px;color:#8A93A1;margin-top:3px;">23 مايو 2026 · 09:30 ص</div>
-              </div>
-            </div>
-            <div class="tl-item event-view">
-              <div class="dot"></div>
-              <div class="body">
-                <b>تم استلامه بواسطة فريق المحاسبة</b>
-                <span><span class="tag">المحاسبة</span> · قيد المراجعة</span>
-                <div style="font-size:11px;color:#8A93A1;margin-top:3px;">23 مايو 2026 · 10:00 ص</div>
-              </div>
-            </div>
-            <div class="tl-item event-clarify">
-              <div class="dot"></div>
-              <div class="body">
-                <b>تم طلب توضيح</b>
-                <span><span class="tag">أحمد محمود</span> · بانتظار ردك</span>
-                <div style="font-size:11px;color:#8A93A1;margin-top:3px;">24 مايو 2026 · 11:15 ص</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Related Messages -->
-        <div class="card">
-          <div class="card-head">
-            <div class="ch-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
-            <h2>رسائل مرتبطة بهذا المستند</h2>
-          </div>
-          <div class="msgs">
-            <div class="msg">
-              <div class="av">أ.م</div>
-              <div style="flex:1;min-width:0;">
-                <div class="msg-head">
-                  <b>أحمد محمود</b>
-                  <span class="role">المحاسب</span>
-                  <span class="time">24 مايو · 11:15 ص</span>
+            <!-- Row 2 -->
+            <tr>
+              <td>قالب مصروفات عام</td>
+              <td>مصروفات</td>
+              <td><span class="chip primary">عام</span></td>
+              <td>10 مايو 2026</td>
+              <td>5</td>
+              <td><span class="chip green">نشط</span></td>
+              <td>
+                <div style="display:flex;gap:6px;">
+                  <a class="btn btn-outline btn-sm" href="data-import.html">استخدام القالب</a>
+                  <button class="btn btn-outline btn-sm">تعديل</button>
+                  <button class="btn btn-outline btn-sm">تعطيل</button>
                 </div>
-                <div class="msg-body">برجاء توضيح طبيعة المصروف الإعلاني حتى نتمكن من تصنيفه بشكل صحيح.</div>
-              </div>
-            </div>
-            <div class="msg">
-              <div class="av" style="background:#E7F0EC;color:#2F7A4E;border-color:rgba(47,122,78,.15);">ن.ع</div>
-              <div style="flex:1;min-width:0;">
-                <div class="msg-head">
-                  <b>نورة العمري</b>
-                  <span class="role" style="background:#E7F0EC;color:#2F7A4E;">أنت</span>
-                  <span class="time">24 مايو · 12:40 م</span>
+              </td>
+            </tr>
+
+            <!-- Row 3 -->
+            <tr>
+              <td>قالب قيود SAP</td>
+              <td>قيود محاسبية</td>
+              <td><span class="chip primary">عام</span></td>
+              <td>2 مايو 2026</td>
+              <td>8</td>
+              <td><span class="chip green">نشط</span></td>
+              <td>
+                <div style="display:flex;gap:6px;">
+                  <a class="btn btn-outline btn-sm" href="data-import.html">استخدام القالب</a>
+                  <button class="btn btn-outline btn-sm">تعديل</button>
+                  <button class="btn btn-outline btn-sm">تعطيل</button>
                 </div>
-                <div class="msg-body">شكرًا للمتابعة، سأرفق توضيحًا كاملًا خلال اليوم.</div>
-              </div>
-            </div>
-          </div>
-        </div>
+              </td>
+            </tr>
 
-      </aside>
-    </div>
+            <!-- Row 4 -->
+            <tr>
+              <td>قالب موردون قديم</td>
+              <td>موردون</td>
+              <td><span class="chip slate">مؤسسة السلام</span></td>
+              <td>1 مارس 2026</td>
+              <td>4</td>
+              <td><span class="chip slate">معطّل</span></td>
+              <td>
+                <div style="display:flex;gap:6px;">
+                  <a class="btn btn-outline btn-sm" href="data-import.html">استخدام القالب</a>
+                  <button class="btn btn-outline btn-sm">تعديل</button>
+                  <button class="btn btn-outline btn-sm">تعطيل</button>
+                </div>
+              </td>
+            </tr>
 
-    <div class="foot">
-      <div>منصة محاسبتي · تفاصيل المستند EXP-118 · شركة النور للتجارة · 2026</div>
-      <div class="links">
-        <a href="client-documents.html">مستنداتي</a>
-        <a href="upload-document.html">رفع مستند جديد</a>
-        <a href="client-dashboard.html">لوحة العميل</a>
-        <a href="#">المساعدة</a>
+          </tbody>
+        </table>
       </div>
     </div>
+    <!-- /BLOCK -->
 
   </main>
+
 </div>
+
+<!-- BLOCK: add template modal -->
+<div class="scrim" data-overlay id="addTemplateModal" hidden>
+  <div class="card" style="width:min(500px,90vw);padding:24px;position:relative;">
+    <div class="card-head" style="margin-bottom:20px;">
+      <h2>إضافة قالب استيراد جديد</h2>
+      <button class="icon-btn" data-close aria-label="إغلاق" style="margin-inline-start:auto;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="fields-grid">
+      <div class="field">
+        <label class="label">اسم القالب</label>
+        <input class="input" type="text" placeholder="مثال: قالب مبيعات شركة النور" />
+      </div>
+      <div class="field">
+        <label class="label">نوع الملف</label>
+        <div class="select-wrap">
+          <select class="select">
+            <option>اختر النوع</option>
+            <option>مبيعات</option>
+            <option>مصروفات</option>
+            <option>عملاء تجاريون</option>
+            <option>موردون</option>
+            <option>قيود محاسبية</option>
+            <option>أرصدة افتتاحية</option>
+            <option>شجرة حسابات</option>
+            <option>كشف حساب بنكي</option>
+          </select>
+          <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+        </div>
+      </div>
+      <div class="field" style="grid-column:1/-1;">
+        <label class="label">الحقول المربوطة (حقل في كل سطر)</label>
+        <textarea class="input" rows="4" placeholder="تاريخ الفاتورة&#10;رقم الفاتورة&#10;اسم العميل&#10;المبلغ"></textarea>
+      </div>
+      <div class="field">
+        <label class="label" style="display:flex;align-items:center;gap:10px;cursor:pointer;">
+          <input type="checkbox" style="width:16px;height:16px;" />
+          <span>هل هو قالب عام؟ (يظهر لجميع العملاء)</span>
+        </label>
+      </div>
+    </div>
+    <div style="display:flex;gap:10px;margin-top:20px;justify-content:flex-end;">
+      <button class="btn btn-primary">حفظ القالب</button>
+      <button class="btn btn-outline" data-close>إلغاء</button>
+    </div>
+  </div>
+</div>
+<!-- /BLOCK -->
 
 <script src="../assets/js/main.js"></script>
 </body>
