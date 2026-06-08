@@ -1,0 +1,837 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>إعداد عميل جديد · منصة محاسبتي</title>
+  <link rel="stylesheet" href="../assets/css/output.css" />
+</head>
+<body>
+
+<div class="app-shell">
+
+  <!-- BLOCK: sidebar -->
+  <aside class="sidebar" aria-label="القائمة الجانبية">
+    <div class="sidebar-brand">
+      <div class="brand-mark">م</div>
+      <div class="brand-name">
+        <b>منصة محاسبتي</b>
+        <span>ADMIN</span>
+      </div>
+    </div>
+    <div class="sidebar-section-label">لوحات العميل</div>
+    <a class="sidebar-link" href="client-dashboard.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span>
+      <span>لوحة العميل</span>
+    </a>
+    <a class="sidebar-link" href="upload-document.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 0 0 0-9h-1.3A7 7 0 1 0 4 16.4"/><path d="M12 12v8"/><path d="m9 15 3-3 3 3"/></svg></span>
+      <span>رفع مستند جديد</span>
+    </a>
+    <a class="sidebar-link" href="client-documents.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M9 13h6"/><path d="M9 17h4"/></svg></span>
+      <span>مستنداتي</span>
+    </a>
+    <a class="sidebar-link" href="messages.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+      <span>الرسائل</span>
+    </a>
+    <div class="sidebar-section-label">ساحة المحاسب</div>
+    <a class="sidebar-link" href="accountant-inbox.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.5 5h13L22 12v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7Z"/></svg></span>
+      <span>صندوق المستندات</span>
+    </a>
+    <a class="sidebar-link" href="document-review.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="m9 14 2 2 4-4"/></svg></span>
+      <span>مراجعة وتصنيف</span>
+    </a>
+    <a class="sidebar-link" href="chart-of-accounts.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v7H3z"/><path d="M14 3h7v7h-7z"/><path d="M14 14h7v7h-7z"/><path d="M3 14h7v7H3z"/></svg></span>
+      <span>شجرة الحسابات</span>
+    </a>
+    <a class="sidebar-link" href="journal-entries.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M9 7h7"/><path d="M9 11h7"/></svg></span>
+      <span>القيود المحاسبية</span>
+    </a>
+    <div class="sidebar-section-label">إدارة</div>
+    <a class="sidebar-link" href="admin-financial-dashboard.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 3-3 4 4 5-6"/></svg></span>
+      <span>لوحة التقارير</span>
+    </a>
+    <a class="sidebar-link" href="reports.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M9 13h6"/><path d="M9 17h4"/><path d="M9 9h1"/></svg></span>
+      <span>مركز التقارير</span>
+    </a>
+    <a class="sidebar-link" href="clients.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 9h.01"/><path d="M9 13h.01"/><path d="M9 17h.01"/><path d="M15 9h.01"/><path d="M15 13h.01"/><path d="M15 17h.01"/></svg></span>
+      <span>إدارة العملاء</span>
+    </a>
+    <a class="sidebar-link" href="users-permissions.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+      <span>المستخدمون والصلاحيات</span>
+    </a>
+    <a class="sidebar-link" href="settings.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12.2 2h-.4a2 2 0 0 0-2 2 1.7 1.7 0 0 1-1 1.6 1.7 1.7 0 0 1-1.9-.3 2 2 0 0 0-2.8 0l-.3.3a2 2 0 0 0 0 2.8 1.7 1.7 0 0 1 .3 1.9 1.7 1.7 0 0 1-1.6 1 2 2 0 0 0-2 2v.4a2 2 0 0 0 2 2 1.7 1.7 0 0 1 1.6 1 1.7 1.7 0 0 1-.3 1.9 2 2 0 0 0 0 2.8l.3.3a2 2 0 0 0 2.8 0 1.7 1.7 0 0 1 1.9-.3 1.7 1.7 0 0 1 1 1.6 2 2 0 0 0 2 2h.4a2 2 0 0 0 2-2 1.7 1.7 0 0 1 1-1.6 1.7 1.7 0 0 1 1.9.3 2 2 0 0 0 2.8 0l.3-.3a2 2 0 0 0 0-2.8 1.7 1.7 0 0 1-.3-1.9 1.7 1.7 0 0 1 1.6-1 2 2 0 0 0 2-2v-.4a2 2 0 0 0-2-2 1.7 1.7 0 0 1-1.6-1 1.7 1.7 0 0 1 .3-1.9 2 2 0 0 0 0-2.8l-.3-.3a2 2 0 0 0-2.8 0 1.7 1.7 0 0 1-1.9.3 1.7 1.7 0 0 1-1-1.6 2 2 0 0 0-2-2Z"/><circle cx="12" cy="12" r="3"/></svg></span>
+      <span>إعدادات النظام</span>
+    </a>
+    <div class="sidebar-section-label">الإعداد والتهيئة</div>
+    <a class="sidebar-link active" href="client-onboarding.html" aria-current="page">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6"/><path d="M22 11h-6"/></svg></span>
+      <span>تهيئة عميل جديد</span>
+    </a>
+    <span class="sidebar-link is-soon" aria-disabled="true">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M3 9h18"/><path d="M3 15h18"/></svg></span>
+      <span>الأرصدة الافتتاحية</span>
+      <span class="sl-soon">قريباً</span>
+    </span>
+    <span class="sidebar-link is-soon" aria-disabled="true">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg></span>
+      <span>الفترات المالية</span>
+      <span class="sl-soon">قريباً</span>
+    </span>
+    <span class="sidebar-link is-soon" aria-disabled="true">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg></span>
+      <span>تصنيفات المستندات</span>
+      <span class="sl-soon">قريباً</span>
+    </span>
+    <div class="sidebar-section-label">الضرائب</div>
+    <a class="sidebar-link" href="client-tax-settings.html">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="5" x2="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg></span>
+      <span>إعدادات ضريبة العميل</span>
+    </a>
+    <span class="sidebar-link is-soon" aria-disabled="true">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M9 13h6"/><path d="M9 17h4"/><path d="M9 9h1"/></svg></span>
+      <span>إقرار ضريبة القيمة المضافة</span>
+      <span class="sl-soon">قريباً</span>
+    </span>
+    <span class="sidebar-link is-soon" aria-disabled="true">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg></span>
+      <span>المستندات الضريبية</span>
+      <span class="sl-soon">قريباً</span>
+    </span>
+    <div class="sidebar-section-label">استيراد البيانات</div>
+    <span class="sidebar-link is-soon" aria-disabled="true">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></span>
+      <span>استيراد البيانات</span>
+      <span class="sl-soon">قريباً</span>
+    </span>
+    <span class="sidebar-link is-soon" aria-disabled="true">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-3"/><path d="M18 2h4v4"/><path d="M22 2 12 12"/></svg></span>
+      <span>مطابقة الحقول</span>
+      <span class="sl-soon">قريباً</span>
+    </span>
+    <span class="sidebar-link is-soon" aria-disabled="true">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></span>
+      <span>معاينة الاستيراد</span>
+      <span class="sl-soon">قريباً</span>
+    </span>
+    <span class="sidebar-link is-soon" aria-disabled="true">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg></span>
+      <span>سجل الاستيراد</span>
+      <span class="sl-soon">قريباً</span>
+    </span>
+    <span class="sidebar-link is-soon" aria-disabled="true">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+      <span>أخطاء الاستيراد</span>
+      <span class="sl-soon">قريباً</span>
+    </span>
+    <span class="sidebar-link is-soon" aria-disabled="true">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></span>
+      <span>قوالب الاستيراد</span>
+      <span class="sl-soon">قريباً</span>
+    </span>
+    <div class="sidebar-section-label">العمليات المحاسبية</div>
+    <span class="sidebar-link is-soon" aria-disabled="true">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v3"/><rect x="9" y="11" width="14" height="10" rx="1"/><path d="M13 16h.01"/></svg></span>
+      <span>الموردون</span>
+      <span class="sl-soon">قريباً</span>
+    </span>
+    <span class="sidebar-link is-soon" aria-disabled="true">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></span>
+      <span>العملاء التجاريون</span>
+      <span class="sl-soon">قريباً</span>
+    </span>
+    <span class="sidebar-link is-soon" aria-disabled="true">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-4 4 4 5-6"/></svg></span>
+      <span>تقارير العميل</span>
+      <span class="sl-soon">قريباً</span>
+    </span>
+    <div class="sidebar-section-label">البنوك</div>
+    <span class="sidebar-link is-soon" aria-disabled="true">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></span>
+      <span>الحسابات البنكية</span>
+      <span class="sl-soon">قريباً</span>
+    </span>
+    <span class="sidebar-link is-soon" aria-disabled="true">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg></span>
+      <span>استيراد كشف الحساب</span>
+      <span class="sl-soon">قريباً</span>
+    </span>
+    <span class="sidebar-link is-soon" aria-disabled="true">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>
+      <span>التسوية البنكية</span>
+      <span class="sl-soon">قريباً</span>
+    </span>
+    <div class="sidebar-section-label">المراجعة والاعتماد</div>
+    <span class="sidebar-link is-soon" aria-disabled="true">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="3"/><path d="M12 22V8"/><path d="m5 12-2 2 2 2"/><path d="M19 14l2-2-2-2"/><path d="M3 14h9"/><path d="M12 14h9"/></svg></span>
+      <span>سير الاعتماد</span>
+      <span class="sl-soon">قريباً</span>
+    </span>
+    <span class="sidebar-link is-soon" aria-disabled="true">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M9 12h6"/><path d="M9 16h4"/></svg></span>
+      <span>سجل التدقيق</span>
+      <span class="sl-soon">قريباً</span>
+    </span>
+    <div class="sidebar-section-label">النظام</div>
+    <span class="sidebar-link is-soon" aria-disabled="true">
+      <span class="sl-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></span>
+      <span>الإشعارات</span>
+      <span class="sl-soon">قريباً</span>
+    </span>
+    <div class="sidebar-foot">
+      <div class="sidebar-help">
+        <b>تحتاج مساعدة؟</b>
+        <p>فريقنا جاهز للرد على استفساراتك خلال دقائق.</p>
+        <a href="#">تواصل مع الدعم
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+        </a>
+      </div>
+    </div>
+  </aside>
+  <!-- /BLOCK -->
+
+  <main class="main-area">
+
+    <!-- BLOCK: header -->
+    <header class="header">
+      <button class="mobile-nav-toggle" aria-label="فتح القائمة">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+      </button>
+      <div class="page-title-wrap">
+        <div>
+          <div class="title-eyebrow">الإعداد والتهيئة · عميل جديد</div>
+          <div class="page-title">إعداد عميل جديد</div>
+          <div class="page-sub">جهّز بيانات العميل، الضريبة، شجرة الحسابات، والملفات الأولية قبل بدء العمل</div>
+        </div>
+      </div>
+      <button class="btn btn-outline" type="button">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg>
+        حفظ كمسودة
+      </button>
+      <button class="btn btn-primary" type="button">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6"/><path d="M22 11h-6"/></svg>
+        إنشاء العميل
+      </button>
+      <a href="clients.html" class="btn btn-outline">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+        رجوع إلى العملاء
+      </a>
+      <div class="header-right">
+        <button class="avatar-btn">
+          <div class="avatar">ك.ع</div>
+          <div class="avatar-name">
+            <b>كريم العمري</b>
+            <span>مدير المكتب</span>
+          </div>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+      </div>
+    </header>
+    <!-- /BLOCK -->
+
+    <div class="layout" style="margin-top:20px;">
+      <div class="card" style="max-width:860px;width:100%;">
+
+        <!-- Stepper -->
+        <div class="stepper" data-wizard>
+          <div class="step active" data-step="1">
+            <div class="n">1</div>
+            <div class="lbl">بيانات الشركة</div>
+          </div>
+          <div class="stepper-flex"><div class="ln"></div></div>
+          <div class="step" data-step="2">
+            <div class="n">2</div>
+            <div class="lbl">بيانات التواصل</div>
+          </div>
+          <div class="stepper-flex"><div class="ln"></div></div>
+          <div class="step" data-step="3">
+            <div class="n">3</div>
+            <div class="lbl">الدولة والعملة</div>
+          </div>
+          <div class="stepper-flex"><div class="ln"></div></div>
+          <div class="step" data-step="4">
+            <div class="n">4</div>
+            <div class="lbl">إعدادات الضريبة</div>
+          </div>
+          <div class="stepper-flex"><div class="ln"></div></div>
+          <div class="step" data-step="5">
+            <div class="n">5</div>
+            <div class="lbl">المحاسب المسؤول</div>
+          </div>
+          <div class="stepper-flex"><div class="ln"></div></div>
+          <div class="step" data-step="6">
+            <div class="n">6</div>
+            <div class="lbl">شجرة الحسابات</div>
+          </div>
+          <div class="stepper-flex"><div class="ln"></div></div>
+          <div class="step" data-step="7">
+            <div class="n">7</div>
+            <div class="lbl">الملفات الأولية</div>
+          </div>
+          <div class="stepper-flex"><div class="ln"></div></div>
+          <div class="step" data-step="8">
+            <div class="n">8</div>
+            <div class="lbl">مراجعة نهائية</div>
+          </div>
+        </div>
+
+        <!-- Panel 1: بيانات الشركة -->
+        <div class="wizard-panel" data-panel="1">
+          <div class="section">
+            <div class="section-head">
+              <span class="stamp">1</span>
+              <h2>بيانات الشركة</h2>
+              <span class="hint">المعلومات الأساسية للعميل</span>
+            </div>
+            <div class="fields-grid">
+              <div class="field" style="grid-column:1 / -1;">
+                <label>اسم الشركة <span class="req">*</span></label>
+                <input class="input" type="text" value="شركة الرواد للاستيراد" />
+              </div>
+              <div class="field">
+                <label>نوع النشاط <span class="req">*</span></label>
+                <div class="select-wrap">
+                  <select class="select">
+                    <option>تجارة جملة</option>
+                    <option>تجارة تجزئة</option>
+                    <option>خدمات</option>
+                    <option>مقاولات</option>
+                    <option>استيراد وتصدير</option>
+                    <option>أخرى</option>
+                  </select>
+                  <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+                </div>
+              </div>
+              <div class="field">
+                <label>الدولة <span class="req">*</span></label>
+                <div class="select-wrap">
+                  <select class="select">
+                    <option selected>السعودية</option>
+                    <option>مصر</option>
+                  </select>
+                  <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+                </div>
+              </div>
+              <div class="field">
+                <label>المدينة <span class="req">*</span></label>
+                <input class="input" type="text" value="الرياض" />
+              </div>
+              <div class="field" style="grid-column:1 / -1;">
+                <label>العنوان</label>
+                <input class="input" type="text" value="طريق الملك فهد، الرياض 12345" />
+              </div>
+              <div class="field">
+                <label>السجل التجاري <span class="req">*</span></label>
+                <input class="input mono" type="text" value="1010234567" inputmode="numeric" />
+              </div>
+              <div class="field">
+                <label>الرقم الضريبي</label>
+                <input class="input mono" type="text" value="300012345600003" inputmode="numeric" />
+              </div>
+              <div class="field">
+                <label>تاريخ بداية التعاقد <span class="req">*</span></label>
+                <div class="input-wrap has-prefix">
+                  <input class="input" type="date" value="2026-06-01" />
+                  <span class="prefix-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18"/><path d="M8 3v4"/><path d="M16 3v4"/></svg></span>
+                </div>
+              </div>
+              <div class="field">
+                <label>حالة العميل <span class="req">*</span></label>
+                <div class="seg">
+                  <button type="button" class="active">نشط</button>
+                  <button type="button">موقوف</button>
+                  <button type="button">قيد التهيئة</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 2: بيانات التواصل -->
+        <div class="wizard-panel" data-panel="2">
+          <div class="section">
+            <div class="section-head">
+              <span class="stamp">2</span>
+              <h2>بيانات التواصل</h2>
+              <span class="hint">المسؤول الرئيسي من العميل</span>
+            </div>
+            <div class="fields-grid">
+              <div class="field">
+                <label>اسم المسؤول <span class="req">*</span></label>
+                <input class="input" type="text" value="خالد عمر" />
+              </div>
+              <div class="field">
+                <label>المنصب</label>
+                <input class="input" type="text" value="المدير المالي" />
+              </div>
+              <div class="field">
+                <label>رقم الهاتف <span class="req">*</span></label>
+                <div class="input-wrap has-suffix">
+                  <span class="suffix mono">+966</span>
+                  <input class="input mono" type="tel" value="512345678" inputmode="tel" />
+                </div>
+              </div>
+              <div class="field">
+                <label>البريد الإلكتروني <span class="req">*</span></label>
+                <input class="input" type="email" value="finance@alrowad.sa" />
+              </div>
+              <div class="field" style="grid-column:1 / -1;">
+                <label>صلاحيات المستخدم الأول <span class="req">*</span></label>
+                <div class="select-wrap">
+                  <select class="select">
+                    <option selected>مالك</option>
+                    <option>محرر</option>
+                    <option>مشاهد</option>
+                  </select>
+                  <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 3: الدولة والعملة -->
+        <div class="wizard-panel" data-panel="3">
+          <div class="section">
+            <div class="section-head">
+              <span class="stamp">3</span>
+              <h2>الدولة والعملة</h2>
+              <span class="hint">تحدّد نظام الضريبة والعملة المستخدمة</span>
+            </div>
+            <div class="fields-grid">
+              <div class="field" style="grid-column:1 / -1;">
+                <label>الدولة <span class="req">*</span></label>
+                <div class="seg">
+                  <button type="button" class="active">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="margin-inline-end:6px;"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg>
+                    السعودية
+                  </button>
+                  <button type="button">مصر</button>
+                </div>
+              </div>
+              <div class="field">
+                <label>العملة <span class="req">*</span></label>
+                <div class="select-wrap">
+                  <select class="select">
+                    <option selected>ريال سعودي (SAR)</option>
+                    <option>جنيه مصري (EGP)</option>
+                  </select>
+                  <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+                </div>
+              </div>
+              <div class="field">
+                <label>لغة الفواتير</label>
+                <div class="select-wrap">
+                  <select class="select">
+                    <option selected>العربية</option>
+                    <option>الإنجليزية</option>
+                    <option>العربية والإنجليزية</option>
+                  </select>
+                  <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+                </div>
+              </div>
+              <div class="field">
+                <label>المنطقة الزمنية</label>
+                <div class="select-wrap">
+                  <select class="select">
+                    <option selected>(GMT+3) الرياض</option>
+                    <option>(GMT+2) القاهرة</option>
+                  </select>
+                  <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 4: إعدادات الضريبة -->
+        <div class="wizard-panel" data-panel="4">
+          <div class="section">
+            <div class="section-head">
+              <span class="stamp">4</span>
+              <h2>إعدادات الضريبة</h2>
+              <span class="hint">معاينة تلقائية بناءً على الدولة المختارة</span>
+            </div>
+            <div class="field" style="margin-bottom:20px;">
+              <label>الدولة</label>
+              <div class="seg" data-country-select>
+                <button type="button" class="active" data-country="sa">السعودية</button>
+                <button type="button" data-country="eg">مصر</button>
+              </div>
+            </div>
+            <div data-country-block="sa">
+              <div class="card" style="background:#F0FAF8;border-color:#A8D8D4;padding:20px 22px 18px;">
+                <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0E6F66" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6Z"/><path d="m9 12 2 2 4-4"/></svg>
+                  <b style="color:#0E6F66;font-size:14.5px;">المملكة العربية السعودية</b>
+                </div>
+                <div style="display:flex;flex-wrap:wrap;gap:8px;">
+                  <span class="chip primary">ضريبة القيمة المضافة 15%</span>
+                  <span class="chip primary">ريال سعودي SAR</span>
+                  <span class="chip green">ZATCA Ready</span>
+                  <span class="chip slate">QR Code مخطط</span>
+                  <span class="chip slate">الفاتورة الإلكترونية مخطط</span>
+                </div>
+                <div style="margin-top:14px;font-size:13px;color:#5C6573;line-height:1.6;">
+                  <b style="color:#14181F;">نظام الفوترة الإلكترونية (ZATCA):</b> المنصة مهيأة لاستيعاب متطلبات هيئة الزكاة والضريبة والجمارك. حقول QR Code والفاتورة الإلكترونية ستُضاف في مرحلة لاحقة.
+                </div>
+              </div>
+            </div>
+            <div data-country-block="eg" hidden>
+              <div class="card" style="background:#FFF8F0;border-color:#F0C88A;padding:20px 22px 18px;">
+                <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A06A0F" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6Z"/><path d="m9 12 2 2 4-4"/></svg>
+                  <b style="color:#A06A0F;font-size:14.5px;">جمهورية مصر العربية</b>
+                </div>
+                <div style="display:flex;flex-wrap:wrap;gap:8px;">
+                  <span class="chip gold">ضريبة القيمة المضافة 14%</span>
+                  <span class="chip gold">جنيه مصري EGP</span>
+                  <span class="chip green">ETA Ready</span>
+                  <span class="chip slate">UUID مخطط</span>
+                  <span class="chip slate">التوقيع الإلكتروني مخطط</span>
+                </div>
+                <div style="margin-top:14px;font-size:13px;color:#5C6573;line-height:1.6;">
+                  <b style="color:#14181F;">نظام الفاتورة الإلكترونية (ETA):</b> المنصة مهيأة لاستيعاب متطلبات مصلحة الضرائب المصرية. حقول UUID والتوقيع الإلكتروني ستُضاف في مرحلة لاحقة.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 5: المحاسب المسؤول -->
+        <div class="wizard-panel" data-panel="5">
+          <div class="section">
+            <div class="section-head">
+              <span class="stamp">5</span>
+              <h2>المحاسب المسؤول</h2>
+              <span class="hint">تعيين الفريق المسؤول عن هذا العميل</span>
+            </div>
+            <div class="fields-grid">
+              <div class="field">
+                <label>المحاسب المسؤول <span class="req">*</span></label>
+                <div class="select-wrap">
+                  <select class="select">
+                    <option selected>منى حسن</option>
+                    <option>أحمد محمود</option>
+                    <option>سارة الخالد</option>
+                    <option>عمر الراشد</option>
+                  </select>
+                  <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+                </div>
+              </div>
+              <div class="field">
+                <label>مدير المراجعة</label>
+                <div class="select-wrap">
+                  <select class="select">
+                    <option selected>أحمد محمود</option>
+                    <option>كريم العمري</option>
+                  </select>
+                  <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+                </div>
+              </div>
+              <div class="field" style="grid-column:1 / -1;">
+                <label>هل يحتاج اعتماد قبل الترحيل؟ <span class="req">*</span></label>
+                <div class="seg">
+                  <button type="button" class="active">نعم، يحتاج اعتماد</button>
+                  <button type="button">لا، ترحيل مباشر</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 6: شجرة الحسابات -->
+        <div class="wizard-panel" data-panel="6">
+          <div class="section">
+            <div class="section-head">
+              <span class="stamp">6</span>
+              <h2>شجرة الحسابات</h2>
+              <span class="hint">اختر طريقة الإعداد</span>
+            </div>
+            <div class="type-grid">
+              <button type="button" class="type-card active">
+                <div class="check"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg></div>
+                <div class="t-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v7H3z"/><path d="M14 3h7v7h-7z"/><path d="M14 14h7v7h-7z"/><path d="M3 14h7v7H3z"/></svg></div>
+                <div><b>استخدام شجرة افتراضية</b></div>
+                <span>شجرة حسابات جاهزة ومتوافقة مع المعايير المحاسبية السعودية والمصرية.</span>
+              </button>
+              <button type="button" class="type-card">
+                <div class="check"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg></div>
+                <div class="t-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+                <div><b>نسخ من عميل مشابه</b></div>
+                <span>نسخ شجرة حسابات من عميل موجود في النظام وتعديلها حسب الحاجة.</span>
+              </button>
+              <button type="button" class="type-card">
+                <div class="check"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg></div>
+                <div class="t-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></div>
+                <div><b>رفع شجرة حسابات</b></div>
+                <span>رفع ملف Excel أو CSV بشجرة الحسابات المعدّة مسبقاً من النظام السابق.</span>
+              </button>
+              <button type="button" class="type-card">
+                <div class="check"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg></div>
+                <div class="t-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg></div>
+                <div><b>إعداد لاحقًا</b></div>
+                <span>تأجيل إعداد شجرة الحسابات وتخصيصها بعد إنشاء ملف العميل.</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 7: الملفات الأولية -->
+        <div class="wizard-panel" data-panel="7">
+          <div class="section">
+            <div class="section-head">
+              <span class="stamp">7</span>
+              <h2>الملفات الأولية</h2>
+              <span class="hint">ارفع ما هو متاح الآن — كل الحقول اختيارية</span>
+            </div>
+
+            <div class="fields-grid" style="grid-template-columns:1fr 1fr;">
+              <!-- شجرة حسابات -->
+              <div class="field" style="grid-column:1 / -1;">
+                <label>شجرة حسابات <span class="opt">(اختياري)</span></label>
+                <div class="dropzone" data-zone-id="z-coa">
+                  <div class="dz-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v7H3z"/><path d="M14 3h7v7h-7z"/><path d="M14 14h7v7h-7z"/><path d="M3 14h7v7H3z"/></svg></div>
+                  <b>شجرة الحسابات</b>
+                  <div class="sub">XLS أو CSV أو PDF</div>
+                  <button type="button" class="browse">اختيار ملف</button>
+                  <div class="formats">
+                    <span class="fmt">XLS / CSV</span>
+                    <span class="fmt">PDF</span>
+                    <span class="fmt">حتى 10 م.ب</span>
+                  </div>
+                  <input type="file" accept=".xlsx,.xls,.csv,application/pdf" hidden />
+                </div>
+                <div class="file-card" data-file-card-for="z-coa" hidden>
+                  <div class="fc-ico">XLS</div>
+                  <div class="fc-body">
+                    <b data-file-name>chart-of-accounts.xlsx</b>
+                    <span data-file-size>— جاري الرفع...</span>
+                    <div class="progress"><div class="bar" style="width:0%"></div></div>
+                  </div>
+                  <button class="icon-btn" data-file-clear aria-label="حذف الملف">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- أرصدة افتتاحية -->
+              <div class="field">
+                <label>أرصدة افتتاحية <span class="opt">(اختياري)</span></label>
+                <div class="dropzone" data-zone-id="z-balances">
+                  <div class="dz-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M3 9h18"/><path d="M3 15h18"/></svg></div>
+                  <b>الأرصدة الافتتاحية</b>
+                  <div class="sub">XLS أو CSV</div>
+                  <button type="button" class="browse">اختيار ملف</button>
+                  <div class="formats"><span class="fmt">XLS / CSV</span></div>
+                  <input type="file" accept=".xlsx,.xls,.csv" hidden />
+                </div>
+                <div class="file-card" data-file-card-for="z-balances" hidden>
+                  <div class="fc-ico">XLS</div>
+                  <div class="fc-body">
+                    <b data-file-name></b>
+                    <span data-file-size>— جاري الرفع...</span>
+                    <div class="progress"><div class="bar" style="width:0%"></div></div>
+                  </div>
+                  <button class="icon-btn" data-file-clear aria-label="حذف الملف">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- مبيعات سابقة -->
+              <div class="field">
+                <label>مبيعات سابقة <span class="opt">(اختياري)</span></label>
+                <div class="dropzone" data-zone-id="z-sales">
+                  <div class="dz-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 3-3 4 4 5-6"/></svg></div>
+                  <b>مبيعات سابقة</b>
+                  <div class="sub">XLS أو CSV أو PDF</div>
+                  <button type="button" class="browse">اختيار ملف</button>
+                  <div class="formats"><span class="fmt">XLS / CSV / PDF</span></div>
+                  <input type="file" accept=".xlsx,.xls,.csv,application/pdf" hidden />
+                </div>
+                <div class="file-card" data-file-card-for="z-sales" hidden>
+                  <div class="fc-ico">XLS</div>
+                  <div class="fc-body">
+                    <b data-file-name></b>
+                    <span data-file-size>— جاري الرفع...</span>
+                    <div class="progress"><div class="bar" style="width:0%"></div></div>
+                  </div>
+                  <button class="icon-btn" data-file-clear aria-label="حذف الملف">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- مصروفات سابقة -->
+              <div class="field">
+                <label>مصروفات سابقة <span class="opt">(اختياري)</span></label>
+                <div class="dropzone" data-zone-id="z-expenses">
+                  <div class="dz-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/><path d="M7 15h4"/></svg></div>
+                  <b>مصروفات سابقة</b>
+                  <div class="sub">XLS أو CSV أو PDF</div>
+                  <button type="button" class="browse">اختيار ملف</button>
+                  <div class="formats"><span class="fmt">XLS / CSV / PDF</span></div>
+                  <input type="file" accept=".xlsx,.xls,.csv,application/pdf" hidden />
+                </div>
+                <div class="file-card" data-file-card-for="z-expenses" hidden>
+                  <div class="fc-ico">XLS</div>
+                  <div class="fc-body">
+                    <b data-file-name></b>
+                    <span data-file-size>— جاري الرفع...</span>
+                    <div class="progress"><div class="bar" style="width:0%"></div></div>
+                  </div>
+                  <button class="icon-btn" data-file-clear aria-label="حذف الملف">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- كشف حساب بنكي -->
+              <div class="field" style="grid-column:1 / -1;">
+                <label>كشف حساب بنكي <span class="opt">(اختياري)</span></label>
+                <div class="dropzone" data-zone-id="z-bank">
+                  <div class="dz-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div>
+                  <b>كشف الحساب البنكي</b>
+                  <div class="sub">PDF أو XLS</div>
+                  <button type="button" class="browse">اختيار ملف</button>
+                  <div class="formats"><span class="fmt">PDF</span><span class="fmt">XLS</span></div>
+                  <input type="file" accept=".xlsx,.xls,application/pdf" hidden />
+                </div>
+                <div class="file-card" data-file-card-for="z-bank" hidden>
+                  <div class="fc-ico">PDF</div>
+                  <div class="fc-body">
+                    <b data-file-name></b>
+                    <span data-file-size>— جاري الرفع...</span>
+                    <div class="progress"><div class="bar" style="width:0%"></div></div>
+                  </div>
+                  <button class="icon-btn" data-file-clear aria-label="حذف الملف">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- ملاحظات -->
+              <div class="field" style="grid-column:1 / -1;">
+                <label>ملاحظات للمحاسب <span class="opt">(اختياري)</span></label>
+                <textarea class="textarea" rows="3" placeholder="أي معلومات إضافية تساعد في إعداد ملف العميل، مثل: نظام محاسبي سابق، خصوصية النشاط، ملاحظات الضريبة..."></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 8: مراجعة نهائية -->
+        <div class="wizard-panel" data-panel="8">
+          <div class="section">
+            <div class="section-head">
+              <span class="stamp">8</span>
+              <h2>مراجعة نهائية</h2>
+              <span class="hint">راجع المعلومات قبل إنشاء ملف العميل</span>
+            </div>
+
+            <div style="display:grid;gap:14px;">
+              <div class="card" style="background:#F8F6F2;border-color:#E6E1D5;padding:16px 18px;">
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+                  <b style="font-size:13.5px;">بيانات الشركة</b>
+                  <span class="chip green">مكتمل</span>
+                </div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px 24px;font-size:13px;color:#5C6573;">
+                  <div><span style="color:#8A93A1;">الاسم:</span> شركة الرواد للاستيراد</div>
+                  <div><span style="color:#8A93A1;">النشاط:</span> تجارة جملة</div>
+                  <div><span style="color:#8A93A1;">الدولة:</span> السعودية</div>
+                  <div><span style="color:#8A93A1;">المدينة:</span> الرياض</div>
+                  <div><span style="color:#8A93A1;">السجل التجاري:</span> <span class="mono">1010234567</span></div>
+                  <div><span style="color:#8A93A1;">الرقم الضريبي:</span> <span class="mono">300012345600003</span></div>
+                </div>
+              </div>
+
+              <div class="card" style="background:#F8F6F2;border-color:#E6E1D5;padding:16px 18px;">
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+                  <b style="font-size:13.5px;">بيانات التواصل</b>
+                  <span class="chip green">مكتمل</span>
+                </div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px 24px;font-size:13px;color:#5C6573;">
+                  <div><span style="color:#8A93A1;">المسؤول:</span> خالد عمر</div>
+                  <div><span style="color:#8A93A1;">المنصب:</span> المدير المالي</div>
+                  <div><span style="color:#8A93A1;">الهاتف:</span> <span class="mono">+966 512345678</span></div>
+                  <div><span style="color:#8A93A1;">البريد:</span> finance@alrowad.sa</div>
+                  <div><span style="color:#8A93A1;">الصلاحية:</span> مالك</div>
+                </div>
+              </div>
+
+              <div class="card" style="background:#F8F6F2;border-color:#E6E1D5;padding:16px 18px;">
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+                  <b style="font-size:13.5px;">الدولة والعملة والضريبة</b>
+                  <span class="chip green">مكتمل</span>
+                </div>
+                <div style="display:flex;flex-wrap:wrap;gap:8px;">
+                  <span class="chip primary">السعودية</span>
+                  <span class="chip primary">ريال سعودي SAR</span>
+                  <span class="chip primary">ضريبة القيمة المضافة 15%</span>
+                  <span class="chip green">ZATCA Ready</span>
+                  <span class="chip slate">لغة الفواتير: العربية</span>
+                </div>
+              </div>
+
+              <div class="card" style="background:#F8F6F2;border-color:#E6E1D5;padding:16px 18px;">
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+                  <b style="font-size:13.5px;">المحاسب المسؤول وشجرة الحسابات</b>
+                  <span class="chip green">مكتمل</span>
+                </div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px 24px;font-size:13px;color:#5C6573;">
+                  <div><span style="color:#8A93A1;">المحاسب:</span> منى حسن</div>
+                  <div><span style="color:#8A93A1;">مدير المراجعة:</span> أحمد محمود</div>
+                  <div><span style="color:#8A93A1;">الاعتماد:</span> مطلوب قبل الترحيل</div>
+                  <div><span style="color:#8A93A1;">شجرة الحسابات:</span> افتراضية</div>
+                </div>
+              </div>
+
+              <div class="tip" style="margin-top:4px;">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                <span>بعد الإنشاء، يمكنك تعديل هذه البيانات من ملف العميل في أي وقت. الضغط على "إنشاء العميل" في الأعلى يبدأ العمل الفعلي.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wizard navigation -->
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:16px 0 4px;margin-top:4px;border-top:1px solid #E6E1D5;">
+          <button class="btn btn-outline" type="button" data-wizard-prev>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+            السابق
+          </button>
+          <button class="btn btn-primary" type="button" data-wizard-next>
+            التالي
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="foot">
+      <div>منصة محاسبتي · إعداد عميل جديد · 2026</div>
+      <div class="links">
+        <a href="clients.html">إدارة العملاء</a>
+        <a href="settings.html">الإعدادات</a>
+        <a href="#">المساعدة</a>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

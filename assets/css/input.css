@@ -160,6 +160,30 @@
     background: theme('colors.primary.DEFAULT');
     color: white;
   }
+  /* coming-soon sidebar items */
+  .sidebar-link.is-soon {
+    color: theme('colors.ink.4');
+    cursor: default;
+    justify-content: flex-start;
+  }
+  .sidebar-link.is-soon:hover { background: transparent; color: theme('colors.ink.4'); }
+  .sidebar-link.is-soon .sl-ico { opacity: .55; }
+  .sl-soon {
+    margin-inline-start: auto;
+    font-size: 10.5px;
+    font-weight: 500;
+    color: theme('colors.ink.4');
+    background: theme('colors.bg.2');
+    border: 1px solid theme('colors.line.DEFAULT');
+    border-radius: 999px;
+    padding: 1px 7px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  /* coming-soon landing card modifier */
+  .landing-card.is-soon { cursor: default; opacity: .78; }
+  .landing-card.is-soon:hover { transform: none; box-shadow: none; }
+
   .sidebar-foot {
     margin-top: auto;
     padding-top: 14px;

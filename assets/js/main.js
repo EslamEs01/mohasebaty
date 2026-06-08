@@ -250,6 +250,56 @@
     refresh();
   }
 
+  /* ---------- Wizard (client onboarding) ---------- */
+  function initWizard() {
+    var stepper = qs('[data-wizard]'); if (!stepper) return;
+    var container = stepper.parentElement;
+    var steps = qsa('.step[data-step]', stepper);
+    var panels = qsa('.wizard-panel[data-panel]', container);
+    var prevBtn = qs('[data-wizard-prev]', container);
+    var nextBtn = qs('[data-wizard-next]', container);
+    var current = 1;
+
+    function goTo(n) {
+      n = Math.max(1, Math.min(steps.length, n));
+      current = n;
+      steps.forEach(function (s) {
+        var idx = parseInt(s.getAttribute('data-step'), 10);
+        s.classList.toggle('active', idx === n);
+      });
+      panels.forEach(function (p) {
+        var idx = parseInt(p.getAttribute('data-panel'), 10);
+        p.hidden = idx !== n;
+      });
+    }
+
+    var activeStep = qs('.step.active[data-step]', stepper);
+    current = activeStep ? parseInt(activeStep.getAttribute('data-step'), 10) : 1;
+    goTo(current);
+
+    steps.forEach(function (s) {
+      on(s, 'click', function () { goTo(parseInt(s.getAttribute('data-step'), 10)); });
+    });
+    if (prevBtn) on(prevBtn, 'click', function () { goTo(current - 1); });
+    if (nextBtn) on(nextBtn, 'click', function () { goTo(current + 1); });
+  }
+
+  /* ---------- Country preset toggle ---------- */
+  function initCountryPreset() {
+    qsa('[data-country-select]').forEach(function (group) {
+      on(group, 'click', function (e) {
+        var btn = e.target.closest('button[data-country]');
+        if (!btn) return;
+        var country = btn.getAttribute('data-country');
+        qsa('button[data-country]', group).forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        qsa('[data-country-block]').forEach(function (block) {
+          block.hidden = block.getAttribute('data-country-block') !== country;
+        });
+      });
+    });
+  }
+
   /* ---------- Boot ---------- */
   function boot() {
     initSidebarMobile();
@@ -259,6 +309,8 @@
     initFilterSelects();
     initOverlays();
     initBulkBar();
+    initWizard();
+    initCountryPreset();
   }
 
   if (document.readyState === 'loading') {

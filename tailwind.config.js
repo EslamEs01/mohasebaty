@@ -5,6 +5,7 @@ module.exports = {
     './pages/**/*.html',
     './assets/js/**/*.js',
   ],
+  safelist: ['is-soon', 'sl-soon'],
   theme: {
     extend: {
       colors: {
