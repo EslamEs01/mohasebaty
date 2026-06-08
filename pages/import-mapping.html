@@ -227,327 +227,336 @@
     </header>
     <!-- /BLOCK -->
 
-    <!-- BLOCK: context summary card -->
-    <div class="card" style="padding:20px;margin-bottom:16px;">
-      <div class="card-head"><h2>ملخص عملية الاستيراد</h2></div>
-      <div class="set-body" style="margin-top:12px;">
-        <div class="set-row"><div class="info"><b>العميل</b></div><div class="ctrl">شركة النور للتجارة</div></div>
-        <div class="set-row"><div class="info"><b>نوع الملف</b></div><div class="ctrl">مبيعات</div></div>
-        <div class="set-row"><div class="info"><b>اسم الملف</b></div><div class="ctrl">مبيعات_Q1_2026.xlsx</div></div>
-        <div class="set-row"><div class="info"><b>عدد الصفوف</b></div><div class="ctrl">248 صف</div></div>
+    <!-- BLOCK: two-column layout -->
+    <div class="layout layout-wide" style="margin-top:20px;align-items:flex-start;">
+
+      <!-- Left column: tip + mapping table + preview table -->
+      <div>
+
+        <!-- Warning tip -->
+        <div class="tip" style="margin-bottom:16px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          <span>3 حقول مطلوبة لم يتم ربطها — يجب ربطها قبل المتابعة للمعاينة</span>
+        </div>
+
+        <!-- BLOCK: mapping table card -->
+        <div class="card" style="margin-bottom:16px;">
+          <div class="table-top">
+            <div class="left">
+              <h2>جدول ربط الأعمدة <span class="count">7</span></h2>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table class="docs">
+              <thead>
+                <tr>
+                  <th>العمود في الملف</th>
+                  <th>مثال من البيانات</th>
+                  <th>الحقل المقابل في النظام</th>
+                  <th>مطلوب؟</th>
+                  <th>الحالة</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Row 1: Invoice Date — mapped -->
+                <tr>
+                  <td>Invoice Date</td>
+                  <td><span class="chip slate">2026-01-15</span></td>
+                  <td>
+                    <div class="select-wrap" style="width:180px;">
+                      <select class="select">
+                        <option>-- اختر حقلاً --</option>
+                        <option selected>تاريخ الفاتورة</option>
+                        <option>رقم الفاتورة</option>
+                        <option>اسم العميل</option>
+                        <option>المبلغ</option>
+                        <option>الضريبة</option>
+                        <option>الإجمالي</option>
+                        <option>وصف البند</option>
+                        <option>ملاحظات</option>
+                      </select>
+                      <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+                    </div>
+                  </td>
+                  <td><span class="chip rose">مطلوب</span></td>
+                  <td><span class="chip green">مربوط</span></td>
+                </tr>
+                <!-- Row 2: Invoice Number — mapped -->
+                <tr>
+                  <td>Invoice Number</td>
+                  <td><span class="chip slate">INV-2026-001</span></td>
+                  <td>
+                    <div class="select-wrap" style="width:180px;">
+                      <select class="select">
+                        <option>-- اختر حقلاً --</option>
+                        <option>تاريخ الفاتورة</option>
+                        <option selected>رقم الفاتورة</option>
+                        <option>اسم العميل</option>
+                        <option>المبلغ</option>
+                        <option>الضريبة</option>
+                        <option>الإجمالي</option>
+                        <option>وصف البند</option>
+                        <option>ملاحظات</option>
+                      </select>
+                      <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+                    </div>
+                  </td>
+                  <td><span class="chip rose">مطلوب</span></td>
+                  <td><span class="chip green">مربوط</span></td>
+                </tr>
+                <!-- Row 3: Customer Name — unmapped required -->
+                <tr>
+                  <td>Customer Name</td>
+                  <td><span class="chip slate">شركة الأمل</span></td>
+                  <td>
+                    <div class="select-wrap" style="width:180px;">
+                      <select class="select">
+                        <option selected>-- اختر حقلاً --</option>
+                        <option>تاريخ الفاتورة</option>
+                        <option>رقم الفاتورة</option>
+                        <option>اسم العميل</option>
+                        <option>المبلغ</option>
+                        <option>الضريبة</option>
+                        <option>الإجمالي</option>
+                        <option>وصف البند</option>
+                        <option>ملاحظات</option>
+                      </select>
+                      <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+                    </div>
+                  </td>
+                  <td><span class="chip rose">مطلوب</span></td>
+                  <td><span class="chip rose">مطلوب — غير مربوط</span></td>
+                </tr>
+                <!-- Row 4: Amount — unmapped required -->
+                <tr>
+                  <td>Amount</td>
+                  <td><span class="chip slate">5,200.00</span></td>
+                  <td>
+                    <div class="select-wrap" style="width:180px;">
+                      <select class="select">
+                        <option selected>-- اختر حقلاً --</option>
+                        <option>تاريخ الفاتورة</option>
+                        <option>رقم الفاتورة</option>
+                        <option>اسم العميل</option>
+                        <option>المبلغ</option>
+                        <option>الضريبة</option>
+                        <option>الإجمالي</option>
+                        <option>وصف البند</option>
+                        <option>ملاحظات</option>
+                      </select>
+                      <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+                    </div>
+                  </td>
+                  <td><span class="chip rose">مطلوب</span></td>
+                  <td><span class="chip rose">مطلوب — غير مربوط</span></td>
+                </tr>
+                <!-- Row 5: VAT — mapped -->
+                <tr>
+                  <td>VAT</td>
+                  <td><span class="chip slate">780.00</span></td>
+                  <td>
+                    <div class="select-wrap" style="width:180px;">
+                      <select class="select">
+                        <option>-- اختر حقلاً --</option>
+                        <option>تاريخ الفاتورة</option>
+                        <option>رقم الفاتورة</option>
+                        <option>اسم العميل</option>
+                        <option>المبلغ</option>
+                        <option selected>الضريبة</option>
+                        <option>الإجمالي</option>
+                        <option>وصف البند</option>
+                        <option>ملاحظات</option>
+                      </select>
+                      <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+                    </div>
+                  </td>
+                  <td><span class="chip rose">مطلوب</span></td>
+                  <td><span class="chip green">مربوط</span></td>
+                </tr>
+                <!-- Row 6: Total — optional unmapped -->
+                <tr>
+                  <td>Total</td>
+                  <td><span class="chip slate">5,980.00</span></td>
+                  <td>
+                    <div class="select-wrap" style="width:180px;">
+                      <select class="select">
+                        <option selected>-- اختر حقلاً --</option>
+                        <option>تاريخ الفاتورة</option>
+                        <option>رقم الفاتورة</option>
+                        <option>اسم العميل</option>
+                        <option>المبلغ</option>
+                        <option>الضريبة</option>
+                        <option>الإجمالي</option>
+                        <option>وصف البند</option>
+                        <option>ملاحظات</option>
+                      </select>
+                      <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+                    </div>
+                  </td>
+                  <td><span class="chip slate">اختياري</span></td>
+                  <td><span class="chip amber">غير مربوط</span></td>
+                </tr>
+                <!-- Row 7: Notes — optional ignored -->
+                <tr>
+                  <td>Notes</td>
+                  <td><span class="chip slate">فاتورة خدمات Q1</span></td>
+                  <td>
+                    <div class="select-wrap" style="width:180px;">
+                      <select class="select">
+                        <option>-- اختر حقلاً --</option>
+                        <option>تاريخ الفاتورة</option>
+                        <option>رقم الفاتورة</option>
+                        <option>اسم العميل</option>
+                        <option>المبلغ</option>
+                        <option>الضريبة</option>
+                        <option>الإجمالي</option>
+                        <option>وصف البند</option>
+                        <option selected>ملاحظات</option>
+                      </select>
+                      <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+                    </div>
+                  </td>
+                  <td><span class="chip slate">اختياري</span></td>
+                  <td><span class="chip slate">متجاهل</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- BLOCK: data preview card -->
+        <div class="card">
+          <div class="table-top">
+            <div class="left">
+              <h2>معاينة أول 10 صفوف من الملف</h2>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table class="docs">
+              <thead>
+                <tr>
+                  <th>Invoice Date</th>
+                  <th>Invoice Number</th>
+                  <th>Customer Name</th>
+                  <th>Amount</th>
+                  <th>VAT</th>
+                  <th>Total</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>15/01/2026</td>
+                  <td>INV-2026-001</td>
+                  <td>شركة الأمل للتجارة</td>
+                  <td>5,200.00</td>
+                  <td>780.00</td>
+                  <td>5,980.00</td>
+                  <td>خدمات استشارية Q1</td>
+                </tr>
+                <tr>
+                  <td>18/01/2026</td>
+                  <td>INV-2026-002</td>
+                  <td>مؤسسة النجاح</td>
+                  <td>3,400.00</td>
+                  <td>510.00</td>
+                  <td>3,910.00</td>
+                  <td>توريد مواد</td>
+                </tr>
+                <tr>
+                  <td>22/01/2026</td>
+                  <td>INV-2026-003</td>
+                  <td>شركة الريادة</td>
+                  <td>7,800.00</td>
+                  <td>1,170.00</td>
+                  <td>8,970.00</td>
+                  <td>خدمات تقنية</td>
+                </tr>
+                <tr>
+                  <td>25/01/2026</td>
+                  <td>INV-2026-004</td>
+                  <td>مجموعة الخليج</td>
+                  <td>2,100.00</td>
+                  <td>315.00</td>
+                  <td>2,415.00</td>
+                  <td>استشارات مالية</td>
+                </tr>
+                <tr>
+                  <td>29/01/2026</td>
+                  <td>INV-2026-005</td>
+                  <td>شركة البناء الحديث</td>
+                  <td>12,500.00</td>
+                  <td>1,875.00</td>
+                  <td>14,375.00</td>
+                  <td>مشروع البناء</td>
+                </tr>
+                <tr>
+                  <td>02/02/2026</td>
+                  <td>INV-2026-006</td>
+                  <td>مؤسسة الإبداع</td>
+                  <td>4,600.00</td>
+                  <td>690.00</td>
+                  <td>5,290.00</td>
+                  <td>تصميم وطباعة</td>
+                </tr>
+                <tr>
+                  <td>05/02/2026</td>
+                  <td>INV-2026-007</td>
+                  <td>شركة التقنية المتقدمة</td>
+                  <td>9,200.00</td>
+                  <td>1,380.00</td>
+                  <td>10,580.00</td>
+                  <td>تطوير برمجيات</td>
+                </tr>
+                <tr>
+                  <td>10/02/2026</td>
+                  <td>INV-2026-008</td>
+                  <td>مؤسسة الرواد</td>
+                  <td>1,800.00</td>
+                  <td>270.00</td>
+                  <td>2,070.00</td>
+                  <td>خدمات إدارية</td>
+                </tr>
+                <tr>
+                  <td>14/02/2026</td>
+                  <td>INV-2026-009</td>
+                  <td>شركة الأفق</td>
+                  <td>6,300.00</td>
+                  <td>945.00</td>
+                  <td>7,245.00</td>
+                  <td>توريد أجهزة</td>
+                </tr>
+                <tr>
+                  <td>18/02/2026</td>
+                  <td>INV-2026-010</td>
+                  <td>مجموعة الأعمال</td>
+                  <td>3,750.00</td>
+                  <td>562.50</td>
+                  <td>4,312.50</td>
+                  <td>خدمات لوجستية</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
       </div>
-    </div>
-    <!-- /BLOCK -->
 
-    <!-- BLOCK: warning tip -->
-    <div class="tip" style="margin-bottom:16px;">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-      <span>3 حقول مطلوبة لم يتم ربطها — يجب ربطها قبل المتابعة للمعاينة</span>
-    </div>
-    <!-- /BLOCK -->
-
-    <!-- BLOCK: mapping table card -->
-    <div class="card" style="margin-bottom:16px;">
-      <div class="table-top">
-        <div class="left">
-          <h2>جدول ربط الأعمدة <span class="count">7</span></h2>
+      <!-- Right column: summary card -->
+      <div>
+        <div class="card" style="padding:20px;">
+          <div class="card-head"><h2>ملخص عملية الاستيراد</h2></div>
+          <div class="set-body" style="margin-top:12px;">
+            <div class="set-row"><div class="info"><b>العميل</b></div><div class="ctrl">شركة النور للتجارة</div></div>
+            <div class="set-row"><div class="info"><b>نوع الملف</b></div><div class="ctrl">مبيعات</div></div>
+            <div class="set-row"><div class="info"><b>اسم الملف</b></div><div class="ctrl">مبيعات_Q1_2026.xlsx</div></div>
+            <div class="set-row"><div class="info"><b>عدد الصفوف</b></div><div class="ctrl">248 صف</div></div>
+          </div>
         </div>
       </div>
-      <div class="table-wrap">
-        <table class="docs">
-          <thead>
-            <tr>
-              <th>العمود في الملف</th>
-              <th>مثال من البيانات</th>
-              <th>الحقل المقابل في النظام</th>
-              <th>مطلوب؟</th>
-              <th>الحالة</th>
-            </tr>
-          </thead>
-          <tbody>
-            <!-- Row 1: Invoice Date — mapped -->
-            <tr>
-              <td>Invoice Date</td>
-              <td><span class="chip slate">2026-01-15</span></td>
-              <td>
-                <div class="select-wrap" style="width:180px;">
-                  <select class="select">
-                    <option>-- اختر حقلاً --</option>
-                    <option selected>تاريخ الفاتورة</option>
-                    <option>رقم الفاتورة</option>
-                    <option>اسم العميل</option>
-                    <option>المبلغ</option>
-                    <option>الضريبة</option>
-                    <option>الإجمالي</option>
-                    <option>وصف البند</option>
-                    <option>ملاحظات</option>
-                  </select>
-                  <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-                </div>
-              </td>
-              <td><span class="chip rose">مطلوب</span></td>
-              <td><span class="chip green">مربوط</span></td>
-            </tr>
-            <!-- Row 2: Invoice Number — mapped -->
-            <tr>
-              <td>Invoice Number</td>
-              <td><span class="chip slate">INV-2026-001</span></td>
-              <td>
-                <div class="select-wrap" style="width:180px;">
-                  <select class="select">
-                    <option>-- اختر حقلاً --</option>
-                    <option>تاريخ الفاتورة</option>
-                    <option selected>رقم الفاتورة</option>
-                    <option>اسم العميل</option>
-                    <option>المبلغ</option>
-                    <option>الضريبة</option>
-                    <option>الإجمالي</option>
-                    <option>وصف البند</option>
-                    <option>ملاحظات</option>
-                  </select>
-                  <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-                </div>
-              </td>
-              <td><span class="chip rose">مطلوب</span></td>
-              <td><span class="chip green">مربوط</span></td>
-            </tr>
-            <!-- Row 3: Customer Name — unmapped required -->
-            <tr>
-              <td>Customer Name</td>
-              <td><span class="chip slate">شركة الأمل</span></td>
-              <td>
-                <div class="select-wrap" style="width:180px;">
-                  <select class="select">
-                    <option selected>-- اختر حقلاً --</option>
-                    <option>تاريخ الفاتورة</option>
-                    <option>رقم الفاتورة</option>
-                    <option>اسم العميل</option>
-                    <option>المبلغ</option>
-                    <option>الضريبة</option>
-                    <option>الإجمالي</option>
-                    <option>وصف البند</option>
-                    <option>ملاحظات</option>
-                  </select>
-                  <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-                </div>
-              </td>
-              <td><span class="chip rose">مطلوب</span></td>
-              <td><span class="chip rose">مطلوب — غير مربوط</span></td>
-            </tr>
-            <!-- Row 4: Amount — unmapped required -->
-            <tr>
-              <td>Amount</td>
-              <td><span class="chip slate">5,200.00</span></td>
-              <td>
-                <div class="select-wrap" style="width:180px;">
-                  <select class="select">
-                    <option selected>-- اختر حقلاً --</option>
-                    <option>تاريخ الفاتورة</option>
-                    <option>رقم الفاتورة</option>
-                    <option>اسم العميل</option>
-                    <option>المبلغ</option>
-                    <option>الضريبة</option>
-                    <option>الإجمالي</option>
-                    <option>وصف البند</option>
-                    <option>ملاحظات</option>
-                  </select>
-                  <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-                </div>
-              </td>
-              <td><span class="chip rose">مطلوب</span></td>
-              <td><span class="chip rose">مطلوب — غير مربوط</span></td>
-            </tr>
-            <!-- Row 5: VAT — mapped -->
-            <tr>
-              <td>VAT</td>
-              <td><span class="chip slate">780.00</span></td>
-              <td>
-                <div class="select-wrap" style="width:180px;">
-                  <select class="select">
-                    <option>-- اختر حقلاً --</option>
-                    <option>تاريخ الفاتورة</option>
-                    <option>رقم الفاتورة</option>
-                    <option>اسم العميل</option>
-                    <option>المبلغ</option>
-                    <option selected>الضريبة</option>
-                    <option>الإجمالي</option>
-                    <option>وصف البند</option>
-                    <option>ملاحظات</option>
-                  </select>
-                  <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-                </div>
-              </td>
-              <td><span class="chip rose">مطلوب</span></td>
-              <td><span class="chip green">مربوط</span></td>
-            </tr>
-            <!-- Row 6: Total — optional unmapped -->
-            <tr>
-              <td>Total</td>
-              <td><span class="chip slate">5,980.00</span></td>
-              <td>
-                <div class="select-wrap" style="width:180px;">
-                  <select class="select">
-                    <option selected>-- اختر حقلاً --</option>
-                    <option>تاريخ الفاتورة</option>
-                    <option>رقم الفاتورة</option>
-                    <option>اسم العميل</option>
-                    <option>المبلغ</option>
-                    <option>الضريبة</option>
-                    <option>الإجمالي</option>
-                    <option>وصف البند</option>
-                    <option>ملاحظات</option>
-                  </select>
-                  <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-                </div>
-              </td>
-              <td><span class="chip slate">اختياري</span></td>
-              <td><span class="chip amber">غير مربوط</span></td>
-            </tr>
-            <!-- Row 7: Notes — optional ignored -->
-            <tr>
-              <td>Notes</td>
-              <td><span class="chip slate">فاتورة خدمات Q1</span></td>
-              <td>
-                <div class="select-wrap" style="width:180px;">
-                  <select class="select">
-                    <option>-- اختر حقلاً --</option>
-                    <option>تاريخ الفاتورة</option>
-                    <option>رقم الفاتورة</option>
-                    <option>اسم العميل</option>
-                    <option>المبلغ</option>
-                    <option>الضريبة</option>
-                    <option>الإجمالي</option>
-                    <option>وصف البند</option>
-                    <option selected>ملاحظات</option>
-                  </select>
-                  <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-                </div>
-              </td>
-              <td><span class="chip slate">اختياري</span></td>
-              <td><span class="chip slate">متجاهل</span></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <!-- /BLOCK -->
 
-    <!-- BLOCK: data preview card -->
-    <div class="card">
-      <div class="table-top">
-        <div class="left">
-          <h2>معاينة أول 10 صفوف من الملف</h2>
-        </div>
-      </div>
-      <div class="table-wrap">
-        <table class="docs">
-          <thead>
-            <tr>
-              <th>Invoice Date</th>
-              <th>Invoice Number</th>
-              <th>Customer Name</th>
-              <th>Amount</th>
-              <th>VAT</th>
-              <th>Total</th>
-              <th>Notes</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>15/01/2026</td>
-              <td>INV-2026-001</td>
-              <td>شركة الأمل للتجارة</td>
-              <td>5,200.00</td>
-              <td>780.00</td>
-              <td>5,980.00</td>
-              <td>خدمات استشارية Q1</td>
-            </tr>
-            <tr>
-              <td>18/01/2026</td>
-              <td>INV-2026-002</td>
-              <td>مؤسسة النجاح</td>
-              <td>3,400.00</td>
-              <td>510.00</td>
-              <td>3,910.00</td>
-              <td>توريد مواد</td>
-            </tr>
-            <tr>
-              <td>22/01/2026</td>
-              <td>INV-2026-003</td>
-              <td>شركة الريادة</td>
-              <td>7,800.00</td>
-              <td>1,170.00</td>
-              <td>8,970.00</td>
-              <td>خدمات تقنية</td>
-            </tr>
-            <tr>
-              <td>25/01/2026</td>
-              <td>INV-2026-004</td>
-              <td>مجموعة الخليج</td>
-              <td>2,100.00</td>
-              <td>315.00</td>
-              <td>2,415.00</td>
-              <td>استشارات مالية</td>
-            </tr>
-            <tr>
-              <td>29/01/2026</td>
-              <td>INV-2026-005</td>
-              <td>شركة البناء الحديث</td>
-              <td>12,500.00</td>
-              <td>1,875.00</td>
-              <td>14,375.00</td>
-              <td>مشروع البناء</td>
-            </tr>
-            <tr>
-              <td>02/02/2026</td>
-              <td>INV-2026-006</td>
-              <td>مؤسسة الإبداع</td>
-              <td>4,600.00</td>
-              <td>690.00</td>
-              <td>5,290.00</td>
-              <td>تصميم وطباعة</td>
-            </tr>
-            <tr>
-              <td>05/02/2026</td>
-              <td>INV-2026-007</td>
-              <td>شركة التقنية المتقدمة</td>
-              <td>9,200.00</td>
-              <td>1,380.00</td>
-              <td>10,580.00</td>
-              <td>تطوير برمجيات</td>
-            </tr>
-            <tr>
-              <td>10/02/2026</td>
-              <td>INV-2026-008</td>
-              <td>مؤسسة الرواد</td>
-              <td>1,800.00</td>
-              <td>270.00</td>
-              <td>2,070.00</td>
-              <td>خدمات إدارية</td>
-            </tr>
-            <tr>
-              <td>14/02/2026</td>
-              <td>INV-2026-009</td>
-              <td>شركة الأفق</td>
-              <td>6,300.00</td>
-              <td>945.00</td>
-              <td>7,245.00</td>
-              <td>توريد أجهزة</td>
-            </tr>
-            <tr>
-              <td>18/02/2026</td>
-              <td>INV-2026-010</td>
-              <td>مجموعة الأعمال</td>
-              <td>3,750.00</td>
-              <td>562.50</td>
-              <td>4,312.50</td>
-              <td>خدمات لوجستية</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
     </div>
-    <!-- /BLOCK -->
+    <!-- /BLOCK: two-column layout -->
 
   </main>
 

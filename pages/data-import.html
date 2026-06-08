@@ -236,141 +236,169 @@
     </header>
     <!-- /BLOCK -->
 
-    <!-- CARD 1: Import form -->
-    <div class="card" style="padding:20px;margin-top:20px;margin-bottom:16px;">
+    <!-- BLOCK: two-column layout -->
+    <div class="layout" style="margin-top:20px;align-items:flex-start;">
 
-      <!-- Section A: Import type -->
-      <div style="font-size:13.5px;font-weight:600;color:#374151;margin-bottom:12px;">نوع البيانات المستوردة</div>
-      <div class="type-grid">
-        <button type="button" class="type-card active">
-          <span class="tc-ico">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v7H3z"/><path d="M14 3h7v4h-7z"/><path d="M14 10h7v4h-7z"/><path d="M3 14h7v7H3z"/><path d="M14 17h7v4h-7z"/></svg>
-          </span>
-          <span class="tc-lbl">مبيعات</span>
-        </button>
-        <button type="button" class="type-card">
-          <span class="tc-ico">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-          </span>
-          <span class="tc-lbl">مصروفات</span>
-        </button>
-        <button type="button" class="type-card">
-          <span class="tc-ico">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </span>
-          <span class="tc-lbl">عملاء تجاريون</span>
-        </button>
-        <button type="button" class="type-card">
-          <span class="tc-ico">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v3"/><rect x="9" y="11" width="14" height="10" rx="1"/><path d="M13 16h.01"/></svg>
-          </span>
-          <span class="tc-lbl">موردون</span>
-        </button>
-        <button type="button" class="type-card">
-          <span class="tc-ico">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M9 7h7"/><path d="M9 11h7"/><path d="M9 15h4"/></svg>
-          </span>
-          <span class="tc-lbl">قيود محاسبية</span>
-        </button>
-        <button type="button" class="type-card">
-          <span class="tc-ico">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M3 9h18"/><path d="M3 15h18"/></svg>
-          </span>
-          <span class="tc-lbl">أرصدة افتتاحية</span>
-        </button>
-        <button type="button" class="type-card">
-          <span class="tc-ico">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v7H3z"/><path d="M14 3h7v7h-7z"/><path d="M14 14h7v7h-7z"/><path d="M3 14h7v7H3z"/></svg>
-          </span>
-          <span class="tc-lbl">شجرة حسابات</span>
-        </button>
-        <button type="button" class="type-card">
-          <span class="tc-ico">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
-          </span>
-          <span class="tc-lbl">كشف حساب بنكي</span>
-        </button>
-      </div>
+      <!-- Main form card -->
+      <div class="card">
 
-      <!-- Section B: File source -->
-      <div style="font-size:13.5px;font-weight:600;color:#374151;margin:16px 0 12px;">مصدر الملف</div>
-      <div class="seg">
-        <button type="button" class="active">Excel</button>
-        <button type="button">CSV</button>
-        <button type="button">PDF</button>
-        <button type="button">نظام محاسبي سابق</button>
-      </div>
-
-      <!-- Section C: File upload -->
-      <div style="margin-top:20px;">
-        <div class="dropzone" data-zone-id="import-file">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-          <p class="dz-title">اسحب الملف هنا أو اضغط للتحديد</p>
-          <p class="dz-sub">Excel · CSV · PDF — حجم أقصى 50 MB</p>
-          <input type="file" accept=".xlsx,.csv,.pdf" style="display:none" />
-        </div>
-        <div class="file-card" data-file-card-for="import-file" hidden>
-          <span class="fc-ico">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg>
-          </span>
-          <span class="fc-name">اسم_الملف.xlsx</span>
-          <span class="fc-size">248 كيلوبايت</span>
-          <button class="fc-remove" type="button" aria-label="إزالة">&times;</button>
-        </div>
-      </div>
-
-      <!-- Section D: Period + Notes -->
-      <div class="fields-grid" style="margin-top:20px;">
-        <div class="field">
-          <label class="label">الفترة المحاسبية</label>
-          <div class="select-wrap">
-            <select class="select">
-              <option>الربع الأول 2026</option>
-              <option>الربع الثاني 2026</option>
-              <option>الربع الثالث 2026</option>
-              <option>الربع الرابع 2026</option>
-            </select>
-            <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+        <!-- Section 1: Import type -->
+        <div class="section">
+          <div class="section-head">
+            <span class="stamp">1</span>
+            <h2>نوع البيانات المستوردة</h2>
+            <span class="hint">اختر نوعاً واحداً</span>
+          </div>
+          <div class="type-grid">
+            <button type="button" class="type-card active">
+              <span class="tc-ico">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v7H3z"/><path d="M14 3h7v4h-7z"/><path d="M14 10h7v4h-7z"/><path d="M3 14h7v7H3z"/><path d="M14 17h7v4h-7z"/></svg>
+              </span>
+              <span class="tc-lbl">مبيعات</span>
+            </button>
+            <button type="button" class="type-card">
+              <span class="tc-ico">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              </span>
+              <span class="tc-lbl">مصروفات</span>
+            </button>
+            <button type="button" class="type-card">
+              <span class="tc-ico">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </span>
+              <span class="tc-lbl">عملاء تجاريون</span>
+            </button>
+            <button type="button" class="type-card">
+              <span class="tc-ico">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v3"/><rect x="9" y="11" width="14" height="10" rx="1"/><path d="M13 16h.01"/></svg>
+              </span>
+              <span class="tc-lbl">موردون</span>
+            </button>
+            <button type="button" class="type-card">
+              <span class="tc-ico">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M9 7h7"/><path d="M9 11h7"/><path d="M9 15h4"/></svg>
+              </span>
+              <span class="tc-lbl">قيود محاسبية</span>
+            </button>
+            <button type="button" class="type-card">
+              <span class="tc-ico">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M3 9h18"/><path d="M3 15h18"/></svg>
+              </span>
+              <span class="tc-lbl">أرصدة افتتاحية</span>
+            </button>
+            <button type="button" class="type-card">
+              <span class="tc-ico">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v7H3z"/><path d="M14 3h7v7h-7z"/><path d="M14 14h7v7h-7z"/><path d="M3 14h7v7H3z"/></svg>
+              </span>
+              <span class="tc-lbl">شجرة حسابات</span>
+            </button>
+            <button type="button" class="type-card">
+              <span class="tc-ico">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+              </span>
+              <span class="tc-lbl">كشف حساب بنكي</span>
+            </button>
           </div>
         </div>
-        <div class="field">
-          <label class="label">ملاحظات</label>
-          <textarea class="input" rows="3" placeholder="أي ملاحظات خاصة بهذا الاستيراد..."></textarea>
+
+        <!-- Section 2: File source -->
+        <div class="section">
+          <div class="section-head">
+            <span class="stamp">2</span>
+            <h2>مصدر الملف</h2>
+          </div>
+          <div class="seg">
+            <button type="button" class="active">Excel</button>
+            <button type="button">CSV</button>
+            <button type="button">PDF</button>
+            <button type="button">نظام محاسبي سابق</button>
+          </div>
         </div>
+
+        <!-- Section 3: File upload -->
+        <div class="section">
+          <div class="section-head">
+            <span class="stamp">3</span>
+            <h2>ارفع الملف</h2>
+            <span class="hint">حجم أقصى 50 MB</span>
+          </div>
+          <div class="dropzone" data-zone-id="import-file">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            <p class="dz-title">اسحب الملف هنا أو اضغط للتحديد</p>
+            <p class="dz-sub">Excel · CSV · PDF — حجم أقصى 50 MB</p>
+            <input type="file" accept=".xlsx,.csv,.pdf" style="display:none" />
+          </div>
+          <div class="file-card" data-file-card-for="import-file" hidden>
+            <span class="fc-ico">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg>
+            </span>
+            <span class="fc-name">اسم_الملف.xlsx</span>
+            <span class="fc-size">248 كيلوبايت</span>
+            <button class="fc-remove" type="button" aria-label="إزالة">&times;</button>
+          </div>
+        </div>
+
+        <!-- Section 4: Period + Notes -->
+        <div class="section">
+          <div class="section-head">
+            <span class="stamp">4</span>
+            <h2>الفترة والملاحظات</h2>
+          </div>
+          <div class="fields-grid">
+            <div class="field">
+              <label class="label">الفترة المحاسبية</label>
+              <div class="select-wrap">
+                <select class="select">
+                  <option>الربع الأول 2026</option>
+                  <option>الربع الثاني 2026</option>
+                  <option>الربع الثالث 2026</option>
+                  <option>الربع الرابع 2026</option>
+                </select>
+                <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">ملاحظات</label>
+              <textarea class="input" rows="3" placeholder="أي ملاحظات خاصة بهذا الاستيراد..."></textarea>
+            </div>
+          </div>
+        </div>
+
       </div>
+      <!-- /Main form card -->
+
+      <!-- Steps sidebar card -->
+      <div class="card" style="padding:20px;">
+        <div class="card-head">
+          <h2>ما الذي سيحدث بعد ذلك؟</h2>
+        </div>
+        <ol class="steps-list" style="list-style:none;padding:0;margin:16px 0 0;display:flex;flex-direction:column;gap:0;">
+          <li class="steps-item" style="display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid var(--clr-border,#e5e7eb);">
+            <span class="steps-num" style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:var(--clr-primary,#2563eb);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;margin-top:1px;">1</span>
+            <div><b style="font-size:13.5px;">رفع الملف</b><div style="font-size:12.5px;color:var(--clr-text-2,#6b7280);margin-top:2px;">تحليل الملف وكشف الأعمدة تلقائياً</div></div>
+          </li>
+          <li class="steps-item" style="display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid var(--clr-border,#e5e7eb);">
+            <span class="steps-num" style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:var(--clr-primary,#2563eb);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;margin-top:1px;">2</span>
+            <div><b style="font-size:13.5px;">معاينة البيانات</b><div style="font-size:12.5px;color:var(--clr-text-2,#6b7280);margin-top:2px;">فحص أولي للصفوف والقيم</div></div>
+          </li>
+          <li class="steps-item" style="display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid var(--clr-border,#e5e7eb);">
+            <span class="steps-num" style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:var(--clr-primary,#2563eb);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;margin-top:1px;">3</span>
+            <div><b style="font-size:13.5px;">ربط الأعمدة</b><div style="font-size:12.5px;color:var(--clr-text-2,#6b7280);margin-top:2px;">ربط أعمدة الملف بحقول النظام</div></div>
+          </li>
+          <li class="steps-item" style="display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid var(--clr-border,#e5e7eb);">
+            <span class="steps-num" style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:var(--clr-primary,#2563eb);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;margin-top:1px;">4</span>
+            <div><b style="font-size:13.5px;">معالجة الأخطاء</b><div style="font-size:12.5px;color:var(--clr-text-2,#6b7280);margin-top:2px;">مراجعة وتصحيح الصفوف بها مشاكل</div></div>
+          </li>
+          <li class="steps-item" style="display:flex;align-items:flex-start;gap:12px;padding:10px 0;">
+            <span class="steps-num" style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:var(--clr-primary,#2563eb);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;margin-top:1px;">5</span>
+            <div><b style="font-size:13.5px;">تنفيذ الاستيراد</b><div style="font-size:12.5px;color:var(--clr-text-2,#6b7280);margin-top:2px;">استيراد الصفوف المقبولة إلى النظام</div></div>
+          </li>
+        </ol>
+      </div>
+      <!-- /Steps sidebar card -->
 
     </div>
-    <!-- /CARD 1 -->
-
-    <!-- CARD 2: Steps -->
-    <div class="card" style="padding:20px;">
-      <div class="card-head">
-        <h2>ما الذي سيحدث بعد ذلك؟</h2>
-      </div>
-      <ol style="list-style:none;padding:0;margin:16px 0 0;display:flex;flex-direction:column;gap:14px;">
-        <li style="display:flex;align-items:flex-start;gap:12px;">
-          <span style="flex-shrink:0;width:28px;height:28px;border-radius:50%;background:var(--clr-primary,#2563eb);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;">1</span>
-          <div><b>رفع الملف</b><br><span style="font-size:13px;color:var(--clr-text-2,#6b7280);">تحليل الملف وكشف الأعمدة تلقائياً</span></div>
-        </li>
-        <li style="display:flex;align-items:flex-start;gap:12px;">
-          <span style="flex-shrink:0;width:28px;height:28px;border-radius:50%;background:var(--clr-primary,#2563eb);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;">2</span>
-          <div><b>معاينة البيانات</b><br><span style="font-size:13px;color:var(--clr-text-2,#6b7280);">فحص أولي للصفوف والقيم</span></div>
-        </li>
-        <li style="display:flex;align-items:flex-start;gap:12px;">
-          <span style="flex-shrink:0;width:28px;height:28px;border-radius:50%;background:var(--clr-primary,#2563eb);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;">3</span>
-          <div><b>ربط الأعمدة</b><br><span style="font-size:13px;color:var(--clr-text-2,#6b7280);">ربط أعمدة الملف بحقول النظام</span></div>
-        </li>
-        <li style="display:flex;align-items:flex-start;gap:12px;">
-          <span style="flex-shrink:0;width:28px;height:28px;border-radius:50%;background:var(--clr-primary,#2563eb);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;">4</span>
-          <div><b>معالجة الأخطاء</b><br><span style="font-size:13px;color:var(--clr-text-2,#6b7280);">مراجعة وتصحيح الصفوف بها مشاكل</span></div>
-        </li>
-        <li style="display:flex;align-items:flex-start;gap:12px;">
-          <span style="flex-shrink:0;width:28px;height:28px;border-radius:50%;background:var(--clr-primary,#2563eb);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;">5</span>
-          <div><b>تنفيذ الاستيراد</b><br><span style="font-size:13px;color:var(--clr-text-2,#6b7280);">استيراد الصفوف المقبولة إلى النظام</span></div>
-        </li>
-      </ol>
-    </div>
-    <!-- /CARD 2 -->
+    <!-- /BLOCK: two-column layout -->
 
   </main>
 
