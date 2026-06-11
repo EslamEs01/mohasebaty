@@ -470,6 +470,24 @@
               <td><span class="chip green">نشط</span></td>
               <td><button class="btn btn-outline btn-sm" type="button" data-open="#addVendorModal">عرض / تعديل</button></td>
             </tr>
+
+            <!-- Empty State (يظهر لعميل جديد بلا موردين أو عند فلتر/بحث بلا نتائج) -->
+            <tr hidden data-empty-state>
+              <td colspan="9">
+                <div class="empty">
+                  <div class="em-art">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v3"/><rect x="9" y="11" width="14" height="10" rx="1"/><path d="M13 16h.01"/></svg>
+                  </div>
+                  <h3>لا يوجد موردون مطابقون</h3>
+                  <p>لم يُسجَّل أي مورد لهذا العميل بعد، أو لا توجد نتائج تطابق الفلاتر الحالية. حاول تعديل معايير البحث أو أضف مورداً جديداً لبدء تسجيل فواتير المصروفات.</p>
+                  <button class="btn btn-primary" type="button" data-open="#addVendorModal">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                    إضافة مورد جديد
+                  </button>
+                </div>
+              </td>
+            </tr>
+
           </tbody>
         </table>
       </div>

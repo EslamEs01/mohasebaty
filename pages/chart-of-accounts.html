@@ -199,11 +199,11 @@
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M3 9h18"/><path d="M3 15h18"/></svg>
         الأرصدة الافتتاحية
       </a>
-      <button class="btn btn-outline" type="button">
+      <button class="btn btn-outline" type="button" disabled title="قريباً">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m8 11 4 4 4-4"/><path d="M3 17v2a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-2"/></svg>
         استيراد شجرة
       </button>
-      <button class="btn btn-outline" type="button">
+      <button class="btn btn-outline" type="button" data-open="#exportConfirmModal">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>
         تصدير
       </button>
@@ -331,7 +331,7 @@
                 <td>أصول</td>
                 <td><span class="lvl-pill main">رئيسي</span></td>
                 <td><span class="chip green">نشط</span></td>
-                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف" aria-label="إيقاف الحساب"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
+                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف — قريباً" aria-label="إيقاف الحساب" disabled><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
               </tr>
               <tr class="acct">
                 <td><span class="acct-code">1010</span></td>
@@ -339,7 +339,7 @@
                 <td>أصول</td>
                 <td><span class="lvl-pill">فرعي</span></td>
                 <td><span class="chip green">نشط</span></td>
-                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف" aria-label="إيقاف الحساب"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
+                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف — قريباً" aria-label="إيقاف الحساب" disabled><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
               </tr>
               <tr class="acct">
                 <td><span class="acct-code">1020</span></td>
@@ -347,7 +347,7 @@
                 <td>أصول</td>
                 <td><span class="lvl-pill">فرعي</span></td>
                 <td><span class="chip green">نشط</span></td>
-                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف" aria-label="إيقاف الحساب"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
+                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف — قريباً" aria-label="إيقاف الحساب" disabled><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
               </tr>
               <tr class="acct">
                 <td><span class="acct-code">1030</span></td>
@@ -355,7 +355,7 @@
                 <td>أصول</td>
                 <td><span class="lvl-pill">فرعي</span></td>
                 <td><span class="chip green">نشط</span></td>
-                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف" aria-label="إيقاف الحساب"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
+                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف — قريباً" aria-label="إيقاف الحساب" disabled><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
               </tr>
 
               <!-- الالتزامات -->
@@ -375,7 +375,7 @@
                 <td>التزام</td>
                 <td><span class="lvl-pill main">رئيسي</span></td>
                 <td><span class="chip green">نشط</span></td>
-                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف" aria-label="إيقاف الحساب"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
+                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف — قريباً" aria-label="إيقاف الحساب" disabled><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
               </tr>
               <tr class="acct">
                 <td><span class="acct-code">2010</span></td>
@@ -383,7 +383,7 @@
                 <td>التزام</td>
                 <td><span class="lvl-pill">فرعي</span></td>
                 <td><span class="chip green">نشط</span></td>
-                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف" aria-label="إيقاف الحساب"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
+                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف — قريباً" aria-label="إيقاف الحساب" disabled><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
               </tr>
               <tr class="acct">
                 <td><span class="acct-code">2020</span></td>
@@ -391,7 +391,7 @@
                 <td>التزام</td>
                 <td><span class="lvl-pill">فرعي</span></td>
                 <td><span class="chip green">نشط</span></td>
-                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف" aria-label="إيقاف الحساب"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
+                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف — قريباً" aria-label="إيقاف الحساب" disabled><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
               </tr>
 
               <!-- حقوق الملكية -->
@@ -411,7 +411,7 @@
                 <td>حقوق ملكية</td>
                 <td><span class="lvl-pill main">رئيسي</span></td>
                 <td><span class="chip green">نشط</span></td>
-                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف" aria-label="إيقاف الحساب"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
+                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف — قريباً" aria-label="إيقاف الحساب" disabled><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
               </tr>
               <tr class="acct">
                 <td><span class="acct-code">3010</span></td>
@@ -419,7 +419,7 @@
                 <td>حقوق ملكية</td>
                 <td><span class="lvl-pill">فرعي</span></td>
                 <td><span class="chip green">نشط</span></td>
-                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف" aria-label="إيقاف الحساب"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
+                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف — قريباً" aria-label="إيقاف الحساب" disabled><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
               </tr>
               <tr class="acct">
                 <td><span class="acct-code">3020</span></td>
@@ -427,7 +427,7 @@
                 <td>حقوق ملكية</td>
                 <td><span class="lvl-pill">فرعي</span></td>
                 <td><span class="chip slate">موقوف</span></td>
-                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف" aria-label="إيقاف الحساب"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
+                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف — قريباً" aria-label="إيقاف الحساب" disabled><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
               </tr>
 
               <!-- الإيرادات -->
@@ -447,7 +447,7 @@
                 <td>إيراد</td>
                 <td><span class="lvl-pill main">رئيسي</span></td>
                 <td><span class="chip green">نشط</span></td>
-                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف" aria-label="إيقاف الحساب"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
+                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف — قريباً" aria-label="إيقاف الحساب" disabled><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
               </tr>
               <tr class="acct">
                 <td><span class="acct-code">4010</span></td>
@@ -455,7 +455,7 @@
                 <td>إيراد</td>
                 <td><span class="lvl-pill">فرعي</span></td>
                 <td><span class="chip green">نشط</span></td>
-                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف" aria-label="إيقاف الحساب"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
+                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف — قريباً" aria-label="إيقاف الحساب" disabled><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
               </tr>
               <tr class="acct">
                 <td><span class="acct-code">4020</span></td>
@@ -463,7 +463,7 @@
                 <td>إيراد</td>
                 <td><span class="lvl-pill">فرعي</span></td>
                 <td><span class="chip green">نشط</span></td>
-                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف" aria-label="إيقاف الحساب"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
+                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف — قريباً" aria-label="إيقاف الحساب" disabled><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
               </tr>
 
               <!-- المصروفات -->
@@ -483,7 +483,7 @@
                 <td>مصروف</td>
                 <td><span class="lvl-pill main">رئيسي</span></td>
                 <td><span class="chip green">نشط</span></td>
-                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف" aria-label="إيقاف الحساب"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
+                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف — قريباً" aria-label="إيقاف الحساب" disabled><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
               </tr>
               <tr class="acct">
                 <td><span class="acct-code">5010</span></td>
@@ -491,7 +491,7 @@
                 <td>مصروف</td>
                 <td><span class="lvl-pill">فرعي</span></td>
                 <td><span class="chip green">نشط</span></td>
-                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف" aria-label="إيقاف الحساب"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
+                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف — قريباً" aria-label="إيقاف الحساب" disabled><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
               </tr>
               <tr class="acct">
                 <td><span class="acct-code">5020</span></td>
@@ -499,7 +499,7 @@
                 <td>مصروف</td>
                 <td><span class="lvl-pill">فرعي</span></td>
                 <td><span class="chip green">نشط</span></td>
-                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف" aria-label="إيقاف الحساب"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
+                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف — قريباً" aria-label="إيقاف الحساب" disabled><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
               </tr>
               <tr class="acct">
                 <td><span class="acct-code">5030</span></td>
@@ -507,7 +507,7 @@
                 <td>مصروف</td>
                 <td><span class="lvl-pill">فرعي</span></td>
                 <td><span class="chip green">نشط</span></td>
-                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف" aria-label="إيقاف الحساب"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
+                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف — قريباً" aria-label="إيقاف الحساب" disabled><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
               </tr>
               <tr class="acct">
                 <td><span class="acct-code">5040</span></td>
@@ -515,7 +515,7 @@
                 <td>مصروف</td>
                 <td><span class="lvl-pill">فرعي</span></td>
                 <td><span class="chip green">نشط</span></td>
-                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف" aria-label="إيقاف الحساب"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
+                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف — قريباً" aria-label="إيقاف الحساب" disabled><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
               </tr>
               <tr class="acct">
                 <td><span class="acct-code">5050</span></td>
@@ -523,7 +523,24 @@
                 <td>مصروف</td>
                 <td><span class="lvl-pill">فرعي</span></td>
                 <td><span class="chip green">نشط</span></td>
-                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف" aria-label="إيقاف الحساب"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
+                <td><div class="mini-acts" style="justify-content:flex-end;"><button class="mini-act edit" title="تعديل" aria-label="تعديل" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></button><button class="mini-act add" title="إضافة فرعي" aria-label="إضافة حساب فرعي" data-open="#addAccountModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button><button class="mini-act stop" title="إيقاف — قريباً" aria-label="إيقاف الحساب" disabled><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h6v6H9z"/></svg></button></div></td>
+              </tr>
+
+              <!-- Empty State (يظهر عند اختيار عميل لا توجد لديه حسابات محاسبية بعد) -->
+              <tr hidden data-empty-state>
+                <td colspan="6">
+                  <div class="empty">
+                    <div class="em-art">
+                      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v7H3z"/><path d="M14 3h7v7h-7z"/><path d="M14 14h7v7h-7z"/><path d="M3 14h7v7H3z"/></svg>
+                    </div>
+                    <h3>لا توجد حسابات محاسبية لهذا العميل بعد</h3>
+                    <p>ابدأ بإنشاء شجرة الحسابات لهذا العميل بإضافة أول حساب رئيسي، أو استخدم شجرة افتراضية حسب نشاطه.</p>
+                    <button class="btn btn-primary" type="button" data-open="#addAccountModal">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+                      إضافة أول حساب
+                    </button>
+                  </div>
+                </td>
               </tr>
 
             </tbody>
@@ -695,6 +712,54 @@
         حفظ الحساب
       </button>
       <button class="btn btn-outline" type="button" data-close>إلغاء</button>
+    </div>
+  </div>
+</div>
+
+<!-- Export Confirm Modal -->
+<div class="scrim" data-overlay id="exportConfirmModal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="exportConfirmTitle">
+    <div class="modal-head">
+      <h3 id="exportConfirmTitle">تصدير البيانات</h3>
+      <button class="icon-btn" data-close aria-label="إغلاق">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p style="margin:0 0 16px; font-size:13.5px; color:var(--ink-3, #5a5650); line-height:1.7;">سيتم تجهيز ملف يحتوي على البيانات المعروضة ضمن النطاق المحدّد أدناه. راجع التفاصيل واختر صيغة الملف المناسبة قبل التصدير.</p>
+      <div class="set-body">
+        <div class="set-row">
+          <div class="info"><b>النطاق</b><span>الفترة المشمولة بالتصدير</span></div>
+          <div class="ctrl">مايو 2026</div>
+        </div>
+        <div class="set-row">
+          <div class="info"><b>عدد السجلات</b><span>إجمالي السجلات ضمن النطاق</span></div>
+          <div class="ctrl"><span class="chip primary">١٢٨ سجلاً</span></div>
+        </div>
+        <div class="set-row">
+          <div class="info"><b>صيغة الملف</b><span>اختر صيغة التصدير</span></div>
+          <div class="ctrl">
+            <div class="seg">
+              <button type="button" class="active">PDF</button>
+              <button type="button">Excel</button>
+              <button type="button">CSV</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="toast" style="margin-top:16px;">
+        <span class="check">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>
+        </span>
+        <span>صيغة PDF موصى بها للطباعة والأرشفة الرسمية. اختر Excel أو CSV لمزيد من المعالجة.</span>
+      </div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-primary" type="button">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+        تصدير
+      </button>
+      <button class="btn btn-outline" type="button" data-close>إغلاق</button>
     </div>
   </div>
 </div>

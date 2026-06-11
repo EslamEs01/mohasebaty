@@ -609,6 +609,32 @@ The project may include these pages:
 14. Users & Permissions
 15. Settings
 
+### Pages delivered in specs 002–011 (now part of the frozen baseline — 38 screens total)
+16. Client Onboarding — `client-onboarding.html` (spec 002)
+17. Client Tax Settings — `client-tax-settings.html` (spec 002)
+18. Client Reports — `client-reports.html` (spec 011)
+19. Data Import — `data-import.html` (specs 003/004)
+20. Import Mapping — `import-mapping.html`
+21. Import Preview — `import-preview.html`
+22. Import History — `import-history.html`
+23. Import Errors — `import-errors.html`
+24. Import Templates — `import-templates.html`
+25. Opening Balances — `opening-balances.html` (spec 005)
+26. Fiscal Periods — `fiscal-periods.html` (spec 005)
+27. Vendors — `vendors.html` (spec 006)
+28. Commercial Customers — `commercial-customers.html` (spec 006)
+29. Bank Accounts — `bank-accounts.html` (spec 006)
+30. Bank Statement Import — `bank-statement-import.html` (spec 007)
+31. Bank Reconciliation — `bank-reconciliation.html` (spec 007)
+32. VAT Report — `vat-report.html` (spec 008)
+33. Tax Documents — `tax-documents.html` (spec 008)
+34. Document Categories — `document-categories.html` (spec 009)
+35. Approval Workflow — `approval-workflow.html` (spec 009)
+36. Audit Log — `audit-log.html` (spec 010)
+37. Notifications — `notifications.html` (spec 010)
+
+Plus `index.html` (landing/forms index). Spec 012 added cross-page modals & action wiring to these pages without creating new pages.
+
 When implementing any page, ensure it follows this rule file.
 
 ---

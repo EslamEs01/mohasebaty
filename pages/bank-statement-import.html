@@ -197,36 +197,28 @@
           <div class="page-sub">ارفع كشف الحساب البنكي واربط أعمدته لتجهيزه للمطابقة</div>
         </div>
       </div>
-      <div class="select-wrap" style="width:190px;">
-        <select class="select">
-          <option>شركة النور للتجارة</option>
-          <option>مؤسسة السلام للمقاولات</option>
-          <option>شركة البيان للخدمات</option>
-          <option>مجموعة الأفق للاستثمار</option>
-        </select>
-        <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-      </div>
-      <div class="select-wrap" style="width:200px;">
-        <select class="select">
-          <option>الحساب الجاري — الراجحي</option>
-          <option>حساب التشغيل — الأهلي</option>
-          <option>حساب التوفير — الإنماء</option>
-        </select>
-        <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-      </div>
-      <div class="select-wrap" style="width:160px;">
-        <select class="select">
-          <option>الربع الثاني 2026</option>
-          <option>الربع الأول 2026</option>
-          <option>الربع الثالث 2026</option>
-          <option>الربع الرابع 2026</option>
-        </select>
-        <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-      </div>
       <button class="btn btn-primary">رفع وتحليل</button>
       <a class="btn btn-primary" href="bank-reconciliation.html">متابعة للمطابقة</a>
       <button class="btn btn-outline">حفظ كمسودة</button>
       <div class="header-right">
+        <div style="position:relative;">
+          <button class="icon-btn" data-bell-toggle="bank-import-bell" aria-label="الإشعارات">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 7 3 9H3c0-2 3-2 3-9Z"/><path d="M10 21a2 2 0 0 0 4 0"/></svg>
+            <span class="badge">2</span>
+          </button>
+          <div class="notif-panel" data-bell-panel="bank-import-bell">
+            <div class="notif-head">الإشعارات</div>
+            <div class="notif-item">
+              <div class="nico amber"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+              <div><b>حركتان بحاجة لمراجعة في كشف الراجحي</b><span>منذ 10 دقائق</span></div>
+            </div>
+            <div class="notif-item">
+              <div class="nico"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+              <div><b>تم التعرف على أعمدة الكشف تلقائياً</b><span>منذ 30 دقيقة</span></div>
+            </div>
+            <a class="notif-item" href="notifications.html"><div><b>عرض كل الإشعارات ←</b></div></a>
+          </div>
+        </div>
         <button class="avatar-btn">
           <div class="avatar">ك.ع</div>
           <div class="avatar-name">
@@ -239,8 +231,50 @@
     </header>
     <!-- /BLOCK -->
 
+    <!-- BLOCK: filter bar -->
+    <div class="card" style="margin-top:20px;">
+      <div class="filters">
+        <div class="filter" style="flex:1 1 220px;min-width:200px;">
+          <label>العميل</label>
+          <div class="select-wrap">
+            <select class="select" aria-label="اختيار العميل">
+              <option>شركة النور للتجارة</option>
+              <option>مؤسسة السلام للمقاولات</option>
+              <option>شركة البيان للخدمات</option>
+              <option>مجموعة الأفق للاستثمار</option>
+            </select>
+            <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+          </div>
+        </div>
+        <div class="filter" style="flex:1 1 220px;min-width:200px;">
+          <label>الحساب البنكي</label>
+          <div class="select-wrap">
+            <select class="select" aria-label="اختيار الحساب البنكي">
+              <option>الحساب الجاري — الراجحي</option>
+              <option>حساب التشغيل — الأهلي</option>
+              <option>حساب التوفير — الإنماء</option>
+            </select>
+            <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+          </div>
+        </div>
+        <div class="filter" style="flex:1 1 180px;min-width:170px;">
+          <label>الفترة</label>
+          <div class="select-wrap">
+            <select class="select" aria-label="اختيار الفترة">
+              <option>الربع الثاني 2026</option>
+              <option>الربع الأول 2026</option>
+              <option>الربع الثالث 2026</option>
+              <option>الربع الرابع 2026</option>
+            </select>
+            <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /BLOCK: filter bar -->
+
     <!-- BLOCK: KPI summary -->
-    <div class="kpi-row" style="margin-top:20px;">
+    <div class="kpi-row" style="margin-top:16px;">
       <div class="card kpi">
         <div class="kpi-top">
           <div class="kpi-ico kpi-ico-primary"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div>
@@ -312,6 +346,13 @@
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
         </button>
       </div>
+      <div style="margin-top:14px;padding:12px 14px;background:#F7E4E4;border-radius:8px;border-inline-start:3px solid #B83A3A;display:flex;gap:10px;align-items:flex-start;">
+        <span style="color:#B83A3A;flex-shrink:0;display:inline-flex;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15 9l-6 6"/><path d="M9 9l6 6"/></svg></span>
+        <div style="font-size:13px;line-height:1.7;">
+          <b style="display:block;margin-bottom:2px;color:#B83A3A;">تعذّر قبول الملف — صيغة غير مدعومة</b>
+          <span>الملف <b>كشف_بنكي_أبريل.docx</b> بصيغة غير مدعومة. يُرجى رفع كشف الحساب بصيغة CSV أو Excel أو PDF بحجم لا يتجاوز 50 ميجابايت.</span>
+        </div>
+      </div>
     </div>
     <!-- /BLOCK: upload -->
 
@@ -323,7 +364,7 @@
       </div>
       <div class="tip" style="margin-bottom:16px;">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-        <span>تم التعرف على أعمدة الكشف وربطها تلقائياً — راجع الربط قبل المتابعة</span>
+        <span>تم التعرف على معظم أعمدة الكشف وربطها تلقائياً — عمود واحد بحاجة لربط يدوي قبل المتابعة</span>
       </div>
       <div class="set-body">
         <div class="set-row">
@@ -349,6 +390,22 @@
         <div class="set-row">
           <div class="info"><b>رقم العملية</b><span>عمود الملف: رقم العملية → حقل النظام: المرجع</span></div>
           <span class="chip green">مربوط</span>
+        </div>
+        <div class="set-row">
+          <div class="info"><b>قناة العملية</b><span>عمود الملف: Channel → لم يتم التعرف على العمود — اختر الحقل المناسب يدوياً</span></div>
+          <div style="display:flex;align-items:center;gap:10px;">
+            <div class="select-wrap" style="width:180px;">
+              <select class="select" aria-label="ربط العمود يدوياً">
+                <option>— اختر حقل النظام —</option>
+                <option>الوصف</option>
+                <option>المرجع</option>
+                <option>التاريخ</option>
+                <option>تجاهل هذا العمود</option>
+              </select>
+              <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+            </div>
+            <span class="chip amber">لم يتم التعرف على العمود</span>
+          </div>
         </div>
       </div>
     </div>

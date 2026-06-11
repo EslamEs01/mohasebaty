@@ -258,6 +258,17 @@
         <div class="kpi-help">حقول مطلوبة فارغة</div>
       </div>
 
+      <div class="card kpi">
+        <div class="kpi-top">
+          <div class="kpi-ico kpi-ico-slate">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8z"/><path d="M15 3v5h5"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
+          </div>
+        </div>
+        <div class="kpi-num">1</div>
+        <div class="kpi-lbl">قيم مكررة</div>
+        <div class="kpi-help">رقم فاتورة موجود مسبقاً</div>
+      </div>
+
     </div>
     <!-- /BLOCK -->
 
@@ -277,6 +288,7 @@
               <th>القيمة</th>
               <th>سبب الخطأ</th>
               <th>الإجراء المقترح</th>
+              <th>معالجة</th>
             </tr>
           </thead>
           <tbody>
@@ -286,6 +298,7 @@
               <td><code>١٢٣٫٠٠ج.م</code></td>
               <td><span class="chip rose">خطأ مبلغ</span> — القيمة تحتوي على رمز عملة</td>
               <td>احذف رمز العملة، أبقِ الرقم فقط</td>
+              <td><button class="btn btn-outline btn-sm" type="button" data-open="#importErrorActionModal">إجراء</button></td>
             </tr>
             <tr>
               <td><span class="chip slate">63</span></td>
@@ -293,6 +306,7 @@
               <td><code>(120,500)</code></td>
               <td><span class="chip rose">خطأ مبلغ</span> — الأرقام السالبة بين أقواس</td>
               <td>استخدم الإشارة السالبة −120500</td>
+              <td><button class="btn btn-outline btn-sm" type="button" data-open="#importErrorActionModal">إجراء</button></td>
             </tr>
             <tr>
               <td><span class="chip slate">12</span></td>
@@ -300,6 +314,7 @@
               <td><code>31/02/2026</code></td>
               <td><span class="chip amber">خطأ تاريخ</span> — التاريخ غير موجود</td>
               <td>صحّح إلى 28/02/2026</td>
+              <td><button class="btn btn-outline btn-sm" type="button" data-open="#importErrorActionModal">إجراء</button></td>
             </tr>
             <tr>
               <td><span class="chip slate">89</span></td>
@@ -307,6 +322,7 @@
               <td><code>Jan-2026</code></td>
               <td><span class="chip amber">خطأ تاريخ</span> — صيغة غير مدعومة</td>
               <td>استخدم صيغة DD/MM/YYYY</td>
+              <td><button class="btn btn-outline btn-sm" type="button" data-open="#importErrorActionModal">إجراء</button></td>
             </tr>
             <tr>
               <td><span class="chip slate">5</span></td>
@@ -314,6 +330,7 @@
               <td>—</td>
               <td><span class="chip primary">حقل مفقود</span> — حقل مطلوب فارغ</td>
               <td>أدخل رقم الفاتورة أو احذف الصف</td>
+              <td><button class="btn btn-outline btn-sm" type="button" data-open="#importErrorActionModal">إجراء</button></td>
             </tr>
             <tr>
               <td><span class="chip slate">78</span></td>
@@ -321,6 +338,7 @@
               <td>—</td>
               <td><span class="chip primary">حقل مفقود</span> — اسم العميل مطلوب</td>
               <td>أدخل اسم العميل أو احذف الصف</td>
+              <td><button class="btn btn-outline btn-sm" type="button" data-open="#importErrorActionModal">إجراء</button></td>
             </tr>
             <tr>
               <td><span class="chip slate">101</span></td>
@@ -328,6 +346,7 @@
               <td><code>INV-2026-001</code></td>
               <td><span class="chip slate">قيمة مكررة</span> — رقم فاتورة موجود مسبقاً</td>
               <td>تحقق وأزِل التكرار</td>
+              <td><button class="btn btn-outline btn-sm" type="button" data-open="#importErrorActionModal">إجراء</button></td>
             </tr>
             <tr>
               <td><span class="chip slate">134</span></td>
@@ -335,6 +354,7 @@
               <td><code>8500</code></td>
               <td><span class="chip rose">خطأ مبلغ</span> — الإجمالي لا يتطابق مع المبلغ + الضريبة</td>
               <td>راجع حساب الضريبة في الملف</td>
+              <td><button class="btn btn-outline btn-sm" type="button" data-open="#importErrorActionModal">إجراء</button></td>
             </tr>
           </tbody>
         </table>
@@ -344,9 +364,9 @@
 
     <!-- BLOCK: action bar -->
     <div class="card" style="padding:16px 20px;display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;margin-bottom:20px;">
-      <button class="btn btn-outline">تحميل ملف الأخطاء</button>
+      <button class="btn btn-outline" type="button" data-open="#exportConfirmModal">تحميل ملف الأخطاء</button>
       <a class="btn btn-outline" href="data-import.html">إعادة رفع الملف</a>
-      <button class="btn btn-outline" style="border-color:#f59e0b;color:#b45309;">تجاهل الصفوف الخاطئة واستكمال</button>
+      <button class="btn btn-amber" type="button" data-open="#importErrorActionModal">تجاهل الصفوف الخاطئة واستكمال</button>
       <a class="btn btn-outline" href="import-history.html">رجوع للسجل</a>
     </div>
     <!-- /BLOCK -->
@@ -354,6 +374,103 @@
   </main>
 
 </div>
+
+<!-- BLOCK: import error action modal (T022) -->
+<div class="scrim" data-overlay id="importErrorActionModal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="importErrorActionTitle">
+    <div class="modal-head">
+      <h3 id="importErrorActionTitle">معالجة خطأ الاستيراد</h3>
+      <button class="icon-btn" data-close aria-label="إغلاق">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p style="margin:0 0 14px; font-size:13.5px; color:var(--ink-3, #5a5650); line-height:1.7;">اختر الإجراء المناسب للتعامل مع هذا الخطأ ثم اضغط «تطبيق الإجراء».</p>
+      <div class="set-body">
+        <div class="set-row">
+          <div class="info"><b>الصف</b><span>رقم الصف في ملف الاستيراد</span></div>
+          <div class="ctrl"><span class="chip slate">٤٢</span></div>
+        </div>
+        <div class="set-row">
+          <div class="info"><b>الخطأ</b><span>وصف المشكلة في هذا الصف</span></div>
+          <div class="ctrl"><span class="chip rose">رقم ضريبي غير صحيح</span></div>
+        </div>
+        <div class="set-row">
+          <div class="info"><b>الإجراء</b><span>اختر طريقة المعالجة</span></div>
+          <div class="ctrl">
+            <div class="seg">
+              <button type="button" class="active">تصحيح يدوي</button>
+              <button type="button">تجاهل الصف</button>
+              <button type="button">إعادة المحاولة</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="field" style="margin-top:14px;">
+        <label class="label">ملاحظة</label>
+        <textarea class="input" rows="2" placeholder="أضف ملاحظة حول الإجراء المتخذ..."></textarea>
+      </div>
+      <div class="tip" style="margin-top:14px;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+        <span>تجاهل الصف يعني استبعاده نهائياً من الاستيراد — سيُسجَّل في تقرير الأخطاء للمراجعة.</span>
+      </div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-primary" type="button">تطبيق الإجراء</button>
+      <button class="btn btn-outline" type="button" data-close>إلغاء</button>
+    </div>
+  </div>
+</div>
+<!-- /BLOCK -->
+
+<!-- BLOCK: export confirm modal (for action bar export button) -->
+<div class="scrim" data-overlay id="exportConfirmModal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="exportConfirmTitle">
+    <div class="modal-head">
+      <h3 id="exportConfirmTitle">تصدير البيانات</h3>
+      <button class="icon-btn" data-close aria-label="إغلاق">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p style="margin:0 0 16px; font-size:13.5px; color:var(--ink-3, #5a5650); line-height:1.7;">سيتم تجهيز ملف يحتوي على البيانات المعروضة ضمن النطاق المحدّد أدناه. راجع التفاصيل واختر صيغة الملف المناسبة قبل التصدير.</p>
+      <div class="set-body">
+        <div class="set-row">
+          <div class="info"><b>النطاق</b><span>الفترة المشمولة بالتصدير</span></div>
+          <div class="ctrl">مايو 2026</div>
+        </div>
+        <div class="set-row">
+          <div class="info"><b>عدد السجلات</b><span>إجمالي السجلات ضمن النطاق</span></div>
+          <div class="ctrl"><span class="chip primary">١٢٨ سجلاً</span></div>
+        </div>
+        <div class="set-row">
+          <div class="info"><b>صيغة الملف</b><span>اختر صيغة التصدير</span></div>
+          <div class="ctrl">
+            <div class="seg">
+              <button type="button" class="active">PDF</button>
+              <button type="button">Excel</button>
+              <button type="button">CSV</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="toast" style="margin-top:16px;">
+        <span class="check">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>
+        </span>
+        <span>صيغة PDF موصى بها للطباعة والأرشفة الرسمية. اختر Excel أو CSV لمزيد من المعالجة.</span>
+      </div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-primary" type="button">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+        تصدير
+      </button>
+      <button class="btn btn-outline" type="button" data-close>إغلاق</button>
+    </div>
+  </div>
+</div>
+<!-- /BLOCK -->
 
 <script src="../assets/js/main.js"></script>
 </body>

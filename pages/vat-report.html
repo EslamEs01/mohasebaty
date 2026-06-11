@@ -195,15 +195,15 @@
           <div class="page-sub">ملخص ضريبة المخرجات والمدخلات وصافي الضريبة المستحقة</div>
         </div>
       </div>
-      <button class="btn btn-outline" type="button">
+      <button class="btn btn-outline" type="button" data-open="#exportConfirmModal">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M9 15h6"/></svg>
         تصدير PDF
       </button>
-      <button class="btn btn-outline" type="button">
+      <button class="btn btn-outline" type="button" data-open="#exportConfirmModal">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>
         تصدير Excel
       </button>
-      <button class="btn btn-primary" type="button">
+      <button class="btn btn-primary" type="button" disabled title="قريباً">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
         اعتماد التقرير
       </button>
@@ -250,61 +250,123 @@
       </div>
     </div>
 
-    <!-- 6 Tax KPI cards -->
-    <div class="kpi-grid-6" style="margin-top:16px;">
-      <div class="card kpi">
-        <div class="kpi-top">
-          <div class="kpi-ico kpi-ico-primary"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 3-3 4 4 5-6"/></svg></div>
-          <span class="kpi-trend up">+8.4%</span>
+    <!-- 6 Tax KPI cards (Saudi) -->
+    <div data-country-block="sa">
+      <div class="kpi-grid-6" style="margin-top:16px;">
+        <div class="card kpi">
+          <div class="kpi-top">
+            <div class="kpi-ico kpi-ico-primary"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 3-3 4 4 5-6"/></svg></div>
+            <span class="kpi-trend up">+8.4%</span>
+          </div>
+          <div class="kpi-num">845,000<span class="ccy">﷼</span></div>
+          <div class="kpi-lbl">إجمالي المبيعات الخاضعة</div>
+          <div class="kpi-help">قبل الضريبة للفترة</div>
         </div>
-        <div class="kpi-num">845,000<span class="ccy">﷼</span></div>
-        <div class="kpi-lbl">إجمالي المبيعات الخاضعة</div>
-        <div class="kpi-help">قبل الضريبة للفترة</div>
+        <div class="card kpi">
+          <div class="kpi-top">
+            <div class="kpi-ico kpi-ico-green"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m18 9-6-6-6 6"/><path d="M12 3v14"/><path d="M5 21h14"/></svg></div>
+            <span class="kpi-trend">15%</span>
+          </div>
+          <div class="kpi-num">126,750<span class="ccy">﷼</span></div>
+          <div class="kpi-lbl">ضريبة المخرجات</div>
+          <div class="kpi-help">على المبيعات الخاضعة</div>
+        </div>
+        <div class="card kpi">
+          <div class="kpi-top">
+            <div class="kpi-ico kpi-ico-primary"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div>
+            <span class="kpi-trend">61%</span>
+          </div>
+          <div class="kpi-num">512,000<span class="ccy">﷼</span></div>
+          <div class="kpi-lbl">المشتريات والمصروفات الخاضعة</div>
+          <div class="kpi-help">قبل الضريبة للفترة</div>
+        </div>
+        <div class="card kpi">
+          <div class="kpi-top">
+            <div class="kpi-ico kpi-ico-amber"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 15 6 6 6-6"/><path d="M12 3v18"/></svg></div>
+            <span class="kpi-trend">15%</span>
+          </div>
+          <div class="kpi-num">76,800<span class="ccy">﷼</span></div>
+          <div class="kpi-lbl">ضريبة المدخلات</div>
+          <div class="kpi-help">القابلة للخصم</div>
+        </div>
+        <div class="card kpi">
+          <div class="kpi-top">
+            <div class="kpi-ico kpi-ico-rose"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+            <span class="kpi-trend down">مستحقة</span>
+          </div>
+          <div class="kpi-num">49,950<span class="ccy">﷼</span></div>
+          <div class="kpi-lbl">صافي الضريبة المستحقة</div>
+          <div class="kpi-help">المخرجات − المدخلات</div>
+        </div>
+        <div class="card kpi">
+          <div class="kpi-top">
+            <div class="kpi-ico kpi-ico-amber"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M12 18v-4"/><path d="M12 11h.01"/></svg></div>
+            <span class="kpi-trend down">يتطلب مراجعة</span>
+          </div>
+          <div class="kpi-num">14</div>
+          <div class="kpi-lbl">مستندات تؤثر على التقرير</div>
+          <div class="kpi-help">قبل الاعتماد النهائي</div>
+        </div>
       </div>
-      <div class="card kpi">
-        <div class="kpi-top">
-          <div class="kpi-ico kpi-ico-green"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m18 9-6-6-6 6"/><path d="M12 3v14"/><path d="M5 21h14"/></svg></div>
-          <span class="kpi-trend">15%</span>
+    </div>
+
+    <!-- 6 Tax KPI cards (Egypt) -->
+    <div data-country-block="eg" hidden>
+      <div class="kpi-grid-6" style="margin-top:16px;">
+        <div class="card kpi">
+          <div class="kpi-top">
+            <div class="kpi-ico kpi-ico-primary"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 3-3 4 4 5-6"/></svg></div>
+            <span class="kpi-trend up">+6.2%</span>
+          </div>
+          <div class="kpi-num">720,000<span class="ccy">ج.م</span></div>
+          <div class="kpi-lbl">إجمالي المبيعات الخاضعة</div>
+          <div class="kpi-help">قبل الضريبة للفترة</div>
         </div>
-        <div class="kpi-num">126,750<span class="ccy">﷼</span></div>
-        <div class="kpi-lbl">ضريبة المخرجات</div>
-        <div class="kpi-help">على المبيعات الخاضعة</div>
-      </div>
-      <div class="card kpi">
-        <div class="kpi-top">
-          <div class="kpi-ico kpi-ico-primary"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div>
-          <span class="kpi-trend">61%</span>
+        <div class="card kpi">
+          <div class="kpi-top">
+            <div class="kpi-ico kpi-ico-green"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m18 9-6-6-6 6"/><path d="M12 3v14"/><path d="M5 21h14"/></svg></div>
+            <span class="kpi-trend">14%</span>
+          </div>
+          <div class="kpi-num">100,800<span class="ccy">ج.م</span></div>
+          <div class="kpi-lbl">ضريبة المخرجات</div>
+          <div class="kpi-help">على المبيعات الخاضعة</div>
         </div>
-        <div class="kpi-num">512,000<span class="ccy">﷼</span></div>
-        <div class="kpi-lbl">المشتريات والمصروفات الخاضعة</div>
-        <div class="kpi-help">قبل الضريبة للفترة</div>
-      </div>
-      <div class="card kpi">
-        <div class="kpi-top">
-          <div class="kpi-ico kpi-ico-amber"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 15 6 6 6-6"/><path d="M12 3v18"/></svg></div>
-          <span class="kpi-trend">15%</span>
+        <div class="card kpi">
+          <div class="kpi-top">
+            <div class="kpi-ico kpi-ico-primary"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div>
+            <span class="kpi-trend">59%</span>
+          </div>
+          <div class="kpi-num">425,000<span class="ccy">ج.م</span></div>
+          <div class="kpi-lbl">المشتريات والمصروفات الخاضعة</div>
+          <div class="kpi-help">قبل الضريبة للفترة</div>
         </div>
-        <div class="kpi-num">76,800<span class="ccy">﷼</span></div>
-        <div class="kpi-lbl">ضريبة المدخلات</div>
-        <div class="kpi-help">القابلة للخصم</div>
-      </div>
-      <div class="card kpi">
-        <div class="kpi-top">
-          <div class="kpi-ico kpi-ico-rose"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
-          <span class="kpi-trend down">مستحقة</span>
+        <div class="card kpi">
+          <div class="kpi-top">
+            <div class="kpi-ico kpi-ico-amber"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 15 6 6 6-6"/><path d="M12 3v18"/></svg></div>
+            <span class="kpi-trend">14%</span>
+          </div>
+          <div class="kpi-num">59,500<span class="ccy">ج.م</span></div>
+          <div class="kpi-lbl">ضريبة المدخلات</div>
+          <div class="kpi-help">القابلة للخصم</div>
         </div>
-        <div class="kpi-num">49,950<span class="ccy">﷼</span></div>
-        <div class="kpi-lbl">صافي الضريبة المستحقة</div>
-        <div class="kpi-help">المخرجات − المدخلات</div>
-      </div>
-      <div class="card kpi">
-        <div class="kpi-top">
-          <div class="kpi-ico kpi-ico-amber"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M12 18v-4"/><path d="M12 11h.01"/></svg></div>
-          <span class="kpi-trend down">يتطلب مراجعة</span>
+        <div class="card kpi">
+          <div class="kpi-top">
+            <div class="kpi-ico kpi-ico-rose"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+            <span class="kpi-trend down">مستحقة</span>
+          </div>
+          <div class="kpi-num">41,300<span class="ccy">ج.م</span></div>
+          <div class="kpi-lbl">صافي الضريبة المستحقة</div>
+          <div class="kpi-help">المخرجات − المدخلات</div>
         </div>
-        <div class="kpi-num">14</div>
-        <div class="kpi-lbl">مستندات تؤثر على التقرير</div>
-        <div class="kpi-help">قبل الاعتماد النهائي</div>
+        <div class="card kpi">
+          <div class="kpi-top">
+            <div class="kpi-ico kpi-ico-amber"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M12 18v-4"/><path d="M12 11h.01"/></svg></div>
+            <span class="kpi-trend down">يتطلب مراجعة</span>
+          </div>
+          <div class="kpi-num">11</div>
+          <div class="kpi-lbl">مستندات تؤثر على التقرير</div>
+          <div class="kpi-help">قبل الاعتماد النهائي</div>
+        </div>
       </div>
     </div>
 
@@ -364,7 +426,8 @@
             <h2>ملخص ضريبة القيمة المضافة</h2>
             <span class="badge-count" style="margin-inline-start:auto;">5 بنود</span>
           </div>
-          <div class="table-wrap">
+          <!-- VAT summary table (Saudi) -->
+          <div class="table-wrap" data-country-block="sa">
             <table class="docs">
               <thead>
                 <tr>
@@ -419,6 +482,77 @@
                 </tr>
               </tbody>
             </table>
+          </div>
+
+          <!-- VAT summary table (Egypt) -->
+          <div class="table-wrap" data-country-block="eg" hidden>
+            <table class="docs">
+              <thead>
+                <tr>
+                  <th>البند</th>
+                  <th>عدد المستندات</th>
+                  <th>قبل الضريبة</th>
+                  <th>الضريبة</th>
+                  <th>الإجمالي</th>
+                  <th>الحالة</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>مبيعات خاضعة</td>
+                  <td>81</td>
+                  <td><span class="amount">720,000 <span class="ccy">ج.م</span></span></td>
+                  <td><span class="amount">100,800 <span class="ccy">ج.م</span></span></td>
+                  <td><span class="amount">820,800 <span class="ccy">ج.م</span></span></td>
+                  <td><span class="chip green">مكتمل</span></td>
+                </tr>
+                <tr>
+                  <td>مبيعات صفرية</td>
+                  <td>9</td>
+                  <td><span class="amount">48,000 <span class="ccy">ج.م</span></span></td>
+                  <td><span class="amount">0 <span class="ccy">ج.م</span></span></td>
+                  <td><span class="amount">48,000 <span class="ccy">ج.م</span></span></td>
+                  <td><span class="chip green">مكتمل</span></td>
+                </tr>
+                <tr>
+                  <td>مصروفات خاضعة</td>
+                  <td>63</td>
+                  <td><span class="amount">425,000 <span class="ccy">ج.م</span></span></td>
+                  <td><span class="amount">59,500 <span class="ccy">ج.م</span></span></td>
+                  <td><span class="amount">484,500 <span class="ccy">ج.م</span></span></td>
+                  <td><span class="chip green">مكتمل</span></td>
+                </tr>
+                <tr>
+                  <td>مصروفات غير قابلة للخصم</td>
+                  <td>6</td>
+                  <td><span class="amount">18,000 <span class="ccy">ج.م</span></span></td>
+                  <td><span class="ref" style="color:#8A93A1;">غير قابل للخصم</span></td>
+                  <td><span class="amount">18,000 <span class="ccy">ج.م</span></span></td>
+                  <td><span class="chip amber">تنبيه</span></td>
+                </tr>
+                <tr>
+                  <td>تسويات ضريبية</td>
+                  <td>2</td>
+                  <td><span class="amount">3,000 <span class="ccy">ج.م</span></span></td>
+                  <td><span class="amount">420 <span class="ccy">ج.م</span></span></td>
+                  <td><span class="amount">3,420 <span class="ccy">ج.م</span></span></td>
+                  <td><span class="chip amber">يحتاج مراجعة</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Empty State (يظهر عند اختيار فترة أو عميل دون مستندات مصنفة) -->
+          <div class="empty" hidden data-empty-state>
+            <div class="em-art">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M9 13h6"/><path d="M9 17h3"/></svg>
+            </div>
+            <h3>لا توجد بيانات ضريبية للفترة المختارة</h3>
+            <p>لم يتم العثور على مستندات مصنّفة ضمن هذه الفترة. غيّر الفترة الضريبية أو راجع تصنيف المستندات لتظهر البنود هنا.</p>
+            <a href="document-review.html" class="btn btn-primary">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="m9 14 2 2 4-4"/></svg>
+            مراجعة وتصنيف المستندات
+            </a>
           </div>
         </section>
 
@@ -491,6 +625,54 @@
     </div>
 
   </main>
+</div>
+
+<!-- Export Confirm Modal -->
+<div class="scrim" data-overlay id="exportConfirmModal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="exportConfirmTitle">
+    <div class="modal-head">
+      <h3 id="exportConfirmTitle">تصدير البيانات</h3>
+      <button class="icon-btn" data-close aria-label="إغلاق">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p style="margin:0 0 16px; font-size:13.5px; color:var(--ink-3, #5a5650); line-height:1.7;">سيتم تجهيز ملف يحتوي على البيانات المعروضة ضمن النطاق المحدّد أدناه. راجع التفاصيل واختر صيغة الملف المناسبة قبل التصدير.</p>
+      <div class="set-body">
+        <div class="set-row">
+          <div class="info"><b>النطاق</b><span>الفترة المشمولة بالتصدير</span></div>
+          <div class="ctrl">مايو 2026</div>
+        </div>
+        <div class="set-row">
+          <div class="info"><b>عدد السجلات</b><span>إجمالي السجلات ضمن النطاق</span></div>
+          <div class="ctrl"><span class="chip primary">١٢٨ سجلاً</span></div>
+        </div>
+        <div class="set-row">
+          <div class="info"><b>صيغة الملف</b><span>اختر صيغة التصدير</span></div>
+          <div class="ctrl">
+            <div class="seg">
+              <button type="button" class="active">PDF</button>
+              <button type="button">Excel</button>
+              <button type="button">CSV</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="toast" style="margin-top:16px;">
+        <span class="check">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>
+        </span>
+        <span>صيغة PDF موصى بها للطباعة والأرشفة الرسمية. اختر Excel أو CSV لمزيد من المعالجة.</span>
+      </div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-primary" type="button">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+        تصدير
+      </button>
+      <button class="btn btn-outline" type="button" data-close>إغلاق</button>
+    </div>
+  </div>
 </div>
 
 <script src="../assets/js/main.js"></script>

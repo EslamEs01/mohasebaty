@@ -8,12 +8,12 @@ local static HTML/CSS/Tailwind only (no CDN, Bootstrap, or React/Vue/Angular/Nex
 UI interaction only (never page content); Arabic-only and RTL-first with `lang="ar"
 dir="rtl"`; do not redesign the approved style; do not break or remove existing pages or
 sections; never ship skeleton or placeholder pages — every page must be complete, linked,
-responsive, and consistent with the 15 approved pages.
+responsive, and consistent with the approved design system across the 38 delivered screens (37 pages in `pages/` + `index.html`).
 
 <!-- SPECKIT START -->
 For additional context about technologies to be used, project structure,
 shell commands, and other important information, read the current plan:
-`specs/011-client-reports-view/plan.md`
+`specs/012-modals-cross-page-actions/plan.md`
 (see also its `research.md`, `data-model.md`, `contracts/page-contracts.md`, and `quickstart.md`).
-Prior features: `specs/010-audit-log-notifications/plan.md`, `specs/009-categories-approval-workflow/plan.md`, `specs/008-vat-tax-documents/spec.md`, `specs/007-bank-statement-reconciliation/plan.md`, `specs/006-vendors-customers-banks/plan.md`, `specs/005-opening-balances-fiscal-periods/plan.md`, `specs/004-data-import-module/plan.md`, `specs/003-data-import-module/plan.md`, `specs/002-client-onboarding-tax-profile/plan.md`.
+Prior features: `specs/011-client-reports-view/plan.md`, `specs/010-audit-log-notifications/plan.md`, `specs/009-categories-approval-workflow/plan.md`, `specs/008-vat-tax-documents/spec.md`, `specs/007-bank-statement-reconciliation/plan.md`, `specs/006-vendors-customers-banks/plan.md`, `specs/005-opening-balances-fiscal-periods/plan.md`, `specs/004-data-import-module/plan.md`, `specs/003-data-import-module/plan.md`, `specs/002-client-onboarding-tax-profile/plan.md`.
 <!-- SPECKIT END -->

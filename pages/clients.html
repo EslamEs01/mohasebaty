@@ -195,7 +195,7 @@
           <div class="page-sub">إدارة شركات العملاء، حالة الحسابات، والمحاسب المسؤول عن كل عميل</div>
         </div>
       </div>
-      <button class="btn btn-outline" type="button">
+      <button class="btn btn-outline" type="button" data-open="#exportConfirmModal">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>
         تصدير العملاء
       </button>
@@ -358,7 +358,10 @@
                   <td class="upd">اليوم</td>
                   <td><span class="amount">5</span></td>
                   <td><span class="chip green">نشط</span></td>
-                  <td><a href="client-profile.html" class="row-action view"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> فتح الملف</a></td>
+                  <td style="display:flex;gap:6px;align-items:center;">
+                    <a href="client-profile.html" class="row-action view"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> فتح الملف</a>
+                    <button class="btn btn-outline btn-sm" type="button" data-open="#assignAccountantModal">إسناد محاسب</button>
+                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -373,7 +376,10 @@
                   <td class="upd">منذ يومين</td>
                   <td><span class="amount">3</span></td>
                   <td><span class="chip amber">يحتاج متابعة</span></td>
-                  <td><a href="client-profile.html" class="row-action view"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> فتح الملف</a></td>
+                  <td style="display:flex;gap:6px;align-items:center;">
+                    <a href="client-profile.html" class="row-action view"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> فتح الملف</a>
+                    <button class="btn btn-outline btn-sm" type="button" data-open="#assignAccountantModal">إسناد محاسب</button>
+                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -388,7 +394,10 @@
                   <td class="upd">منذ 5 أيام</td>
                   <td><span class="amount">0</span></td>
                   <td><span class="chip green">نشط</span></td>
-                  <td><a href="client-profile.html" class="row-action view"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> فتح الملف</a></td>
+                  <td style="display:flex;gap:6px;align-items:center;">
+                    <a href="client-profile.html" class="row-action view"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> فتح الملف</a>
+                    <button class="btn btn-outline btn-sm" type="button" data-open="#assignAccountantModal">إسناد محاسب</button>
+                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -403,7 +412,10 @@
                   <td class="upd">منذ 12 يومًا</td>
                   <td><span class="amount">2</span></td>
                   <td><span class="chip amber">يحتاج متابعة</span></td>
-                  <td><a href="client-profile.html" class="row-action view"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> فتح الملف</a></td>
+                  <td style="display:flex;gap:6px;align-items:center;">
+                    <a href="client-profile.html" class="row-action view"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> فتح الملف</a>
+                    <button class="btn btn-outline btn-sm" type="button" data-open="#assignAccountantModal">إسناد محاسب</button>
+                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -418,7 +430,10 @@
                   <td class="upd">منذ شهر</td>
                   <td><span class="amount">0</span></td>
                   <td><span class="chip slate">موقوف</span></td>
-                  <td><a href="client-profile.html" class="row-action view"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> فتح الملف</a></td>
+                  <td style="display:flex;gap:6px;align-items:center;">
+                    <a href="client-profile.html" class="row-action view"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> فتح الملف</a>
+                    <button class="btn btn-outline btn-sm" type="button" data-open="#assignAccountantModal">إسناد محاسب</button>
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -477,7 +492,7 @@
           </div>
           <div class="pri-foot">
             <span style="font-size:12px;color:#8A93A1;">آخر مزامنة قبل دقيقة</span>
-            <a href="#">عرض الكل (6) ←</a>
+            <a href="clients.html">عرض الكل (6) ←</a>
           </div>
         </div>
 
@@ -572,6 +587,101 @@
         حفظ العميل
       </button>
       <button class="btn btn-outline" type="button" data-close>إلغاء</button>
+    </div>
+  </div>
+</div>
+
+<!-- Assign Accountant Modal -->
+<div class="scrim" data-overlay id="assignAccountantModal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="assignAccountantTitle">
+    <div class="modal-head">
+      <h3 id="assignAccountantTitle">إسناد محاسب</h3>
+      <button class="icon-btn" data-close aria-label="إغلاق">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p style="margin:0 0 16px; font-size:13.5px; color:var(--ink-3, #5a5650); line-height:1.7;">أسند محاسبًا مسؤولًا لمتابعة مستندات وتقارير هذا العميل.</p>
+      <div class="set-body">
+        <div class="set-row">
+          <div class="info"><b>العميل</b><span>الشركة المراد الإسناد إليها</span></div>
+          <div class="ctrl"><span class="chip primary">مؤسسة السلام للمقاولات</span></div>
+        </div>
+      </div>
+      <div class="fields-grid" style="margin-top:16px;">
+        <div class="field" style="grid-column:1 / -1;">
+          <label>المحاسب <span class="req">*</span></label>
+          <div class="select-wrap">
+            <select class="select">
+              <option>أحمد محمود</option>
+              <option>منى حسن</option>
+              <option>محمد عبد الله</option>
+              <option>سارة علي</option>
+              <option>خالد عمر</option>
+            </select>
+            <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+          </div>
+        </div>
+        <div class="field" style="grid-column:1 / -1;">
+          <label>ملاحظة</label>
+          <textarea class="input" rows="3" placeholder="ملاحظة اختيارية حول هذا الإسناد"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-primary" type="button">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>
+        إسناد المحاسب
+      </button>
+      <button class="btn btn-outline" type="button" data-close>إلغاء</button>
+    </div>
+  </div>
+</div>
+
+<!-- Export Confirm Modal -->
+<div class="scrim" data-overlay id="exportConfirmModal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="exportConfirmTitle">
+    <div class="modal-head">
+      <h3 id="exportConfirmTitle">تصدير البيانات</h3>
+      <button class="icon-btn" data-close aria-label="إغلاق">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p style="margin:0 0 16px; font-size:13.5px; color:var(--ink-3, #5a5650); line-height:1.7;">سيتم تجهيز ملف يحتوي على البيانات المعروضة ضمن النطاق المحدّد أدناه. راجع التفاصيل واختر صيغة الملف المناسبة قبل التصدير.</p>
+      <div class="set-body">
+        <div class="set-row">
+          <div class="info"><b>النطاق</b><span>الفترة المشمولة بالتصدير</span></div>
+          <div class="ctrl">مايو 2026</div>
+        </div>
+        <div class="set-row">
+          <div class="info"><b>عدد السجلات</b><span>إجمالي السجلات ضمن النطاق</span></div>
+          <div class="ctrl"><span class="chip primary">١٢٨ سجلاً</span></div>
+        </div>
+        <div class="set-row">
+          <div class="info"><b>صيغة الملف</b><span>اختر صيغة التصدير</span></div>
+          <div class="ctrl">
+            <div class="seg">
+              <button type="button" class="active">PDF</button>
+              <button type="button">Excel</button>
+              <button type="button">CSV</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="toast" style="margin-top:16px;">
+        <span class="check">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>
+        </span>
+        <span>صيغة PDF موصى بها للطباعة والأرشفة الرسمية. اختر Excel أو CSV لمزيد من المعالجة.</span>
+      </div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-primary" type="button">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+        تصدير
+      </button>
+      <button class="btn btn-outline" type="button" data-close>إغلاق</button>
     </div>
   </div>
 </div>

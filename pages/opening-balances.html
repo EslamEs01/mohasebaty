@@ -209,17 +209,9 @@
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
         إضافة رصيد
       </button>
-      <button class="btn btn-outline" type="button" data-open="#uploadBalancesModal">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-        رفع ملف أرصدة
-      </button>
       <button class="btn btn-primary" type="button">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
         اعتماد الأرصدة
-      </button>
-      <button class="btn btn-outline" type="button">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>
-        تصدير
       </button>
       <div class="header-right">
         <button class="avatar-btn">
@@ -285,7 +277,17 @@
       <div class="card-head">
         <div class="ch-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M3 9h18"/><path d="M3 15h18"/></svg></div>
         <h2>أرصدة بداية التشغيل</h2>
-        <span class="badge-count" style="margin-inline-start:auto;">10 حسابات</span>
+        <span class="badge-count">10 حسابات</span>
+        <div class="hd-actions" style="margin-inline-start:auto;display:flex;gap:8px;">
+          <button class="btn btn-outline btn-sm" type="button" data-open="#uploadBalancesModal">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            رفع ملف أرصدة
+          </button>
+          <button class="btn btn-outline btn-sm" type="button" data-open="#exportConfirmModal">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>
+            تصدير
+          </button>
+        </div>
       </div>
       <div class="table-wrap">
         <table class="docs">
@@ -390,6 +392,29 @@
               <td><span class="amount">55,000 <span class="ccy">﷼</span></span></td>
               <td>أرباح مرحّلة من سنوات سابقة</td>
               <td><span class="chip green">مطابق</span></td>
+            </tr>
+
+            <!-- Empty State (يظهر عند اختيار عميل جديد لم تُدخل له أرصدة افتتاحية بعد) -->
+            <tr hidden data-empty-state>
+              <td colspan="7">
+                <div class="empty">
+                  <div class="em-art">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M3 9h18"/><path d="M3 15h18"/></svg>
+                  </div>
+                  <h3>لم يتم إدخال أي أرصدة افتتاحية بعد</h3>
+                  <p>ابدأ بإدخال أرصدة بداية التشغيل لهذا العميل يدويًا حسابًا حسابًا، أو ارفع ملف أرصدة جاهزًا (Excel أو CSV) لاستيرادها دفعة واحدة.</p>
+                  <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">
+                    <button class="btn btn-primary" type="button" data-open="#addBalanceModal">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+                      إضافة رصيد
+                    </button>
+                    <button class="btn btn-outline" type="button" data-open="#uploadBalancesModal">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                      رفع ملف أرصدة
+                    </button>
+                  </div>
+                </div>
+              </td>
             </tr>
           </tbody>
           <tfoot>
@@ -518,6 +543,54 @@
         رفع ومتابعة
       </button>
       <button class="btn btn-outline" type="button" data-close>إلغاء</button>
+    </div>
+  </div>
+</div>
+
+<!-- Export Confirm Modal -->
+<div class="scrim" data-overlay id="exportConfirmModal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="exportConfirmTitle">
+    <div class="modal-head">
+      <h3 id="exportConfirmTitle">تصدير البيانات</h3>
+      <button class="icon-btn" data-close aria-label="إغلاق">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p style="margin:0 0 16px; font-size:13.5px; color:var(--ink-3, #5a5650); line-height:1.7;">سيتم تجهيز ملف يحتوي على البيانات المعروضة ضمن النطاق المحدّد أدناه. راجع التفاصيل واختر صيغة الملف المناسبة قبل التصدير.</p>
+      <div class="set-body">
+        <div class="set-row">
+          <div class="info"><b>النطاق</b><span>الفترة المشمولة بالتصدير</span></div>
+          <div class="ctrl">مايو 2026</div>
+        </div>
+        <div class="set-row">
+          <div class="info"><b>عدد السجلات</b><span>إجمالي السجلات ضمن النطاق</span></div>
+          <div class="ctrl"><span class="chip primary">١٢٨ سجلاً</span></div>
+        </div>
+        <div class="set-row">
+          <div class="info"><b>صيغة الملف</b><span>اختر صيغة التصدير</span></div>
+          <div class="ctrl">
+            <div class="seg">
+              <button type="button" class="active">PDF</button>
+              <button type="button">Excel</button>
+              <button type="button">CSV</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="toast" style="margin-top:16px;">
+        <span class="check">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>
+        </span>
+        <span>صيغة PDF موصى بها للطباعة والأرشفة الرسمية. اختر Excel أو CSV لمزيد من المعالجة.</span>
+      </div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-primary" type="button">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+        تصدير
+      </button>
+      <button class="btn btn-outline" type="button" data-close>إغلاق</button>
     </div>
   </div>
 </div>

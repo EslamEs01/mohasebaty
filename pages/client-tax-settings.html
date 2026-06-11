@@ -290,9 +290,11 @@
               </div>
             </div>
             <div class="set-row">
-              <div class="info"><b>الرقم الضريبي</b><span>رقم التسجيل لدى هيئة الضريبة</span></div>
-              <div class="ctrl" style="width:220px;">
-                <input class="input mono" type="text" value="300012345600003" inputmode="numeric" style="width:220px;" />
+              <div class="info"><b>الرقم الضريبي</b><span>رقم التسجيل لدى هيئة الضريبة · مثال: 300012345600003 للسعودية (15 رقمًا تبدأ بالرقم 3)</span></div>
+              <div class="ctrl" style="width:220px;flex-direction:column;align-items:flex-start;gap:6px;">
+                <input class="input mono" type="text" value="300012345600003" inputmode="numeric" style="width:220px;" aria-describedby="tax-no-err" />
+                <span class="hint">15 رقمًا تبدأ بالرقم 3 للسعودية</span>
+                <span id="tax-no-err" class="chip rose" style="display:none;">رقم ضريبي غير صالح — يجب أن يتكوّن من 15 رقمًا يبدأ بالرقم 3.</span>
               </div>
             </div>
             <div class="set-row">
@@ -333,12 +335,21 @@
             <h2>إعداد الضريبة</h2>
           </div>
           <div class="set-body">
-            <div class="set-row">
-              <div class="info"><b>نسبة الضريبة الافتراضية</b><span>تُطبّق تلقائيًا على المستندات ما لم يحددها المحاسب</span></div>
+            <div class="set-row" data-country-block="sa">
+              <div class="info"><b>نسبة الضريبة الافتراضية</b><span>تُطبّق تلقائيًا على المستندات ما لم يحددها المحاسب · المعدل المعتمد في السعودية 15%</span></div>
               <div class="ctrl" style="width:120px;">
                 <div class="input-wrap has-suffix" style="width:120px;">
                   <span class="suffix">%</span>
                   <input class="input mono" type="text" value="15" inputmode="decimal" />
+                </div>
+              </div>
+            </div>
+            <div class="set-row" data-country-block="eg" hidden>
+              <div class="info"><b>نسبة الضريبة الافتراضية</b><span>تُطبّق تلقائيًا على المستندات ما لم يحددها المحاسب · المعدل المعتمد في مصر 14%</span></div>
+              <div class="ctrl" style="width:120px;">
+                <div class="input-wrap has-suffix" style="width:120px;">
+                  <span class="suffix">%</span>
+                  <input class="input mono" type="text" value="14" inputmode="decimal" />
                 </div>
               </div>
             </div>

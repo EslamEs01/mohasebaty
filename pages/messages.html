@@ -16,7 +16,7 @@
       <div class="brand-mark">م</div>
       <div class="brand-name">
         <b>منصة محاسبتي</b>
-        <span>ACCOUNTANT</span>
+        <span>MOHASEBATY</span>
       </div>
     </div>
     <div class="sidebar-section-label">لوحات العميل</div>
@@ -304,18 +304,36 @@
             <span class="conv-ico">ف</span>
             <span class="conv-body">
               <span class="conv-top"><b>مؤسسة الفيصل للمقاولات</b><span class="t">منذ أسبوع</span></span>
-              <span class="conv-last">تم ترحيل كل مستندات أبريل</span>
+              <span class="conv-last">تم معالجة مستندات أبريل بالكامل</span>
               <span class="conv-tags">
                 <span class="conv-badge done">تم الرد</span>
                 <span class="conv-doc"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg> EXP-99</span>
               </span>
             </span>
           </button>
+
+          <!-- Empty State (يظهر عند عدم وجود محادثات) -->
+          <div class="empty" hidden data-empty-state>
+            <div class="em-art">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3>لا توجد محادثات حتى الآن</h3>
+            <p>ابدأ محادثة جديدة لمتابعة مراسلات العملاء وفريق المحاسبة من هنا.</p>
+          </div>
         </div>
       </section>
 
       <!-- Center column: active conversation -->
       <section class="card msg-pane chat" aria-label="المحادثة النشطة">
+        <!-- Empty State (يظهر عند عدم تحديد أي محادثة) -->
+        <div class="empty" hidden data-empty-state>
+          <div class="em-art">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>اختر محادثة للعرض</h3>
+          <p>حدد إحدى المحادثات من القائمة لعرض الرسائل والرد على العميل.</p>
+        </div>
+
         <!-- Active conversation header -->
         <div class="chat-head">
           <div class="ci">ن</div>
@@ -392,7 +410,7 @@
         <div class="composer">
           <textarea class="textarea" placeholder="اكتب رسالتك هنا..." style="min-height:70px;"></textarea>
           <div class="composer-foot">
-            <button type="button" class="btn btn-outline btn-sm">
+            <button type="button" class="btn btn-outline btn-sm" disabled title="قريباً">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m21.4 11.1-8.6 8.6a5 5 0 0 1-7-7l8.5-8.6a3 3 0 0 1 4.3 4.3l-8.6 8.5a1 1 0 0 1-1.4-1.4l7.9-7.9"/></svg>
               إرفاق ملف
             </button>

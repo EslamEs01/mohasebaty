@@ -203,7 +203,7 @@
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M9 13h6"/><path d="M9 17h4"/><path d="M9 9h1"/></svg>
         تقرير الضريبة
       </a>
-      <button class="btn btn-outline" type="button">
+      <button class="btn btn-outline" type="button" data-open="#exportConfirmModal">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>
         تصدير شامل
       </button>
@@ -212,6 +212,10 @@
         تقرير جديد
       </a>
       <div class="header-right">
+        <button class="icon-btn" aria-label="الإشعارات">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 7 3 9H3c0-2 3-2 3-9Z"/><path d="M10 21a2 2 0 0 0 4 0"/></svg>
+          <span class="badge">5</span>
+        </button>
         <button class="avatar-btn">
           <div class="avatar">ك.ع</div>
           <div class="avatar-name">
@@ -295,29 +299,29 @@
       </div>
     </div>
     <div class="reports-grid">
-      <button class="report-card">
+      <button class="report-card" disabled title="قريباً">
         <div class="rc-top">
           <div class="rc-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M8 17V9"/><path d="M13 17V5"/><path d="M18 17v-4"/></svg></div>
           <div style="flex:1;min-width:0;">
-            <div class="rc-title">ميزان مراجعة</div>
+            <div class="rc-title">ميزان مراجعة <span class="chip amber" style="font-size:10px;padding:1px 6px;vertical-align:middle;">قريباً</span></div>
             <div class="rc-sub">عرض أرصدة الحسابات المدينة والدائنة خلال فترة محددة</div>
           </div>
         </div>
         <div class="rc-foot"><span class="freq">شهري</span><span style="display:inline-flex;align-items:center;gap:4px;">فتح التقرير <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></span></div>
       </button>
 
-      <button class="report-card rc-c2">
+      <button class="report-card rc-c2" disabled title="قريباً">
         <div class="rc-top">
           <div class="rc-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m3 17 6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></div>
           <div style="flex:1;min-width:0;">
-            <div class="rc-title">قائمة الدخل</div>
+            <div class="rc-title">قائمة الدخل <span class="chip amber" style="font-size:10px;padding:1px 6px;vertical-align:middle;">قريباً</span></div>
             <div class="rc-sub">تحليل الإيرادات والمصروفات وصافي الربح التقديري</div>
           </div>
         </div>
         <div class="rc-foot"><span class="freq">شهري</span><span style="display:inline-flex;align-items:center;gap:4px;">فتح التقرير <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></span></div>
       </button>
 
-      <button class="report-card rc-c3">
+      <a href="vat-report.html" class="report-card rc-c3" style="text-decoration:none;display:block;">
         <div class="rc-top">
           <div class="rc-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M19 5 5 19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg></div>
           <div style="flex:1;min-width:0;">
@@ -326,42 +330,42 @@
           </div>
         </div>
         <div class="rc-foot"><span class="freq">شهري</span><span style="display:inline-flex;align-items:center;gap:4px;">فتح التقرير <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></span></div>
-      </button>
+      </a>
 
-      <button class="report-card rc-c4">
+      <button class="report-card rc-c4" disabled title="قريباً">
         <div class="rc-top">
           <div class="rc-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
           <div style="flex:1;min-width:0;">
-            <div class="rc-title">تقرير الإيرادات</div>
+            <div class="rc-title">تقرير الإيرادات <span class="chip amber" style="font-size:10px;padding:1px 6px;vertical-align:middle;">قريباً</span></div>
             <div class="rc-sub">تفاصيل فواتير المبيعات والإيرادات حسب العميل والبند</div>
           </div>
         </div>
         <div class="rc-foot"><span class="freq">شهري</span><span style="display:inline-flex;align-items:center;gap:4px;">فتح التقرير <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></span></div>
       </button>
 
-      <button class="report-card rc-c5">
+      <button class="report-card rc-c5" disabled title="قريباً">
         <div class="rc-top">
           <div class="rc-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/><path d="M7 15h4"/></svg></div>
           <div style="flex:1;min-width:0;">
-            <div class="rc-title">تقرير المصروفات</div>
+            <div class="rc-title">تقرير المصروفات <span class="chip amber" style="font-size:10px;padding:1px 6px;vertical-align:middle;">قريباً</span></div>
             <div class="rc-sub">تحليل المصروفات حسب التصنيف والفترة</div>
           </div>
         </div>
         <div class="rc-foot"><span class="freq">شهري</span><span style="display:inline-flex;align-items:center;gap:4px;">فتح التقرير <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></span></div>
       </button>
 
-      <button class="report-card rc-c6">
+      <button class="report-card rc-c6" disabled title="قريباً">
         <div class="rc-top">
           <div class="rc-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M10 13h.01"/><path d="m9.5 16.5 1 1 2.5-2.5"/></svg></div>
           <div style="flex:1;min-width:0;">
-            <div class="rc-title">المستندات غير المصنفة</div>
+            <div class="rc-title">المستندات غير المصنفة <span class="chip amber" style="font-size:10px;padding:1px 6px;vertical-align:middle;">قريباً</span></div>
             <div class="rc-sub">متابعة المستندات التي لم يتم تصنيفها أو ترحيلها</div>
           </div>
         </div>
         <div class="rc-foot"><span class="freq">لحظي</span><span style="display:inline-flex;align-items:center;gap:4px;">فتح التقرير <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></span></div>
       </button>
 
-      <button class="report-card">
+      <a href="client-reports.html" class="report-card" style="text-decoration:none;display:block;">
         <div class="rc-top">
           <div class="rc-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
           <div style="flex:1;min-width:0;">
@@ -370,9 +374,9 @@
           </div>
         </div>
         <div class="rc-foot"><span class="freq">حسب الطلب</span><span style="display:inline-flex;align-items:center;gap:4px;">فتح التقرير <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></span></div>
-      </button>
+      </a>
 
-      <button class="report-card rc-c2">
+      <a href="audit-log.html" class="report-card rc-c2" style="text-decoration:none;display:block;">
         <div class="rc-top">
           <div class="rc-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
           <div style="flex:1;min-width:0;">
@@ -381,7 +385,7 @@
           </div>
         </div>
         <div class="rc-foot"><span class="freq">يومي</span><span style="display:inline-flex;align-items:center;gap:4px;">فتح التقرير <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></span></div>
-      </button>
+      </a>
     </div>
 
     <!-- Recent generated reports + status summary -->
@@ -419,7 +423,12 @@
                 <td><span class="assignee"><span class="av a-1">أ</span><span class="name">أحمد محمود</span></span></td>
                 <td class="upd">اليوم</td>
                 <td><span class="chip green">جاهز</span></td>
-                <td><button class="row-action view" type="button"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> تحميل</button></td>
+                <td>
+                  <div style="display:flex;gap:6px;flex-wrap:wrap;">
+                    <button class="row-action view" type="button" data-open="#exportConfirmModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> تصدير</button>
+                    <button class="row-action" type="button" data-open="#approveReportModal">اعتماد</button>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td>
@@ -433,7 +442,12 @@
                 <td><span class="assignee"><span class="av a-2">م</span><span class="name">منى حسن</span></span></td>
                 <td class="upd">أمس</td>
                 <td><span class="chip green">جاهز</span></td>
-                <td><button class="row-action view" type="button"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg> عرض</button></td>
+                <td>
+                  <div style="display:flex;gap:6px;flex-wrap:wrap;">
+                    <button class="row-action view" type="button" data-open="#exportConfirmModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> تصدير</button>
+                    <button class="row-action" type="button" data-open="#approveReportModal">اعتماد</button>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td>
@@ -447,7 +461,7 @@
                 <td><span class="assignee"><span class="av a-1">أ</span><span class="name">أحمد محمود</span></span></td>
                 <td class="upd">منذ 3 أيام</td>
                 <td><span class="chip amber">قيد التجهيز</span></td>
-                <td><button class="row-action review" type="button"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> متابعة</button></td>
+                <td><button class="row-action review" type="button" disabled title="قريباً">متابعة</button></td>
               </tr>
               <tr>
                 <td>
@@ -461,7 +475,12 @@
                 <td><span class="assignee"><span class="av a-3">خ</span><span class="name">خالد عمر</span></span></td>
                 <td class="upd">منذ 5 أيام</td>
                 <td><span class="chip green">جاهز</span></td>
-                <td><button class="row-action view" type="button"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> تحميل</button></td>
+                <td>
+                  <div style="display:flex;gap:6px;flex-wrap:wrap;">
+                    <button class="row-action view" type="button" data-open="#exportConfirmModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> تصدير</button>
+                    <button class="row-action" type="button" data-open="#approveReportModal">اعتماد</button>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td>
@@ -475,7 +494,12 @@
                 <td><span class="assignee"><span class="av a-2">م</span><span class="name">منى حسن</span></span></td>
                 <td class="upd">منذ أسبوع</td>
                 <td><span class="chip green">جاهز</span></td>
-                <td><button class="row-action view" type="button"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg> عرض</button></td>
+                <td>
+                  <div style="display:flex;gap:6px;flex-wrap:wrap;">
+                    <button class="row-action view" type="button" data-open="#exportConfirmModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> تصدير</button>
+                    <button class="row-action" type="button" data-open="#approveReportModal">اعتماد</button>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td>
@@ -489,7 +513,7 @@
                 <td><span class="assignee"><span class="av a-1">أ</span><span class="name">أحمد محمود</span></span></td>
                 <td class="upd">منذ 10 أيام</td>
                 <td><span class="chip rose">تحتاج مراجعة</span></td>
-                <td><button class="row-action review" type="button"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> متابعة</button></td>
+                <td><button class="row-action review" type="button" disabled title="قريباً">متابعة</button></td>
               </tr>
             </tbody>
           </table>
@@ -509,7 +533,7 @@
         </div>
 
         <div class="tbl-foot">
-          <span>عرض 7 من 24 تقرير</span>
+          <span>عرض 6 من 24 تقرير</span>
           <div class="pager">
             <button aria-label="السابق"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button>
             <button class="current">1</button>
@@ -553,6 +577,90 @@
     </div>
 
   </main>
+</div>
+
+<!-- Approve Report Modal -->
+<div class="scrim" data-overlay id="approveReportModal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="approveReportTitle">
+    <div class="modal-head">
+      <h3 id="approveReportTitle">اعتماد التقرير</h3>
+      <button class="icon-btn" data-close aria-label="إغلاق">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p style="margin:0 0 16px; font-size:13.5px; color:var(--ink-3, #5a5650); line-height:1.7;">يرجى مراجعة تفاصيل التقرير أدناه قبل إتمام عملية الاعتماد. بعد الاعتماد سيُوضع التقرير في حالة «معتمد» ولا يمكن تعديله.</p>
+      <div class="set-body">
+        <div class="set-row">
+          <div class="info"><b>اسم التقرير</b><span>التقرير المطلوب اعتماده</span></div>
+          <div class="ctrl">تقرير الضريبة — مايو 2026</div>
+        </div>
+        <div class="set-row">
+          <div class="info"><b>الحالة الحالية</b><span>وضع التقرير قبل الاعتماد</span></div>
+          <div class="ctrl"><span class="chip green">جاهز</span></div>
+        </div>
+        <div class="set-row">
+          <div class="info"><b>المُعد</b><span>المحاسب الذي أنشأ التقرير</span></div>
+          <div class="ctrl"><span class="assignee"><span class="av a-1">أ</span><span class="name">أحمد محمود</span></span></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-primary" type="button">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        اعتماد التقرير
+      </button>
+      <button class="btn btn-outline" type="button" data-close>إلغاء</button>
+    </div>
+  </div>
+</div>
+
+<!-- Export Confirm Modal -->
+<div class="scrim" data-overlay id="exportConfirmModal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="exportConfirmTitle">
+    <div class="modal-head">
+      <h3 id="exportConfirmTitle">تصدير البيانات</h3>
+      <button class="icon-btn" data-close aria-label="إغلاق">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p style="margin:0 0 16px; font-size:13.5px; color:var(--ink-3, #5a5650); line-height:1.7;">سيتم تجهيز ملف يحتوي على البيانات المعروضة ضمن النطاق المحدّد أدناه. راجع التفاصيل واختر صيغة الملف المناسبة قبل التصدير.</p>
+      <div class="set-body">
+        <div class="set-row">
+          <div class="info"><b>النطاق</b><span>الفترة المشمولة بالتصدير</span></div>
+          <div class="ctrl">مايو 2026</div>
+        </div>
+        <div class="set-row">
+          <div class="info"><b>عدد السجلات</b><span>إجمالي السجلات ضمن النطاق</span></div>
+          <div class="ctrl"><span class="chip primary">١٢٨ سجلاً</span></div>
+        </div>
+        <div class="set-row">
+          <div class="info"><b>صيغة الملف</b><span>اختر صيغة التصدير</span></div>
+          <div class="ctrl">
+            <div class="seg">
+              <button type="button" class="active">PDF</button>
+              <button type="button">Excel</button>
+              <button type="button">CSV</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="toast" style="margin-top:16px;">
+        <span class="check">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>
+        </span>
+        <span>صيغة PDF موصى بها للطباعة والأرشفة الرسمية. اختر Excel أو CSV لمزيد من المعالجة.</span>
+      </div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-primary" type="button">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+        تصدير
+      </button>
+      <button class="btn btn-outline" type="button" data-close>إغلاق</button>
+    </div>
+  </div>
 </div>
 
 <script src="../assets/js/main.js"></script>
