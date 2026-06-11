@@ -13,7 +13,7 @@ responsive, and consistent with the 15 approved pages.
 <!-- SPECKIT START -->
 For additional context about technologies to be used, project structure,
 shell commands, and other important information, read the current plan:
-`specs/009-categories-approval-workflow/plan.md`
+`specs/011-client-reports-view/plan.md`
 (see also its `research.md`, `data-model.md`, `contracts/page-contracts.md`, and `quickstart.md`).
-Prior features: `specs/008-vat-tax-documents/spec.md`, `specs/007-bank-statement-reconciliation/plan.md`, `specs/006-vendors-customers-banks/plan.md`, `specs/005-opening-balances-fiscal-periods/plan.md`, `specs/004-data-import-module/plan.md`, `specs/003-data-import-module/plan.md`, `specs/002-client-onboarding-tax-profile/plan.md`.
+Prior features: `specs/010-audit-log-notifications/plan.md`, `specs/009-categories-approval-workflow/plan.md`, `specs/008-vat-tax-documents/spec.md`, `specs/007-bank-statement-reconciliation/plan.md`, `specs/006-vendors-customers-banks/plan.md`, `specs/005-opening-balances-fiscal-periods/plan.md`, `specs/004-data-import-module/plan.md`, `specs/003-data-import-module/plan.md`, `specs/002-client-onboarding-tax-profile/plan.md`.
 <!-- SPECKIT END -->
