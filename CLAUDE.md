@@ -13,7 +13,7 @@ responsive, and consistent with the 15 approved pages.
 <!-- SPECKIT START -->
 For additional context about technologies to be used, project structure,
 shell commands, and other important information, read the current plan:
-`specs/004-data-import-module/plan.md`
+`specs/005-opening-balances-fiscal-periods/plan.md`
 (see also its `research.md`, `data-model.md`, `contracts/page-contracts.md`, and `quickstart.md`).
-Prior features: `specs/003-data-import-module/plan.md`, `specs/002-client-onboarding-tax-profile/plan.md`.
+Prior features: `specs/004-data-import-module/plan.md`, `specs/003-data-import-module/plan.md`, `specs/002-client-onboarding-tax-profile/plan.md`.
 <!-- SPECKIT END -->
