@@ -334,10 +334,10 @@
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>
             <span class="bulk-count"><b data-bulk-count>0</b> مستندات محددة</span>
             <div class="bulk-actions">
-              <button class="ba-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6"/><path d="M22 11h-6"/></svg> تعيين لمحاسب</button>
-              <button class="ba-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8Z"/><circle cx="7.5" cy="7.5" r="1"/></svg> تغيير الحالة</button>
-              <button class="ba-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> تصدير</button>
-              <button class="ba-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="4" rx="1"/><path d="M5 8v11a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/><path d="M10 12h4"/></svg> أرشفة</button>
+              <button class="ba-btn" type="button" data-open="#bulkActionModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6"/><path d="M22 11h-6"/></svg> تعيين لمحاسب</button>
+              <button class="ba-btn" type="button" data-open="#bulkActionModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8Z"/><circle cx="7.5" cy="7.5" r="1"/></svg> تغيير الحالة</button>
+              <button class="ba-btn" type="button" data-open="#exportConfirmModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> تصدير</button>
+              <button class="ba-btn" type="button" data-open="#bulkActionModal"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="4" rx="1"/><path d="M5 8v11a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/><path d="M10 12h4"/></svg> أرشفة</button>
               <button class="ba-clear" data-bulk-clear>إلغاء</button>
             </div>
           </div>
@@ -382,7 +382,7 @@
                   <td><span class="chip rose">مطلوب توضيح</span></td>
                   <td class="upd">منذ ساعة</td>
                   <td><span class="assignee"><span class="av a-2">م</span><span class="name">منى</span></span></td>
-                  <td><button class="row-action followup"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> متابعة</button></td>
+                  <td><a href="document-review.html" class="row-action followup"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> متابعة</a></td>
                 </tr>
                 <tr>
                   <td><button type="button" class="checkbox" data-bulk-row></button></td>
@@ -394,7 +394,7 @@
                   <td><span class="chip green">تم التصنيف</span></td>
                   <td class="upd">أمس</td>
                   <td><span class="assignee"><span class="av a-1">أ</span><span class="name">أحمد</span></span></td>
-                  <td><button class="row-action view"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg> عرض</button></td>
+                  <td><a href="document-review.html" class="row-action view"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg> عرض</a></td>
                 </tr>
                 <tr>
                   <td><button type="button" class="checkbox" data-bulk-row></button></td>
@@ -406,7 +406,7 @@
                   <td><span class="chip amber">قيد المراجعة</span></td>
                   <td class="upd">أمس</td>
                   <td><span class="unassigned"><span class="dot"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6"/><path d="M22 11h-6"/></svg></span> غير معين</span></td>
-                  <td><button class="row-action assign"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6"/><path d="M22 11h-6"/></svg> تعيين</button></td>
+                  <td><a href="document-review.html" class="row-action assign"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6"/><path d="M22 11h-6"/></svg> تعيين</a></td>
                 </tr>
                 <tr>
                   <td><button type="button" class="checkbox" data-bulk-row></button></td>
@@ -430,7 +430,7 @@
                   <td><span class="chip green">تم التصنيف</span></td>
                   <td class="upd">منذ يومين</td>
                   <td><span class="assignee"><span class="av a-3">س</span><span class="name">سالم</span></span></td>
-                  <td><button class="row-action view"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg> عرض</button></td>
+                  <td><a href="document-review.html" class="row-action view"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg> عرض</a></td>
                 </tr>
                 <tr>
                   <td><button type="button" class="checkbox" data-bulk-row></button></td>
@@ -442,7 +442,7 @@
                   <td><span class="chip primary">تم الترحيل</span></td>
                   <td class="upd">منذ 3 أيام</td>
                   <td><span class="assignee"><span class="av a-2">م</span><span class="name">منى</span></span></td>
-                  <td><button class="row-action view"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg> عرض</button></td>
+                  <td><a href="document-review.html" class="row-action view"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg> عرض</a></td>
                 </tr>
                 <tr>
                   <td><button type="button" class="checkbox" data-bulk-row></button></td>
@@ -454,7 +454,7 @@
                   <td><span class="chip rose">مطلوب توضيح</span></td>
                   <td class="upd">منذ 4 ساعات</td>
                   <td><span class="assignee"><span class="av a-1">أ</span><span class="name">أحمد</span></span></td>
-                  <td><button class="row-action followup"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> متابعة</button></td>
+                  <td><a href="document-review.html" class="row-action followup"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> متابعة</a></td>
                 </tr>
                 <tr>
                   <td><button type="button" class="checkbox" data-bulk-row></button></td>
@@ -466,7 +466,7 @@
                   <td><span class="chip green">تم التصنيف</span></td>
                   <td class="upd">منذ 3 أيام</td>
                   <td><span class="assignee"><span class="av a-3">س</span><span class="name">سالم</span></span></td>
-                  <td><button class="row-action view"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg> عرض</button></td>
+                  <td><a href="document-review.html" class="row-action view"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg> عرض</a></td>
                 </tr>
                 <tr>
                   <td><button type="button" class="checkbox" data-bulk-row></button></td>
@@ -478,7 +478,7 @@
                   <td><span class="chip amber">قيد المراجعة</span></td>
                   <td class="upd">أمس</td>
                   <td><span class="unassigned"><span class="dot"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6"/><path d="M22 11h-6"/></svg></span> غير معين</span></td>
-                  <td><button class="row-action assign"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6"/><path d="M22 11h-6"/></svg> تعيين</button></td>
+                  <td><a href="document-review.html" class="row-action assign"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6"/><path d="M22 11h-6"/></svg> تعيين</a></td>
                 </tr>
               </tbody>
             </table>
@@ -547,7 +547,7 @@
           </div>
           <div class="pri-foot">
             <span style="font-size:12px;color:#8A93A1;">تحديث تلقائي</span>
-            <a href="#">عرض الكل (7) ←</a>
+            <a href="accountant-inbox.html">عرض الكل (7) ←</a>
           </div>
         </div>
 
@@ -580,6 +580,81 @@
     </div>
 
   </main>
+</div>
+
+<div class="scrim" data-overlay id="exportConfirmModal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="exportConfirmTitle">
+    <div class="modal-head">
+      <h3 id="exportConfirmTitle">تصدير البيانات</h3>
+      <button class="icon-btn" data-close aria-label="إغلاق">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p style="margin:0 0 16px; font-size:13.5px; color:var(--ink-3, #5a5650); line-height:1.7;">سيتم تجهيز ملف يحتوي على المستندات المحددة ضمن النطاق المحدّد أدناه. راجع التفاصيل واختر صيغة الملف المناسبة قبل التصدير.</p>
+      <div class="set-body">
+        <div class="set-row">
+          <div class="info"><b>النطاق</b><span>الفترة المشمولة بالتصدير</span></div>
+          <div class="ctrl">مايو 2026</div>
+        </div>
+        <div class="set-row">
+          <div class="info"><b>عدد السجلات</b><span>إجمالي المستندات المحددة</span></div>
+          <div class="ctrl"><span class="chip primary">١٢٨ سجلاً</span></div>
+        </div>
+        <div class="set-row">
+          <div class="info"><b>صيغة الملف</b><span>اختر صيغة التصدير</span></div>
+          <div class="ctrl">
+            <div class="seg">
+              <button type="button" class="active">PDF</button>
+              <button type="button">Excel</button>
+              <button type="button">CSV</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="toast" style="margin-top:16px;">
+        <span class="check">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>
+        </span>
+        <span>صيغة PDF موصى بها للطباعة والأرشفة الرسمية. اختر Excel أو CSV لمزيد من المعالجة.</span>
+      </div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-primary" type="button">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+        تصدير
+      </button>
+      <button class="btn btn-outline" type="button" data-close>إغلاق</button>
+    </div>
+  </div>
+</div>
+
+<div class="scrim" data-overlay id="bulkActionModal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="bulkActionTitle">
+    <div class="modal-head">
+      <h3 id="bulkActionTitle">تأكيد الإجراء الجماعي</h3>
+      <button class="icon-btn" data-close aria-label="إغلاق">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p style="margin:0 0 14px; font-size:13.5px; color:var(--ink-3, #5a5650); line-height:1.7;">سيتم تطبيق الإجراء المحدد على جميع المستندات المختارة. راجع تحديدك وأضف ملاحظة إن لزم قبل المتابعة.</p>
+      <div class="set-body">
+        <div class="set-row">
+          <div class="info"><b>المستندات المحددة</b><span>سيشملها الإجراء الجماعي</span></div>
+          <div class="ctrl"><span class="chip primary">المستندات المحددة</span></div>
+        </div>
+      </div>
+      <div class="field" style="margin-top:14px;">
+        <label>ملاحظة (اختياري)</label>
+        <textarea class="input" rows="2" placeholder="أضف ملاحظة تُرفق بالإجراء"></textarea>
+      </div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-primary" type="button">تأكيد الإجراء</button>
+      <button class="btn btn-outline" type="button" data-close>إلغاء</button>
+    </div>
+  </div>
 </div>
 
 <script src="../assets/js/main.js"></script>

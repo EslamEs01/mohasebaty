@@ -200,6 +200,28 @@
         إضافة قاعدة
       </button>
       <div class="header-right">
+        <div style="position:relative;">
+          <button class="icon-btn" data-bell-toggle="approval-bell" aria-label="الإشعارات">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 7 3 9H3c0-2 3-2 3-9Z"/><path d="M10 21a2 2 0 0 0 4 0"/></svg>
+            <span class="badge">4</span>
+          </button>
+          <div class="notif-panel" data-bell-panel="approval-bell">
+            <div class="notif-head">الإشعارات</div>
+            <div class="notif-item">
+              <div class="nico amber"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+              <div><b>7 مستندات بانتظار اعتماد المحاسب المسؤول</b><span>منذ 20 دقيقة</span></div>
+            </div>
+            <div class="notif-item">
+              <div class="nico amber"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M9 13h6"/><path d="M9 17h4"/></svg></div>
+              <div><b>تقريران بانتظار اعتماد مدير الحسابات</b><span>منذ ساعة</span></div>
+            </div>
+            <div class="notif-item">
+              <div class="nico"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="m9 14 2 2 4-4"/></svg></div>
+              <div><b>تم اعتماد قاعدة إغلاق فترة مالية</b><span>منذ ساعتين</span></div>
+            </div>
+            <a class="notif-item" href="notifications.html"><div><b>عرض كل الإشعارات ←</b></div></a>
+          </div>
+        </div>
         <button class="avatar-btn">
           <div class="avatar">أ.م</div>
           <div class="avatar-name">
@@ -303,7 +325,7 @@
                   <td>المحاسب المسؤول</td>
                   <td>مدير الحسابات</td>
                   <td><span class="chip green">مفعّلة</span></td>
-                  <td><button class="btn btn-outline btn-sm" type="button">تعديل</button></td>
+                  <td><button class="btn btn-outline btn-sm" type="button" data-open="#addRuleModal">تعديل</button></td>
                 </tr>
                 <tr>
                   <td>ترحيل القيود</td>
@@ -311,7 +333,7 @@
                   <td>المحاسب المسؤول</td>
                   <td>مدير الحسابات</td>
                   <td><span class="chip green">مفعّلة</span></td>
-                  <td><button class="btn btn-outline btn-sm" type="button">تعديل</button></td>
+                  <td><button class="btn btn-outline btn-sm" type="button" data-open="#addRuleModal">تعديل</button></td>
                 </tr>
                 <tr>
                   <td>اعتماد تقرير VAT</td>
@@ -319,7 +341,7 @@
                   <td>محاسب الضرائب</td>
                   <td>مدير الحسابات</td>
                   <td><span class="chip green">مفعّلة</span></td>
-                  <td><button class="btn btn-outline btn-sm" type="button">تعديل</button></td>
+                  <td><button class="btn btn-outline btn-sm" type="button" data-open="#addRuleModal">تعديل</button></td>
                 </tr>
                 <tr>
                   <td>إغلاق فترة مالية</td>
@@ -327,7 +349,7 @@
                   <td>المحاسب المسؤول</td>
                   <td>المدير المالي</td>
                   <td><span class="chip green">مفعّلة</span></td>
-                  <td><button class="btn btn-outline btn-sm" type="button">تعديل</button></td>
+                  <td><button class="btn btn-outline btn-sm" type="button" data-open="#addRuleModal">تعديل</button></td>
                 </tr>
                 <tr>
                   <td>إعادة فتح فترة مغلقة</td>
@@ -335,10 +357,24 @@
                   <td><span class="ref" style="color:#8A93A1;">—</span></td>
                   <td>المدير المالي</td>
                   <td><span class="chip amber">يحتاج إكمال</span></td>
-                  <td><button class="btn btn-outline btn-sm" type="button">تعديل</button></td>
+                  <td><button class="btn btn-outline btn-sm" type="button" data-open="#addRuleModal">تعديل</button></td>
                 </tr>
               </tbody>
             </table>
+          </div>
+          <!-- Empty State (يظهر عند عدم وجود قواعد اعتماد مُعرَّفة) -->
+          <div hidden data-empty-state>
+            <div class="empty">
+              <div class="em-art">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="3"/><path d="M12 22V8"/><path d="m5 12-2 2 2 2"/><path d="M19 14l2-2-2-2"/><path d="M3 14h9"/><path d="M12 14h9"/></svg>
+              </div>
+              <h3>لا توجد قواعد اعتماد مُعرَّفة بعد</h3>
+              <p>ابدأ بإضافة أول قاعدة لتحديد المراجع الأول والمعتمد النهائي لكل عملية قبل الترحيل أو إصدار التقارير.</p>
+              <button class="btn btn-primary" type="button" data-open="#addRuleModal">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+                إضافة أول قاعدة
+              </button>
+            </div>
           </div>
         </section>
 
@@ -364,6 +400,7 @@
               <div class="ctrl" style="display:flex;align-items:center;gap:10px;">
                 <span class="chip amber">2</span>
                 <a href="vat-report.html" class="btn btn-outline btn-sm">عرض</a>
+                <button class="btn btn-primary btn-sm" type="button" data-open="#approveReportModal">اعتماد</button>
               </div>
             </div>
             <div class="set-row">
@@ -394,6 +431,48 @@
     </div>
 
   </main>
+</div>
+
+<!-- Approve Report Modal -->
+<div class="scrim" data-overlay id="approveReportModal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="approveReportTitle">
+    <div class="modal-head">
+      <h3 id="approveReportTitle">اعتماد التقرير</h3>
+      <button class="icon-btn" data-close aria-label="إغلاق">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p style="margin:0 0 16px; font-size:13.5px; color:var(--ink-3, #5a5650); line-height:1.7;">راجع تفاصيل التقرير قبل اعتماده. بعد الاعتماد لن يمكن تعديل التقرير إلا بصلاحية خاصة.</p>
+      <div class="set-body">
+        <div class="set-row">
+          <div class="info"><b>التقرير</b><span>اسم التقرير المراد اعتماده</span></div>
+          <div class="ctrl">قائمة الدخل — مايو 2026</div>
+        </div>
+        <div class="set-row">
+          <div class="info"><b>الحالة الحالية</b><span>حالة التقرير قبل الاعتماد</span></div>
+          <div class="ctrl"><span class="chip amber">مسودة</span></div>
+        </div>
+        <div class="set-row">
+          <div class="info"><b>المُعد</b><span>المحاسب الذي أعد التقرير</span></div>
+          <div class="ctrl">أحمد محمود</div>
+        </div>
+      </div>
+      <div class="fields-grid" style="margin-top:14px;">
+        <div class="field" style="grid-column:1 / -1;">
+          <label>ملاحظة اعتماد</label>
+          <input class="input" type="text" placeholder="أضف ملاحظة للاعتماد (اختياري)" />
+        </div>
+      </div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-primary" type="button">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>
+        اعتماد التقرير
+      </button>
+      <button class="btn btn-outline" type="button" data-close>إلغاء</button>
+    </div>
+  </div>
 </div>
 
 <!-- Add Rule Modal -->

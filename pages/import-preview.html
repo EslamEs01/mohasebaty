@@ -198,8 +198,9 @@
         </div>
       </div>
       <a class="btn btn-primary" href="import-history.html">تنفيذ الاستيراد</a>
+      <a class="btn btn-outline" href="import-errors.html">مراجعة الأخطاء (5)</a>
       <a class="btn btn-outline" href="import-mapping.html">رجوع للربط</a>
-      <button class="btn btn-outline">تحميل نسخة مراجعة</button>
+      <button class="btn btn-outline" type="button" data-open="#exportConfirmModal">تحميل نسخة مراجعة</button>
       <div class="header-right">
         <button class="avatar-btn">
           <div class="avatar">ك.ع</div>
@@ -247,7 +248,7 @@
             <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
           </div>
         </div>
-        <div class="kpi-num">8</div>
+        <div class="kpi-num">3</div>
         <div class="kpi-lbl">صفوف بها تحذيرات</div>
         <div class="kpi-help">تحتاج مراجعة قبل الاستيراد</div>
       </div>
@@ -409,13 +410,13 @@
     <!-- BLOCK: warnings card -->
     <div class="card" style="padding:20px;">
       <div class="card-head">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="color:#f59e0b;margin-inline-end:8px;"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-        <h2>تحذيرات (8 صفوف)</h2>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="color:#A06A0F;margin-inline-end:8px;"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        <h2>تحذيرات (3 صفوف)</h2>
       </div>
       <ul style="margin:12px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;">
-        <li style="padding:10px;background:#fffbeb;border-radius:6px;font-size:13px;border-inline-start:3px solid #f59e0b;">الصف 47 — المبلغ يحتوي على رمز عملة (ج.م) يجب إزالته قبل الاستيراد</li>
-        <li style="padding:10px;background:#fffbeb;border-radius:6px;font-size:13px;border-inline-start:3px solid #f59e0b;">الصف 63 — المبلغ مكتوب بين أقواس (120,500) يشير إلى قيمة سالبة — تحقق من صحة البيانات</li>
-        <li style="padding:10px;background:#fffbeb;border-radius:6px;font-size:13px;border-inline-start:3px solid #f59e0b;">الصف 89 — صيغة التاريخ (Jan-2026) غير مدعومة، سيُحوَّل تلقائياً إلى 01/01/2026</li>
+        <li style="padding:10px;background:#f4ecda;border-radius:6px;font-size:13px;border-inline-start:3px solid #A06A0F;">الصف 47 — المبلغ يحتوي على رمز عملة (ج.م) يجب إزالته قبل الاستيراد</li>
+        <li style="padding:10px;background:#f4ecda;border-radius:6px;font-size:13px;border-inline-start:3px solid #A06A0F;">الصف 63 — المبلغ مكتوب بين أقواس (120,500) يشير إلى قيمة سالبة — تحقق من صحة البيانات</li>
+        <li style="padding:10px;background:#f4ecda;border-radius:6px;font-size:13px;border-inline-start:3px solid #A06A0F;">الصف 89 — صيغة التاريخ (Jan-2026) غير مدعومة، سيُحوَّل تلقائياً إلى 01/01/2026</li>
       </ul>
     </div>
     <!-- /BLOCK -->
@@ -423,6 +424,55 @@
   </main>
 
 </div>
+
+<!-- BLOCK: export confirm modal -->
+<div class="scrim" data-overlay id="exportConfirmModal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="exportConfirmTitle">
+    <div class="modal-head">
+      <h3 id="exportConfirmTitle">تصدير البيانات</h3>
+      <button class="icon-btn" data-close aria-label="إغلاق">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p style="margin:0 0 16px; font-size:13.5px; color:var(--ink-3, #5a5650); line-height:1.7;">سيتم تجهيز ملف يحتوي على البيانات المعروضة ضمن النطاق المحدّد أدناه. راجع التفاصيل واختر صيغة الملف المناسبة قبل التصدير.</p>
+      <div class="set-body">
+        <div class="set-row">
+          <div class="info"><b>النطاق</b><span>الفترة المشمولة بالتصدير</span></div>
+          <div class="ctrl">مايو 2026</div>
+        </div>
+        <div class="set-row">
+          <div class="info"><b>عدد السجلات</b><span>إجمالي السجلات ضمن النطاق</span></div>
+          <div class="ctrl"><span class="chip primary">١٢٨ سجلاً</span></div>
+        </div>
+        <div class="set-row">
+          <div class="info"><b>صيغة الملف</b><span>اختر صيغة التصدير</span></div>
+          <div class="ctrl">
+            <div class="seg">
+              <button type="button" class="active">PDF</button>
+              <button type="button">Excel</button>
+              <button type="button">CSV</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="toast" style="margin-top:16px;">
+        <span class="check">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>
+        </span>
+        <span>صيغة PDF موصى بها للطباعة والأرشفة الرسمية. اختر Excel أو CSV لمزيد من المعالجة.</span>
+      </div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-primary" type="button">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+        تصدير
+      </button>
+      <button class="btn btn-outline" type="button" data-close>إغلاق</button>
+    </div>
+  </div>
+</div>
+<!-- /BLOCK -->
 
 <script src="../assets/js/main.js"></script>
 </body>

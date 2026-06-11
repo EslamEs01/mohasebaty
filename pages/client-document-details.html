@@ -211,6 +211,41 @@
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 0 0 0-9h-1.3A7 7 0 1 0 4 16.4"/><path d="M12 12v8"/><path d="m9 15 3-3 3 3"/></svg>
           رفع مستند جديد
         </a>
+        <div class="client-pill">
+          <span class="dot"></span>
+          <span>متصل بـ</span>
+          <b>شركة النور للتجارة</b>
+        </div>
+        <div style="position:relative;">
+          <button class="icon-btn" data-bell-toggle="docdetails-bell" aria-label="الإشعارات">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 7 3 9H3c0-2 3-2 3-9Z"/><path d="M10 21a2 2 0 0 0 4 0"/></svg>
+            <span class="badge">3</span>
+          </button>
+          <div class="notif-panel" data-bell-panel="docdetails-bell">
+            <div class="notif-head">الإشعارات</div>
+            <div class="notif-item">
+              <div class="nico"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+              <div><b>رسالة جديدة من المحاسب</b><span>منذ ساعتين</span></div>
+            </div>
+            <div class="notif-item">
+              <div class="nico rose"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></div>
+              <div><b>فاتورة EXP-118 تحتاج توضيحًا</b><span>اليوم</span></div>
+            </div>
+            <div class="notif-item">
+              <div class="nico amber"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="m9 14 2 2 4-4"/></svg></div>
+              <div><b>تم استلام سند صرف PV-073</b><span>أمس</span></div>
+            </div>
+            <a class="notif-item" href="notifications.html"><div><b>عرض كل الإشعارات ←</b></div></a>
+          </div>
+        </div>
+        <button class="avatar-btn">
+          <div class="avatar">ن.ع</div>
+          <div class="avatar-name">
+            <b>نورة العمري</b>
+            <span>مديرة الحسابات</span>
+          </div>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
       </div>
     </header>
     <!-- /BLOCK -->
@@ -284,9 +319,9 @@
               </div>
             </div>
             <div class="preview-tools" style="display:flex;gap:8px;flex-wrap:wrap;">
-              <button class="btn btn-outline btn-sm" type="button"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg> عرض الملف</button>
-              <button class="btn btn-outline btn-sm" type="button"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> تحميل الملف</button>
-              <button class="btn btn-outline btn-sm" type="button"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 0 0 0-9h-1.3A7 7 0 1 0 4 16.4"/><path d="M12 12v8"/><path d="m9 15 3-3 3 3"/></svg> رفع نسخة بديلة</button>
+              <button class="btn btn-outline btn-sm" type="button" disabled title="قريباً"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg> عرض الملف</button>
+              <button class="btn btn-outline btn-sm" type="button" disabled title="قريباً"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> تحميل الملف</button>
+              <a class="btn btn-outline btn-sm" href="upload-document.html"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 0 0 0-9h-1.3A7 7 0 1 0 4 16.4"/><path d="M12 12v8"/><path d="m9 15 3-3 3 3"/></svg> رفع نسخة بديلة</a>
             </div>
           </div>
           <div style="padding:0 22px 22px;">

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>سجل النشاط · منصة محاسبتي</title>
+  <title>سجل التدقيق · منصة محاسبتي</title>
   <link rel="stylesheet" href="../assets/css/output.css" />
 </head>
 <body>
@@ -16,7 +16,7 @@
       <div class="brand-mark">م</div>
       <div class="brand-name">
         <b>منصة محاسبتي</b>
-        <span>ACCOUNTANT</span>
+        <span>ADMIN</span>
       </div>
     </div>
     <div class="sidebar-section-label">لوحات العميل</div>
@@ -191,11 +191,11 @@
       <div class="page-title-wrap">
         <div>
           <div class="title-eyebrow">الحوكمة · التتبع</div>
-          <div class="page-title">سجل النشاط</div>
+          <div class="page-title">سجل التدقيق</div>
           <div class="page-sub">تابع كل العمليات والتعديلات الحساسة داخل النظام</div>
         </div>
       </div>
-      <button class="btn btn-outline" type="button">
+      <button class="btn btn-outline" type="button" data-open="#exportConfirmModal">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>
         تصدير السجل
       </button>
@@ -416,6 +416,23 @@
                   <td><span class="ref" style="color:#8A93A1;">127.0.0.1</span></td>
                   <td><button class="btn btn-outline btn-sm" type="button">عرض</button></td>
                 </tr>
+
+                <!-- Empty state (يظهر عند تطبيق فلاتر لا تطابق أي حدث) -->
+                <tr hidden data-empty-state>
+                  <td colspan="9">
+                    <div class="empty">
+                      <div class="em-art">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M9 12h6"/><path d="M9 16h4"/></svg>
+                      </div>
+                      <h3>لا توجد أحداث تطابق الفلاتر المحددة</h3>
+                      <p>جرّب توسيع نطاق الفترة أو تغيير المستخدم أو العميل أو نوع الإجراء، أو امسح الفلاتر لعرض جميع الأحداث المسجّلة في السجل.</p>
+                      <button class="btn btn-outline" type="button">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+                        مسح الفلاتر
+                      </button>
+                    </div>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -456,7 +473,7 @@
     </div>
 
     <div class="foot">
-      <div>منصة محاسبتي · سجل النشاط · 2026</div>
+      <div>منصة محاسبتي · سجل التدقيق · 2026</div>
       <div class="links">
         <a href="settings.html">إعدادات النظام</a>
         <a href="users-permissions.html">المستخدمون والصلاحيات</a>
@@ -466,6 +483,54 @@
     </div>
 
   </main>
+</div>
+
+<!-- Export Confirm Modal -->
+<div class="scrim" data-overlay id="exportConfirmModal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="exportConfirmTitle">
+    <div class="modal-head">
+      <h3 id="exportConfirmTitle">تصدير البيانات</h3>
+      <button class="icon-btn" data-close aria-label="إغلاق">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p style="margin:0 0 16px; font-size:13.5px; color:var(--ink-3, #5a5650); line-height:1.7;">سيتم تجهيز ملف يحتوي على البيانات المعروضة ضمن النطاق المحدّد أدناه. راجع التفاصيل واختر صيغة الملف المناسبة قبل التصدير.</p>
+      <div class="set-body">
+        <div class="set-row">
+          <div class="info"><b>النطاق</b><span>الفترة المشمولة بالتصدير</span></div>
+          <div class="ctrl">مايو 2026</div>
+        </div>
+        <div class="set-row">
+          <div class="info"><b>عدد السجلات</b><span>إجمالي السجلات ضمن النطاق</span></div>
+          <div class="ctrl"><span class="chip primary">١٢٨ سجلاً</span></div>
+        </div>
+        <div class="set-row">
+          <div class="info"><b>صيغة الملف</b><span>اختر صيغة التصدير</span></div>
+          <div class="ctrl">
+            <div class="seg">
+              <button type="button" class="active">PDF</button>
+              <button type="button">Excel</button>
+              <button type="button">CSV</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="toast" style="margin-top:16px;">
+        <span class="check">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>
+        </span>
+        <span>صيغة PDF موصى بها للطباعة والأرشفة الرسمية. اختر Excel أو CSV لمزيد من المعالجة.</span>
+      </div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-primary" type="button">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+        تصدير
+      </button>
+      <button class="btn btn-outline" type="button" data-close>إغلاق</button>
+    </div>
+  </div>
 </div>
 
 <script src="../assets/js/main.js"></script>
