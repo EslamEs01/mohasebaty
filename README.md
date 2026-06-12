@@ -25,7 +25,7 @@ Arabic RTL outsourced accounting / bookkeeping platform — fully static HTML/CS
 
 ### بوابة العميل · Client Portal
 
-> **تنقّل منفصل للعميل · Separated navigation:** صفحات بوابة العميل الست تستخدم **قائمة جانبية مبسّطة خاصة بالعميل** (لوحة العميل · رفع مستند جديد · مستنداتي · تقاريري · الرسائل) ولا تعرض أي روابط محاسبية/إدارية داخلية. أمّا صفحات المحاسب/الإدارة فتحتفظ بالقائمة الجانبية الكاملة. (The 6 client-portal pages use a simplified **client-only sidebar**; internal accounting/admin navigation is never shown to clients. Accountant/admin pages keep the full sidebar.)
+> **التنقّل في النسخة التجريبية · Prototype navigation:** للأغراض التجريبية/الاستعراضية للواجهة الأمامية، تظهر القائمة الجانبية الكاملة عبر جميع الصفحات حتى يتمكّن المراجعون من الوصول إلى كل الشاشات. سيفرض تطبيق الواجهة الخلفية لاحقًا التنقّل والصلاحيات حسب الدور (RBAC). (For frontend prototype/demo purposes, the full navigation is visible across pages so reviewers can access all screens. Backend implementation will enforce role-based navigation and permissions.)
 
 | الصفحة العربية | المسار |
 |---|---|

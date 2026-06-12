@@ -293,7 +293,9 @@ Suggested navigation groups:
 
 Client pages must stay simple and non-technical.
 
-**Client navigation (MANDATORY):** The client-portal pages — `client-dashboard.html`, `upload-document.html`, `client-documents.html`, `client-document-details.html`, `client-reports.html`, `messages.html` — MUST use the **simplified client-only sidebar** and MUST NEVER expose the accountant/admin sidebar. The client sidebar contains ONLY these five links: لوحة العميل (`client-dashboard.html`), رفع مستند جديد (`upload-document.html`), مستنداتي (`client-documents.html`), تقاريري (`client-reports.html`), الرسائل (`messages.html`), plus an optional client profile block in the footer (company name · account status · responsible accountant). Adding any internal link to a client page sidebar — شجرة الحسابات، القيود المحاسبية، إدارة العملاء، إعدادات النظام، الاستيراد، البنوك، الضرائب الداخلية، التقارير الإدارية، سجل التدقيق, etc. — is PROHIBITED. The full sidebar belongs to accountant/admin pages only.
+**Client navigation — business rule vs. prototype exception:**
+- **Backend/RBAC rule (permanent):** Real **client** users MUST NOT be able to access admin/accounting modules (chart of accounts, journal entries, client management, system settings, internal tax/admin reports, imports, banks, audit log). Once the backend exists, role-based access control MUST enforce client-only navigation for client accounts and accountant/admin navigation per permission for staff accounts.
+- **Frontend-prototype exception (current static demo only):** During the static demo/review phase — with no backend or auth — the **full unified sidebar is shown on all pages, including the client-portal pages** (`client-dashboard.html`, `upload-document.html`, `client-documents.html`, `client-document-details.html`, `client-reports.html`, `messages.html`) so reviewers/buyers can reach every screen from anywhere. This visibility is a review convenience ONLY and does not change the backend rule above; it MUST be replaced by RBAC-enforced navigation during backend integration.
 
 Client must not see:
 

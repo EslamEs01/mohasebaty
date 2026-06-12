@@ -276,6 +276,13 @@
         </div>
         <span class="chip green">235 صف جاهز</span>
       </div>
+      <div class="callout callout-success" style="margin-bottom:14px;">
+        <span class="callout-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>
+        <div class="callout-body">
+          <b class="callout-title">٢٣٥ صفًا جاهزة للاستيراد</b>
+          <p class="callout-text">تم التحقق من معظم الصفوف بنجاح. راجع الصفوف التي بها تحذيرات أدناه قبل اعتماد الاستيراد النهائي.</p>
+        </div>
+      </div>
       <div class="table-wrap">
         <table class="docs">
           <thead>
@@ -401,6 +408,17 @@
               <td>—</td>
               <td><span class="chip rose">خطأ</span></td>
             </tr>
+            <!-- Empty state (hidden — يظهر عند عدم وجود نتائج للربط بالـ backend مستقبلاً) -->
+            <tr hidden data-empty-state>
+              <td colspan="9">
+                <div class="empty">
+                  <div class="em-art"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+                  <h3>لا توجد بيانات للمعاينة</h3>
+                  <p>لم يتم تجهيز أي بيانات للمعاينة بعد. ابدأ استيراداً جديداً وأكمل خطوات المطابقة لعرض الصفوف هنا.</p>
+                  <a class="btn btn-primary" href="data-import.html"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg> بدء استيراد جديد</a>
+                </div>
+              </td>
+            </tr>
           </tbody>
         </table>
       </div>
@@ -413,11 +431,20 @@
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="color:#A06A0F;margin-inline-end:8px;"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
         <h2>تحذيرات (3 صفوف)</h2>
       </div>
-      <ul style="margin:12px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;">
-        <li style="padding:10px;background:#f4ecda;border-radius:6px;font-size:13px;border-inline-start:3px solid #A06A0F;">الصف 47 — المبلغ يحتوي على رمز عملة (ج.م) يجب إزالته قبل الاستيراد</li>
-        <li style="padding:10px;background:#f4ecda;border-radius:6px;font-size:13px;border-inline-start:3px solid #A06A0F;">الصف 63 — المبلغ مكتوب بين أقواس (120,500) يشير إلى قيمة سالبة — تحقق من صحة البيانات</li>
-        <li style="padding:10px;background:#f4ecda;border-radius:6px;font-size:13px;border-inline-start:3px solid #A06A0F;">الصف 89 — صيغة التاريخ (Jan-2026) غير مدعومة، سيُحوَّل تلقائياً إلى 01/01/2026</li>
-      </ul>
+      <div style="margin-top:12px;">
+        <div class="callout callout-warn">
+          <span class="callout-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></span>
+          <div class="callout-body"><p class="callout-text">الصف 47 — المبلغ يحتوي على رمز عملة (ج.م) يجب إزالته قبل الاستيراد</p></div>
+        </div>
+        <div class="callout callout-warn">
+          <span class="callout-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></span>
+          <div class="callout-body"><p class="callout-text">الصف 63 — المبلغ مكتوب بين أقواس (120,500) يشير إلى قيمة سالبة — تحقق من صحة البيانات</p></div>
+        </div>
+        <div class="callout callout-warn">
+          <span class="callout-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></span>
+          <div class="callout-body"><p class="callout-text">الصف 89 — صيغة التاريخ (Jan-2026) غير مدعومة، سيُحوَّل تلقائياً إلى 01/01/2026</p></div>
+        </div>
+      </div>
     </div>
     <!-- /BLOCK -->
 

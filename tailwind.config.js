@@ -5,7 +5,12 @@ module.exports = {
     './pages/**/*.html',
     './assets/js/**/*.js',
   ],
-  safelist: ['is-soon', 'sl-soon'],
+  safelist: [
+    'is-soon', 'sl-soon',
+    // Reusable callout/validation component — keep all 4 states available for reuse
+    'callout', 'callout-warn', 'callout-error', 'callout-info', 'callout-success',
+    'callout-ico', 'callout-body', 'callout-title', 'callout-text',
+  ],
   theme: {
     extend: {
       colors: {

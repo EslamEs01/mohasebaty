@@ -279,6 +279,13 @@
           <h2>جدول الأخطاء <span class="count">8</span></h2>
         </div>
       </div>
+      <div class="callout callout-error" style="margin-bottom:14px;">
+        <span class="callout-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg></span>
+        <div class="callout-body">
+          <b class="callout-title">٨ صفوف بها أخطاء تتطلب المعالجة</b>
+          <p class="callout-text">يجب تصحيح هذه الأخطاء أو تجاهلها قبل إتمام الاستيراد. راجع كل صف واختر الإجراء المناسب من عمود الإجراء.</p>
+        </div>
+      </div>
       <div class="table-wrap">
         <table class="docs">
           <thead>
@@ -356,6 +363,16 @@
               <td>راجع حساب الضريبة في الملف</td>
               <td><button class="btn btn-outline btn-sm" type="button" data-open="#importErrorActionModal">إجراء</button></td>
             </tr>
+            <!-- Empty state (hidden — يظهر عند عدم وجود نتائج للربط بالـ backend مستقبلاً) -->
+            <tr hidden data-empty-state>
+              <td colspan="7">
+                <div class="empty">
+                  <div class="em-art"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+                  <h3>لا توجد أخطاء في الاستيراد</h3>
+                  <p>تم التحقق من جميع الصفوف بنجاح ولا توجد أخطاء تتطلب المعالجة. يمكنك متابعة اعتماد الاستيراد.</p>
+                </div>
+              </td>
+            </tr>
           </tbody>
         </table>
       </div>
@@ -410,9 +427,9 @@
         <label class="label">ملاحظة</label>
         <textarea class="input" rows="2" placeholder="أضف ملاحظة حول الإجراء المتخذ..."></textarea>
       </div>
-      <div class="tip" style="margin-top:14px;">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
-        <span>تجاهل الصف يعني استبعاده نهائياً من الاستيراد — سيُسجَّل في تقرير الأخطاء للمراجعة.</span>
+      <div class="callout callout-warn" style="margin-top:14px;">
+        <span class="callout-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></span>
+        <div class="callout-body"><p class="callout-text">تجاهل الصف يعني استبعاده نهائياً من الاستيراد — سيُسجَّل في تقرير الأخطاء للمراجعة.</p></div>
       </div>
     </div>
     <div class="modal-foot">
