@@ -9,6 +9,10 @@ UI interaction only (never page content); Arabic-only and RTL-first with `lang="
 dir="rtl"`; do not redesign the approved style; do not break or remove existing pages or
 sections; never ship skeleton or placeholder pages — every page must be complete, linked,
 responsive, and consistent with the approved design system across the 38 delivered screens (37 pages in `pages/` + `index.html`).
+Client-facing pages (`client-dashboard.html`, `upload-document.html`, `client-documents.html`,
+`client-document-details.html`, `client-reports.html`, `messages.html`) MUST use the simplified
+client-only sidebar (لوحة العميل · رفع مستند جديد · مستنداتي · تقاريري · الرسائل) and MUST NEVER
+expose accountant/admin navigation; the full sidebar belongs to accountant/admin pages only.
 
 <!-- SPECKIT START -->
 For additional context about technologies to be used, project structure,

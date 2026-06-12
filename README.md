@@ -25,6 +25,8 @@ Arabic RTL outsourced accounting / bookkeeping platform — fully static HTML/CS
 
 ### بوابة العميل · Client Portal
 
+> **تنقّل منفصل للعميل · Separated navigation:** صفحات بوابة العميل الست تستخدم **قائمة جانبية مبسّطة خاصة بالعميل** (لوحة العميل · رفع مستند جديد · مستنداتي · تقاريري · الرسائل) ولا تعرض أي روابط محاسبية/إدارية داخلية. أمّا صفحات المحاسب/الإدارة فتحتفظ بالقائمة الجانبية الكاملة. (The 6 client-portal pages use a simplified **client-only sidebar**; internal accounting/admin navigation is never shown to clients. Accountant/admin pages keep the full sidebar.)
+
 | الصفحة العربية | المسار |
 |---|---|
 | لوحة العميل | `/pages/client-dashboard.html` |

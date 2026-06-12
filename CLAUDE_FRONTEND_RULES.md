@@ -293,6 +293,8 @@ Suggested navigation groups:
 
 Client pages must stay simple and non-technical.
 
+**Client navigation (MANDATORY):** The client-portal pages — `client-dashboard.html`, `upload-document.html`, `client-documents.html`, `client-document-details.html`, `client-reports.html`, `messages.html` — MUST use the **simplified client-only sidebar** and MUST NEVER expose the accountant/admin sidebar. The client sidebar contains ONLY these five links: لوحة العميل (`client-dashboard.html`), رفع مستند جديد (`upload-document.html`), مستنداتي (`client-documents.html`), تقاريري (`client-reports.html`), الرسائل (`messages.html`), plus an optional client profile block in the footer (company name · account status · responsible accountant). Adding any internal link to a client page sidebar — شجرة الحسابات، القيود المحاسبية، إدارة العملاء، إعدادات النظام، الاستيراد، البنوك، الضرائب الداخلية، التقارير الإدارية، سجل التدقيق, etc. — is PROHIBITED. The full sidebar belongs to accountant/admin pages only.
+
 Client must not see:
 
 - Debit / Credit
@@ -302,6 +304,7 @@ Client must not see:
 - Internal accountant notes
 - Accounting tree
 - Complex accounting classification
+- Admin/accounting **sidebar links** (chart of accounts, journal entries, client management, system settings, internal tax/admin reports, imports, banks, audit log)
 
 Client pages should focus on:
 

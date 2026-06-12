@@ -7,6 +7,22 @@
 
 ---
 
+## Post-Freeze Resolutions
+
+- **Item #1 — Client portal exposed the accountant/admin sidebar (Principle V): ✅ FIXED (2026-06-12).**
+  The 6 client-portal pages (`client-dashboard.html`, `upload-document.html`, `client-documents.html`,
+  `client-document-details.html`, `client-reports.html`, `messages.html`) now use a **simplified client-only
+  sidebar** with exactly five links (لوحة العميل · رفع مستند جديد · مستنداتي · تقاريري · الرسائل) plus a client
+  profile footer (شركة النور للتجارة · حالة الحساب: نشط · المحاسب المسؤول: أحمد محمود). All internal
+  accounting/admin nav (شجرة الحسابات، القيود المحاسبية، إدارة العملاء، إعدادات النظام، الاستيراد، البنوك،
+  الضرائب الداخلية، التقارير الإدارية، سجل التدقيق) was removed from these pages. The accountant/admin pages
+  retain the full sidebar. Enforced going forward by `CLAUDE.md` and `CLAUDE_FRONTEND_RULES.md` §10. Zero new
+  CSS/JS; reused `.sidebar`/`.sidebar-link`/`.sidebar-help` components.
+- Items #2 (empty-state rollout) and #3 (reusable error/callout component) remain documented backend-integration
+  recommendations; currency reactivity per `TaxProfile` is captured in §2 Backend Assumptions.
+
+---
+
 ## 1. Entities
 
 ### 1.1 Client (شركة عميل)
