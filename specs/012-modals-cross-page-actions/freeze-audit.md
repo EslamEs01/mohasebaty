@@ -7,6 +7,25 @@
 
 ---
 
+## Post-Freeze Resolutions
+
+- **Item #1 — Client portal sidebar: ↩️ INTENTIONALLY REVERTED for demo/reviewer access (2026-06-12).**
+  The client-only sidebar split (5-link sidebar on the 6 client-portal pages) was **reverted by product
+  decision**: this is a static frontend prototype, and the buyer/reviewer needs to explore and test **all
+  screens from any page** before backend/RBAC exists. All 37 in-app pages — including the 6 client-portal pages
+  (`client-dashboard.html`, `upload-document.html`, `client-documents.html`, `client-document-details.html`,
+  `client-reports.html`, `messages.html`) — now use the **full unified sidebar** with correct per-page active
+  state. (`index.html` remains the landing/launcher with no sidebar.)
+  **Backend note (RBAC — must enforce later):** the underlying business rule still stands — once the backend
+  and auth exist, role-based access control MUST restrict navigation so that **client** users see only
+  client-facing pages, and **accountant/admin** users see internal accounting/admin pages per their
+  permissions. The full-sidebar-everywhere state is a prototype review convenience ONLY. See
+  `CLAUDE_FRONTEND_RULES.md` §10 (business rule + prototype exception).
+- Items #2 (empty-state rollout) and #3 (reusable error/callout component) remain documented backend-integration
+  recommendations; currency reactivity per `TaxProfile` is captured in §2 Backend Assumptions.
+
+---
+
 ## 1. Entities
 
 ### 1.1 Client (شركة عميل)

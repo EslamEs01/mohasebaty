@@ -293,6 +293,10 @@ Suggested navigation groups:
 
 Client pages must stay simple and non-technical.
 
+**Client navigation — business rule vs. prototype exception:**
+- **Backend/RBAC rule (permanent):** Real **client** users MUST NOT be able to access admin/accounting modules (chart of accounts, journal entries, client management, system settings, internal tax/admin reports, imports, banks, audit log). Once the backend exists, role-based access control MUST enforce client-only navigation for client accounts and accountant/admin navigation per permission for staff accounts.
+- **Frontend-prototype exception (current static demo only):** During the static demo/review phase — with no backend or auth — the **full unified sidebar is shown on all pages, including the client-portal pages** (`client-dashboard.html`, `upload-document.html`, `client-documents.html`, `client-document-details.html`, `client-reports.html`, `messages.html`) so reviewers/buyers can reach every screen from anywhere. This visibility is a review convenience ONLY and does not change the backend rule above; it MUST be replaced by RBAC-enforced navigation during backend integration.
+
 Client must not see:
 
 - Debit / Credit
@@ -302,6 +306,7 @@ Client must not see:
 - Internal accountant notes
 - Accounting tree
 - Complex accounting classification
+- Admin/accounting **sidebar links** (chart of accounts, journal entries, client management, system settings, internal tax/admin reports, imports, banks, audit log)
 
 Client pages should focus on:
 

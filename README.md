@@ -25,6 +25,8 @@ Arabic RTL outsourced accounting / bookkeeping platform — fully static HTML/CS
 
 ### بوابة العميل · Client Portal
 
+> **التنقّل في النسخة التجريبية · Prototype navigation:** للأغراض التجريبية/الاستعراضية للواجهة الأمامية، تظهر القائمة الجانبية الكاملة عبر جميع الصفحات حتى يتمكّن المراجعون من الوصول إلى كل الشاشات. سيفرض تطبيق الواجهة الخلفية لاحقًا التنقّل والصلاحيات حسب الدور (RBAC). (For frontend prototype/demo purposes, the full navigation is visible across pages so reviewers can access all screens. Backend implementation will enforce role-based navigation and permissions.)
+
 | الصفحة العربية | المسار |
 |---|---|
 | لوحة العميل | `/pages/client-dashboard.html` |

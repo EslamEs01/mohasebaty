@@ -435,6 +435,17 @@
                     <button class="btn btn-outline btn-sm" type="button" data-open="#assignAccountantModal">إسناد محاسب</button>
                   </td>
                 </tr>
+                <!-- Empty state (hidden — يظهر عند عدم وجود نتائج للربط بالـ backend مستقبلاً) -->
+                <tr hidden data-empty-state>
+                  <td colspan="9">
+                    <div class="empty">
+                      <div class="em-art"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 9h.01"/><path d="M9 13h.01"/><path d="M9 17h.01"/><path d="M15 9h.01"/><path d="M15 13h.01"/><path d="M15 17h.01"/></svg></div>
+                      <h3>لا يوجد عملاء مطابقون</h3>
+                      <p>لم يُسجَّل أي عميل بعد، أو لا توجد نتائج تطابق الفلاتر الحالية. أضِف أول عميل لبدء إدارة مستنداته وتقاريره.</p>
+                      <button class="btn btn-primary" type="button" data-open="#addClientModal"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg> إضافة عميل جديد</button>
+                    </div>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>

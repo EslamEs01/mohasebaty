@@ -65,7 +65,9 @@
   html, body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    /* clip (not hidden) prevents horizontal scroll WITHOUT breaking position:sticky
+       on the sidebar / form footer / settings side-nav */
+    overflow-x: clip;
     max-width: 100%;
   }
   body {
@@ -851,6 +853,33 @@
     border-radius: 12px;
     display: flex; align-items: flex-start; gap: 8px;
   }
+
+  /* ---------- Callout / Validation (warn · error · info · success) ---------- */
+
+  .callout {
+    display: flex; align-items: flex-start; gap: 10px;
+    padding: 12px 14px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    font-size: 13px; line-height: 1.6;
+    color: theme('colors.ink.2');
+  }
+  .callout + .callout { margin-top: 10px; }
+  .callout-ico { flex-shrink: 0; display: inline-flex; margin-top: 1px; }
+  .callout-ico svg { width: 18px; height: 18px; }
+  .callout-body { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+  .callout-title { font-weight: 600; font-size: 13px; }
+  .callout-text { margin: 0; font-size: 12.5px; color: theme('colors.ink.2'); line-height: 1.6; }
+  .callout-text ul { margin: 4px 0 0; padding-inline-start: 18px; display: flex; flex-direction: column; gap: 4px; }
+
+  .callout-warn    { background: theme('colors.amber.soft');   border-color: rgba(160,106,15,.22); }
+  .callout-warn .callout-ico,    .callout-warn .callout-title    { color: theme('colors.amber.DEFAULT'); }
+  .callout-error   { background: theme('colors.rose.soft');    border-color: rgba(184,58,58,.22); }
+  .callout-error .callout-ico,   .callout-error .callout-title   { color: theme('colors.rose.DEFAULT'); }
+  .callout-info    { background: theme('colors.primary.soft'); border-color: rgba(14,111,102,.22); }
+  .callout-info .callout-ico,    .callout-info .callout-title    { color: theme('colors.primary.ink'); }
+  .callout-success { background: theme('colors.green.soft');   border-color: rgba(47,122,78,.22); }
+  .callout-success .callout-ico, .callout-success .callout-title { color: theme('colors.green.DEFAULT'); }
 
   /* ---------- Messages ---------- */
 

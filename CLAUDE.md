@@ -9,6 +9,9 @@ UI interaction only (never page content); Arabic-only and RTL-first with `lang="
 dir="rtl"`; do not redesign the approved style; do not break or remove existing pages or
 sections; never ship skeleton or placeholder pages — every page must be complete, linked,
 responsive, and consistent with the approved design system across the 38 delivered screens (37 pages in `pages/` + `index.html`).
+During static frontend demo, full navigation may be shown across all pages for reviewer access.
+During backend integration, enforce role-based navigation and permissions (client users see only
+client-facing pages; accountant/admin users see internal accounting/admin pages per their role).
 
 <!-- SPECKIT START -->
 For additional context about technologies to be used, project structure,

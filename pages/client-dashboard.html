@@ -16,7 +16,7 @@
       <div class="brand-mark">م</div>
       <div class="brand-name">
         <b>منصة محاسبتي</b>
-        <span>MOHASEBATY</span>
+        <span>ADMIN</span>
       </div>
     </div>
     <div class="sidebar-section-label">لوحات العميل</div>
@@ -418,6 +418,17 @@
                 <td><span class="chip green">تم التصنيف</span></td>
                 <td class="upd">منذ 5 أيام</td>
                 <td style="text-align:start;"><a class="btn btn-ghost" href="client-document-details.html"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg> عرض</a></td>
+              </tr>
+              <!-- Empty state (hidden — يظهر عند عدم وجود نتائج للربط بالـ backend مستقبلاً) -->
+              <tr hidden data-empty-state>
+                <td colspan="7">
+                  <div class="empty">
+                    <div class="em-art"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M12 18v-6"/><path d="m9 15 3-3 3 3"/></svg></div>
+                    <h3>لا توجد مستندات بعد</h3>
+                    <p>ابدأ برفع أول مستند (فاتورة أو إيصال) ليتولى فريق المحاسبة مراجعته وتصنيفه.</p>
+                    <a class="btn btn-primary" href="upload-document.html"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg> رفع مستند جديد</a>
+                  </div>
+                </td>
               </tr>
             </tbody>
           </table>
